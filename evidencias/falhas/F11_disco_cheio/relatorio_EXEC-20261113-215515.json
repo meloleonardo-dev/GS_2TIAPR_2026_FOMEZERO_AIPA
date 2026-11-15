@@ -1,0 +1,83 @@
+{
+  "_aviso": "Relatório gerado pelo robô (execução real) com dados SIMULADOS; evidência da IoT física e simulada nunca misturadas: veja 'modo_iot'.",
+  "id_execucao": "EXEC-20261113-215515",
+  "inicio": "2026-11-13T21:55:15-03:00",
+  "simulado": true,
+  "arquivo_lotes": "entrada\\lotes_entregues.json",
+  "modo_iot": [
+    "fisico"
+  ],
+  "modo_iot_texto": "IoT: evidência FÍSICA (origem fisico; logs reais de 10 e 11/11/2026, commit 4b09c42).",
+  "recursos": {
+    "disco_livre_mb": 57115.5,
+    "disco_uso_pct": 88.3,
+    "memoria_disponivel_mb": 4619.9,
+    "memoria_uso_pct": 71.3,
+    "cpu_pct": 13.9
+  },
+  "fim": "2026-11-13T21:55:15-03:00",
+  "duracao_total_s": 0.11,
+  "abortado": true,
+  "arquivo_log": "EXEC-20261113-215515.log",
+  "resumo": {
+    "lotes_no_arquivo": 0,
+    "lotes_tratados": 0,
+    "processado": 0,
+    "revisao_humana": 0,
+    "falha": 0,
+    "ignorado_duplicado": 0,
+    "ignorado_nao_entregue": 0,
+    "ignorados_nao_entregues": 0,
+    "taxa_automacao": null,
+    "taxa_revisao_humana": null,
+    "taxa_erros": null
+  },
+  "definicoes": {
+    "lotes_tratados": "entregues, sem contar duplicados nem não entregues",
+    "taxa_erros": "lotes com status falha / lotes tratados",
+    "tempo_de_ciclo_lote": "T3 a T10 por lote, em ms (inclui espera do portal)",
+    "custo_por_processo": "não medido (sem custo real)"
+  },
+  "tempo_de_ciclo_lote_ms": {
+    "n": 0,
+    "media_ms": null,
+    "min_ms": null,
+    "max_ms": null
+  },
+  "tempo_de_ciclo_por_lote": {},
+  "tarefas_bpmn": {
+    "T1": {
+      "nome": "Verificar ambiente",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 104.2,
+      "min_ms": 104.2,
+      "max_ms": 104.2
+    }
+  },
+  "gateways": {
+    "G0": {
+      "nao_ambiente": 1
+    }
+  },
+  "falhas_tratadas": [
+    {
+      "falha": "F11",
+      "lote_id": null,
+      "motivo": "disco_insuficiente",
+      "caminho_seguro": "aborta antes de gravar; relatório explica"
+    }
+  ],
+  "resultados": [],
+  "trilhas_bpmn": {
+    "-": [
+      "T1",
+      "G0:nao_ambiente",
+      "T12"
+    ]
+  },
+  "conferencia_gabarito": null
+}

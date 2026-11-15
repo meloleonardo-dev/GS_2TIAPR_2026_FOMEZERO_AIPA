@@ -1,0 +1,115 @@
+$ python executar_robo.py --trabalho saida\cenarios\revisao_humana
+(código de saída 0)
+
+2026-11-13 21:51:57,370 | INFO | EXEC-20261113-215157 | E0 | - | início da execução (trabalho=revisao_humana, origens IoT aceitas=['fisico'], portal_modo=nenhum, sem_portal=False)
+2026-11-13 21:51:57,473 | INFO | EXEC-20261113-215157 | T1 | - | recursos: disco livre 57119.9 MB, memória disponível 4571.8 MB, CPU 15.4%
+2026-11-13 21:51:58,493 | INFO | EXEC-20261113-215157 | T1 | - | portal SIMULADO fora do ar: subindo em http://127.0.0.1:5050 (modo de falha nenhum)
+2026-11-13 21:51:59,050 | INFO | EXEC-20261113-215157 | T1 | - | health do portal SIMULADO ok
+2026-11-13 21:51:59,050 | INFO | EXEC-20261113-215157 | G0 | - | gateway -> sim
+2026-11-13 21:51:59,054 | INFO | EXEC-20261113-215157 | T2 | - | IoT lida: 2 arquivo(s), 146 mensagens {'status': 2, 'telemetria': 71, 'ack': 71, 'alerta_normalizacao': 1, 'alerta_ativacao': 1}, 0 linha(s) inválida(s)
+2026-11-13 21:52:01,300 | INFO | EXEC-20261113-215157 | T2 | - | 13 registro(s) lido(s) de lotes_entregues.json
+2026-11-13 21:52:01,300 | INFO | EXEC-20261113-215157 | G1 | - | gateway -> sim
+2026-11-13 21:52:01,315 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0001 | gateway -> sim
+2026-11-13 21:52:01,315 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0001 | gateway -> sim
+2026-11-13 21:52:01,316 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0001 | gateway -> novo
+2026-11-13 21:52:01,467 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0001 | IA: ocorrência=sem_ocorrencia confiança=0.3228 kg_extraido=8.0 kg_ocorrencia=None
+2026-11-13 21:52:01,468 | INFO | EXEC-20261113-215157 | T6 | LOTE-2026-0001 | ativação quebra_cadeia_frio (alerta_ativacao) origem=fisico seq=630 ts=2026-11-11T13:32:35Z (mqtt-20261111-102301.log:107)
+2026-11-13 21:52:01,468 | INFO | EXEC-20261113-215157 | T6 | LOTE-2026-0001 | ativação quebra_cadeia_frio (telemetria) origem=fisico seq=100 ts=2026-11-11T01:14:40Z (mqtt-20261110-221343.log:2)
+2026-11-13 21:52:01,468 | INFO | EXEC-20261113-215157 | T6 | LOTE-2026-0001 | ativação quebra_cadeia_frio (telemetria) origem=fisico seq=101 ts=2026-11-11T01:14:50Z (mqtt-20261110-221343.log:4)
+2026-11-13 21:52:01,468 | INFO | EXEC-20261113-215157 | T6 | LOTE-2026-0001 | 1 normalização(ões) no período: não apagam o histórico de ativação
+2026-11-13 21:52:01,468 | INFO | EXEC-20261113-215157 | T6 | LOTE-2026-0001 | ... 25 ativações no período no total
+2026-11-13 21:52:01,468 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0001 | gateway -> revisao_humana
+2026-11-13 21:52:01,468 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0001 | revisão humana: ['alerta_iot_quebra_cadeia_frio', 'baixa_confianca']
+2026-11-13 21:52:01,475 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0001 | status revisao_humana motivo ['alerta_iot_quebra_cadeia_frio', 'baixa_confianca']
+2026-11-13 21:52:01,475 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:01,475 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:01,475 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0002 | gateway -> novo
+2026-11-13 21:52:01,479 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0002 | IA: ocorrência=sem_ocorrencia confiança=0.9719 kg_extraido=12.0 kg_ocorrencia=None
+2026-11-13 21:52:01,479 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0002 | gateway -> automatico
+2026-11-13 21:52:01,479 | INFO | EXEC-20261113-215157 | T7 | LOTE-2026-0002 | kg validado 12.0 (confirmacao_beneficiario) -> CO₂ evitado 30.48 kg CO₂eq (estimativa), 120 pontos, acumulado do doador 12.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:52:01,541 | INFO | EXEC-20261113-215157 | G6 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:01,541 | INFO | EXEC-20261113-215157 | T8 | LOTE-2026-0002 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0002.pdf
+2026-11-13 21:52:04,760 | INFO | EXEC-20261113-215157 | T9 | LOTE-2026-0002 | lançado pelo Selenium, protocolo SIM-000001
+2026-11-13 21:52:04,764 | INFO | EXEC-20261113-215157 | T9 | LOTE-2026-0002 | lançamento confirmado pela API REST (protocolo SIM-000001, meio selenium)
+2026-11-13 21:52:04,764 | INFO | EXEC-20261113-215157 | G7 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:04,770 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0002 | status processado motivo []
+2026-11-13 21:52:04,770 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:04,770 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:04,770 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0003 | gateway -> novo
+2026-11-13 21:52:04,773 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0003 | IA: ocorrência=sem_ocorrencia confiança=0.9827 kg_extraido=20.0 kg_ocorrencia=None
+2026-11-13 21:52:04,773 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0003 | gateway -> automatico
+2026-11-13 21:52:04,773 | INFO | EXEC-20261113-215157 | T7 | LOTE-2026-0003 | kg validado 20.0 (confirmacao_beneficiario) -> CO₂ evitado 50.8 kg CO₂eq (estimativa), 200 pontos, acumulado do doador 32.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:52:04,795 | INFO | EXEC-20261113-215157 | G6 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:04,796 | INFO | EXEC-20261113-215157 | T8 | LOTE-2026-0003 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0003.pdf
+2026-11-13 21:52:07,015 | INFO | EXEC-20261113-215157 | T9 | LOTE-2026-0003 | lançado pelo Selenium, protocolo SIM-000002
+2026-11-13 21:52:07,043 | INFO | EXEC-20261113-215157 | T9 | LOTE-2026-0003 | lançamento confirmado pela API REST (protocolo SIM-000002, meio selenium)
+2026-11-13 21:52:07,043 | INFO | EXEC-20261113-215157 | G7 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:07,062 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0003 | status processado motivo []
+2026-11-13 21:52:07,062 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:07,062 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:07,066 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0005 | gateway -> novo
+2026-11-13 21:52:07,077 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0005 | IA: ocorrência=sem_ocorrencia confiança=0.9189 kg_extraido=25.0 kg_ocorrencia=None
+2026-11-13 21:52:07,077 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0005 | gateway -> automatico
+2026-11-13 21:52:07,078 | INFO | EXEC-20261113-215157 | T7 | LOTE-2026-0005 | kg validado 25.0 (confirmacao_beneficiario) -> CO₂ evitado 63.5 kg CO₂eq (estimativa), 250 pontos, acumulado do doador 57.0 kg -> selo Bronze
+2026-11-13 21:52:07,170 | INFO | EXEC-20261113-215157 | G6 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:07,173 | INFO | EXEC-20261113-215157 | T8 | LOTE-2026-0005 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0005.pdf
+2026-11-13 21:52:09,953 | INFO | EXEC-20261113-215157 | T9 | LOTE-2026-0005 | lançado pelo Selenium, protocolo SIM-000003
+2026-11-13 21:52:09,958 | INFO | EXEC-20261113-215157 | T9 | LOTE-2026-0005 | lançamento confirmado pela API REST (protocolo SIM-000003, meio selenium)
+2026-11-13 21:52:09,958 | INFO | EXEC-20261113-215157 | G7 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:09,967 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0005 | status processado motivo []
+2026-11-13 21:52:09,967 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0006 | gateway -> sim
+2026-11-13 21:52:09,967 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0006 | gateway -> sim
+2026-11-13 21:52:09,968 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0006 | gateway -> novo
+2026-11-13 21:52:09,971 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0006 | IA: ocorrência=avaria confiança=0.6338 kg_extraido=6.0 kg_ocorrencia=None
+2026-11-13 21:52:09,971 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0006 | gateway -> revisao_humana
+2026-11-13 21:52:09,971 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0006 | revisão humana: ['ocorrencia_avaria', 'baixa_confianca']
+2026-11-13 21:52:09,977 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0006 | status revisao_humana motivo ['ocorrencia_avaria', 'baixa_confianca']
+2026-11-13 21:52:09,977 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0007 | gateway -> sim
+2026-11-13 21:52:09,977 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0007 | gateway -> sim
+2026-11-13 21:52:09,978 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0007 | gateway -> novo
+2026-11-13 21:52:09,981 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0007 | IA: ocorrência=avaria confiança=0.9375 kg_extraido=10.0 kg_ocorrencia=2.0
+2026-11-13 21:52:09,981 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0007 | gateway -> revisao_humana
+2026-11-13 21:52:09,981 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0007 | revisão humana: ['ocorrencia_avaria']
+2026-11-13 21:52:09,988 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0007 | status revisao_humana motivo ['ocorrencia_avaria']
+2026-11-13 21:52:09,989 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0008 | gateway -> sim
+2026-11-13 21:52:09,989 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0008 | gateway -> sim
+2026-11-13 21:52:09,989 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0008 | gateway -> novo
+2026-11-13 21:52:09,993 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0008 | IA: ocorrência=divergencia_quantidade confiança=0.9189 kg_extraido=9.0 kg_ocorrencia=None
+2026-11-13 21:52:09,993 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0008 | gateway -> revisao_humana
+2026-11-13 21:52:09,993 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0008 | revisão humana: ['ocorrencia_divergencia_quantidade', 'divergencia_kg']
+2026-11-13 21:52:10,000 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0008 | status revisao_humana motivo ['ocorrencia_divergencia_quantidade', 'divergencia_kg']
+2026-11-13 21:52:10,000 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0009 | gateway -> sim
+2026-11-13 21:52:10,000 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0009 | gateway -> sim
+2026-11-13 21:52:10,001 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0009 | gateway -> novo
+2026-11-13 21:52:10,004 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0009 | IA: ocorrência=problema_temperatura confiança=0.8179 kg_extraido=5.0 kg_ocorrencia=None
+2026-11-13 21:52:10,004 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0009 | gateway -> revisao_humana
+2026-11-13 21:52:10,005 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0009 | revisão humana: ['ocorrencia_problema_temperatura']
+2026-11-13 21:52:10,011 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0009 | status revisao_humana motivo ['ocorrencia_problema_temperatura']
+2026-11-13 21:52:10,012 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0010 | gateway -> sim
+2026-11-13 21:52:10,012 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0010 | gateway -> sim
+2026-11-13 21:52:10,012 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0010 | gateway -> novo
+2026-11-13 21:52:10,016 | INFO | EXEC-20261113-215157 | T5 | LOTE-2026-0010 | IA: ocorrência=ilegivel_outro confiança=0.7439 kg_extraido=None kg_ocorrencia=None
+2026-11-13 21:52:10,016 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0010 | gateway -> revisao_humana
+2026-11-13 21:52:10,016 | INFO | EXEC-20261113-215157 | G5 | LOTE-2026-0010 | revisão humana: ['ocorrencia_ilegivel_outro', 'sem_confirmacao']
+2026-11-13 21:52:10,021 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0010 | status revisao_humana motivo ['ocorrencia_ilegivel_outro', 'sem_confirmacao']
+2026-11-13 21:52:10,022 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0011 | gateway -> sim
+2026-11-13 21:52:10,022 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0011 | gateway -> nao
+2026-11-13 21:52:10,026 | WARNING | EXEC-20261113-215157 | T3 | LOTE-2026-0011 | campo inválido: quantidade_disponibilizada_kg
+2026-11-13 21:52:10,033 | INFO | EXEC-20261113-215157 | T10 | LOTE-2026-0011 | status falha motivo ['dado_invalido:quantidade_disponibilizada_kg']
+2026-11-13 21:52:10,033 | INFO | EXEC-20261113-215157 | G2 | indice10 | gateway -> sim
+2026-11-13 21:52:10,033 | INFO | EXEC-20261113-215157 | G3 | indice10 | gateway -> nao
+2026-11-13 21:52:10,038 | WARNING | EXEC-20261113-215157 | T3 | indice10 | campo inválido: lote_id
+2026-11-13 21:52:10,041 | INFO | EXEC-20261113-215157 | T10 | indice10 | status falha motivo ['dado_invalido:lote_id']
+2026-11-13 21:52:10,041 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:10,041 | INFO | EXEC-20261113-215157 | G3 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:10,041 | INFO | EXEC-20261113-215157 | G4 | LOTE-2026-0002 | gateway -> duplicado
+2026-11-13 21:52:10,041 | INFO | EXEC-20261113-215157 | T4 | LOTE-2026-0002 | lote já tratado com o mesmo conteúdo: ignorado (não lança de novo)
+2026-11-13 21:52:10,041 | INFO | EXEC-20261113-215157 | G2 | LOTE-2026-0004 | gateway -> nao (em_transporte)
+2026-11-13 21:52:10,407 | INFO | EXEC-20261113-215157 | T11 | - | fila de revisão humana: 6 lote(s) pendente(s)
+2026-11-13 21:52:10,409 | INFO | EXEC-20261113-215157 | T11 | - | CT-05 gravado (indicadores.json, historico_entregas.csv)
+2026-11-13 21:52:10,439 | INFO | EXEC-20261113-215157 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215157.md
+2026-11-13 21:52:12,738 | INFO | EXEC-20261113-215157 | E1 | - | portal SIMULADO iniciado pelo robô foi encerrado
+
+== EXEC-20261113-215157 | tratados 11 | processado 3 | revisão humana 6 | falha 2 | duplicados 1 | não entregues 1 | taxa de erros 0.1818 | 13.05 s
+   relatório: saida\cenarios\revisao_humana\saida\relatorios\relatorio_EXEC-20261113-215157.md | log: saida\cenarios\revisao_humana\saida\logs\EXEC-20261113-215157.log
+   gabarito: 12 de 13 registros conferem

@@ -1,0 +1,31 @@
+id;texto;classe;kg_recebido_gabarito;kg_cadastrado;origem;rotulado_por;revisao_humana
+FM-01;show, os 8 quilo de banana tão aqui na mesa;sem_ocorrencia;8;8;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-02;valeu demais!!! 15kg de arroz já na despensa da cozinha;sem_ocorrencia;15;15;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-03;Pessoal, passando pra avisar que a doação de hoje (doze quilos de laranja) foi guardada e a criançada vai adorar, gratidão;sem_ocorrencia;12;12;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-04;beleza, 3,5 kg de pão de forma guardados;sem_ocorrencia;3.5;3.5;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-05;a moça do mercado deixou 40 kilos de batata, conferido e guardado;sem_ocorrencia;40;40;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-06;recebemos sim. vinte quilos de feijão, bem embalado, já tá no estoque;sem_ocorrencia;20;20;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-07;6 kg de maçã aqui, mas metade tá machucada e pisada;avaria;6;6;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-08;o saco do arroz abriu no caminho e espalhou grão pelo carro todo, sobrou uns 9 kg;avaria;9;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-09;leite chegou com as caixinhas estufadas, 12 litros;avaria;;12;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-10;pão veio todo esmagado, deu pra aproveitar pouco dos 5 kg;avaria;5;5;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-11;banana preta e melando, bicho em volta, 7 kg;avaria;7;7;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-12;as bandejas de ovos chegaram com várias trincadas, mais ou menos dois quilos perdidos de dez;avaria;10;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-13;pediram vinte, vieram doze quilos;divergencia_quantidade;12;20;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-14;contei aqui e sumiram umas 3 caixas;divergencia_quantidade;;30;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-15;no app tava 25 kg mas na balança deu 18;divergencia_quantidade;18;25;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-16;chegou metade do que vocês anunciaram, uns 10 kg;divergencia_quantidade;10;20;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-17;tinha que ser 40 kilos de laranja, mas o motorista trouxe 32;divergencia_quantidade;32;40;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-18;veio uma caixa de tomate, uns 4 kg, a outra ficou no mercado;divergencia_quantidade;4;8;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-19;o iogurte tava suando e mole, parece que ficou no sol, 6 kg;problema_temperatura;6;6;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-20;frango chegou molinho, sem aquela friagem de freezer, 10 kg;problema_temperatura;10;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-21;a caixa de isopor veio aberta e o queijo tava suado, 3 quilos;problema_temperatura;3;3;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-22;o leite chegou na mão, fora do isopor, uns oito quilos;problema_temperatura;8;8;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-23;carne moída veio pingando água e com cheiro forte, 5 kg;problema_temperatura;5;5;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-24;o motorista disse que o carro ficou parado no calor por duas horas com o presunto dentro, recebemos 4 kg;problema_temperatura;4;4;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-25;kkkkkkk;ilegivel_outro;;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-26;oi bom dia quem fala?;ilegivel_outro;;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-27;manda o comprovante no zap;ilegivel_outro;;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-28;...;ilegivel_outro;;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-29;teste 123 teste;ilegivel_outro;;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao
+FM-30;esse número é da ong?;ilegivel_outro;;10;SINTETICO_fora_do_molde;agente de IA da AIPA (escrito e rotulado);nao

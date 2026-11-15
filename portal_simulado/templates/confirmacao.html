@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block titulo %}Confirmação{% endblock %}
+{% block corpo %}
+<h2>{% if criado %}Lançamento registrado{% else %}Lote já lançado anteriormente{% endif %}</h2>
+<p>Lote de doação: <strong id="lote">{{ lote_id }}</strong></p>
+<p id="situacao">{% if criado %}novo{% else %}ja_lancado{% endif %}</p>
+<p>Protocolo: <span id="protocolo"></span> <span id="aguarde">gerando protocolo...</span></p>
+<script>
+  // conteúdo dinâmico: o protocolo só aparece depois de um atraso (o robô espera com WebDriverWait)
+  setTimeout(function () {
+    document.getElementById("protocolo").textContent = "{{ protocolo }}";
+    document.getElementById("aguarde").remove();
+  }, {{ atraso }});
+</script>
+<p><a href="/lancamentos/novo">Novo lançamento</a></p>
+{% endblock %}

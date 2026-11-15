@@ -1,0 +1,96 @@
+$ python executar_robo.py --cenario iot_ausente
+(código de saída 0)
+
+[cenário iot_ausente | F2] fonte da IoT ausente -> pasta saida\cenarios\iot_ausente
+2026-11-13 21:52:37,077 | INFO | EXEC-20261113-215237 | E0 | - | início da execução (trabalho=iot_ausente, origens IoT aceitas=['fisico'], portal_modo=nenhum, sem_portal=False)
+2026-11-13 21:52:37,180 | INFO | EXEC-20261113-215237 | T1 | - | recursos: disco livre 57118.2 MB, memória disponível 4533.4 MB, CPU 11.1%
+2026-11-13 21:52:38,207 | INFO | EXEC-20261113-215237 | T1 | - | portal SIMULADO fora do ar: subindo em http://127.0.0.1:5050 (modo de falha nenhum)
+2026-11-13 21:52:38,737 | INFO | EXEC-20261113-215237 | T1 | - | health do portal SIMULADO ok
+2026-11-13 21:52:38,737 | INFO | EXEC-20261113-215237 | G0 | - | gateway -> sim
+2026-11-13 21:52:38,739 | WARNING | EXEC-20261113-215237 | T2 | - | fonte da IoT ausente (iot/*.log): todos os lotes vão para revisão humana (dados_iot_indisponiveis)
+2026-11-13 21:52:39,850 | INFO | EXEC-20261113-215237 | T2 | - | 13 registro(s) lido(s) de lotes_entregues.json
+2026-11-13 21:52:39,850 | INFO | EXEC-20261113-215237 | G1 | - | gateway -> sim
+2026-11-13 21:52:39,859 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0001 | gateway -> sim
+2026-11-13 21:52:39,859 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0001 | gateway -> sim
+2026-11-13 21:52:39,859 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0001 | gateway -> novo
+2026-11-13 21:52:39,943 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0001 | IA: ocorrência=sem_ocorrencia confiança=0.3228 kg_extraido=8.0 kg_ocorrencia=None
+2026-11-13 21:52:39,943 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0001 | gateway -> revisao_humana
+2026-11-13 21:52:39,943 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0001 | revisão humana: ['alerta_iot_quebra_cadeia_frio', 'dados_iot_indisponiveis', 'baixa_confianca']
+2026-11-13 21:52:39,945 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0001 | status revisao_humana motivo ['alerta_iot_quebra_cadeia_frio', 'dados_iot_indisponiveis', 'baixa_confianca']
+2026-11-13 21:52:39,946 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:39,946 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:39,946 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0002 | gateway -> novo
+2026-11-13 21:52:39,948 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0002 | IA: ocorrência=sem_ocorrencia confiança=0.9719 kg_extraido=12.0 kg_ocorrencia=None
+2026-11-13 21:52:39,948 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0002 | gateway -> revisao_humana
+2026-11-13 21:52:39,948 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0002 | revisão humana: ['dados_iot_indisponiveis']
+2026-11-13 21:52:39,950 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0002 | status revisao_humana motivo ['dados_iot_indisponiveis']
+2026-11-13 21:52:39,950 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:39,951 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:39,951 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0003 | gateway -> novo
+2026-11-13 21:52:39,953 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0003 | IA: ocorrência=sem_ocorrencia confiança=0.9827 kg_extraido=20.0 kg_ocorrencia=None
+2026-11-13 21:52:39,953 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0003 | gateway -> revisao_humana
+2026-11-13 21:52:39,953 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0003 | revisão humana: ['dados_iot_indisponiveis']
+2026-11-13 21:52:39,957 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0003 | status revisao_humana motivo ['dados_iot_indisponiveis']
+2026-11-13 21:52:39,957 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:39,957 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:39,957 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0005 | gateway -> novo
+2026-11-13 21:52:39,959 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0005 | IA: ocorrência=sem_ocorrencia confiança=0.9189 kg_extraido=25.0 kg_ocorrencia=None
+2026-11-13 21:52:39,959 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0005 | gateway -> revisao_humana
+2026-11-13 21:52:39,959 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0005 | revisão humana: ['dados_iot_indisponiveis']
+2026-11-13 21:52:39,962 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0005 | status revisao_humana motivo ['dados_iot_indisponiveis']
+2026-11-13 21:52:39,962 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0006 | gateway -> sim
+2026-11-13 21:52:39,962 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0006 | gateway -> sim
+2026-11-13 21:52:39,962 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0006 | gateway -> novo
+2026-11-13 21:52:39,964 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0006 | IA: ocorrência=avaria confiança=0.6338 kg_extraido=6.0 kg_ocorrencia=None
+2026-11-13 21:52:39,964 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0006 | gateway -> revisao_humana
+2026-11-13 21:52:39,964 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0006 | revisão humana: ['dados_iot_indisponiveis', 'ocorrencia_avaria', 'baixa_confianca']
+2026-11-13 21:52:39,967 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0006 | status revisao_humana motivo ['dados_iot_indisponiveis', 'ocorrencia_avaria', 'baixa_confianca']
+2026-11-13 21:52:39,967 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0007 | gateway -> sim
+2026-11-13 21:52:39,967 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0007 | gateway -> sim
+2026-11-13 21:52:39,967 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0007 | gateway -> novo
+2026-11-13 21:52:39,969 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0007 | IA: ocorrência=avaria confiança=0.9375 kg_extraido=10.0 kg_ocorrencia=2.0
+2026-11-13 21:52:39,969 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0007 | gateway -> revisao_humana
+2026-11-13 21:52:39,969 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0007 | revisão humana: ['dados_iot_indisponiveis', 'ocorrencia_avaria']
+2026-11-13 21:52:39,972 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0007 | status revisao_humana motivo ['dados_iot_indisponiveis', 'ocorrencia_avaria']
+2026-11-13 21:52:39,973 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0008 | gateway -> sim
+2026-11-13 21:52:39,973 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0008 | gateway -> sim
+2026-11-13 21:52:39,973 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0008 | gateway -> novo
+2026-11-13 21:52:39,975 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0008 | IA: ocorrência=divergencia_quantidade confiança=0.9189 kg_extraido=9.0 kg_ocorrencia=None
+2026-11-13 21:52:39,975 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0008 | gateway -> revisao_humana
+2026-11-13 21:52:39,975 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0008 | revisão humana: ['dados_iot_indisponiveis', 'ocorrencia_divergencia_quantidade', 'divergencia_kg']
+2026-11-13 21:52:39,979 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0008 | status revisao_humana motivo ['dados_iot_indisponiveis', 'ocorrencia_divergencia_quantidade', 'divergencia_kg']
+2026-11-13 21:52:39,979 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0009 | gateway -> sim
+2026-11-13 21:52:39,979 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0009 | gateway -> sim
+2026-11-13 21:52:39,979 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0009 | gateway -> novo
+2026-11-13 21:52:39,981 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0009 | IA: ocorrência=problema_temperatura confiança=0.8179 kg_extraido=5.0 kg_ocorrencia=None
+2026-11-13 21:52:39,981 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0009 | gateway -> revisao_humana
+2026-11-13 21:52:39,981 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0009 | revisão humana: ['dados_iot_indisponiveis', 'ocorrencia_problema_temperatura']
+2026-11-13 21:52:39,984 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0009 | status revisao_humana motivo ['dados_iot_indisponiveis', 'ocorrencia_problema_temperatura']
+2026-11-13 21:52:39,984 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0010 | gateway -> sim
+2026-11-13 21:52:39,984 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0010 | gateway -> sim
+2026-11-13 21:52:39,984 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0010 | gateway -> novo
+2026-11-13 21:52:39,986 | INFO | EXEC-20261113-215237 | T5 | LOTE-2026-0010 | IA: ocorrência=ilegivel_outro confiança=0.7439 kg_extraido=None kg_ocorrencia=None
+2026-11-13 21:52:39,986 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0010 | gateway -> revisao_humana
+2026-11-13 21:52:39,986 | INFO | EXEC-20261113-215237 | G5 | LOTE-2026-0010 | revisão humana: ['dados_iot_indisponiveis', 'ocorrencia_ilegivel_outro', 'sem_confirmacao']
+2026-11-13 21:52:39,989 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0010 | status revisao_humana motivo ['dados_iot_indisponiveis', 'ocorrencia_ilegivel_outro', 'sem_confirmacao']
+2026-11-13 21:52:39,989 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0011 | gateway -> sim
+2026-11-13 21:52:39,989 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0011 | gateway -> nao
+2026-11-13 21:52:39,992 | WARNING | EXEC-20261113-215237 | T3 | LOTE-2026-0011 | campo inválido: quantidade_disponibilizada_kg
+2026-11-13 21:52:39,994 | INFO | EXEC-20261113-215237 | T10 | LOTE-2026-0011 | status falha motivo ['dado_invalido:quantidade_disponibilizada_kg']
+2026-11-13 21:52:39,995 | INFO | EXEC-20261113-215237 | G2 | indice10 | gateway -> sim
+2026-11-13 21:52:39,995 | INFO | EXEC-20261113-215237 | G3 | indice10 | gateway -> nao
+2026-11-13 21:52:39,998 | WARNING | EXEC-20261113-215237 | T3 | indice10 | campo inválido: lote_id
+2026-11-13 21:52:39,999 | INFO | EXEC-20261113-215237 | T10 | indice10 | status falha motivo ['dado_invalido:lote_id']
+2026-11-13 21:52:39,999 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:39,999 | INFO | EXEC-20261113-215237 | G3 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:52:39,999 | INFO | EXEC-20261113-215237 | G4 | LOTE-2026-0002 | gateway -> duplicado
+2026-11-13 21:52:39,999 | INFO | EXEC-20261113-215237 | T4 | LOTE-2026-0002 | lote já tratado com o mesmo conteúdo: ignorado (não lança de novo)
+2026-11-13 21:52:39,999 | INFO | EXEC-20261113-215237 | G2 | LOTE-2026-0004 | gateway -> nao (em_transporte)
+2026-11-13 21:52:40,163 | INFO | EXEC-20261113-215237 | T11 | - | fila de revisão humana: 9 lote(s) pendente(s)
+2026-11-13 21:52:40,164 | INFO | EXEC-20261113-215237 | T11 | - | CT-05 gravado (indicadores.json, historico_entregas.csv)
+2026-11-13 21:52:40,194 | INFO | EXEC-20261113-215237 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215237.md
+2026-11-13 21:52:40,196 | INFO | EXEC-20261113-215237 | E1 | - | portal SIMULADO iniciado pelo robô foi encerrado
+
+== EXEC-20261113-215237 | tratados 11 | processado 0 | revisão humana 9 | falha 2 | duplicados 1 | não entregues 1 | taxa de erros 0.1818 | 3.11 s
+   relatório: saida\cenarios\iot_ausente\saida\relatorios\relatorio_EXEC-20261113-215237.md | log: saida\cenarios\iot_ausente\saida\logs\EXEC-20261113-215237.log
+   gabarito: 9 de 13 registros conferem

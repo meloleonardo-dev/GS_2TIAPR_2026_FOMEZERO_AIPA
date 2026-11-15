@@ -1,0 +1,219 @@
+{
+  "versao_contrato": "ct04-v0",
+  "simulado": true,
+  "lotes": [
+    {
+      "versao_contrato": "ct04-v0",
+      "simulado": true,
+      "lote_id": "LOTE-2026-0003",
+      "doador_id": "DOADOR-001",
+      "status": "revisao_humana",
+      "motivo": [
+        "evento_iot_desconhecido"
+      ],
+      "revisao": {
+        "situacao": "pendente",
+        "decidido_em": null
+      },
+      "quantidade_recebida_kg": null,
+      "origem_quantidade": null,
+      "co2_evitado_kg_co2eq": null,
+      "metodologia_carbono": {
+        "tipo": "estimativa",
+        "fator_kg_co2eq_por_kg": 2.54,
+        "fonte": "FAO (2013). Food wastage footprint: Impacts on natural resources. Summary report, ISBN 978-92-5-107752-8, p. 7 e 18 (F-026)",
+        "calculo_do_fator": "3,3 Gt CO2eq / 1,3 Gt de alimento comestível desperdiçado (cálculo do grupo; não é número publicado pela FAO)",
+        "ano_referencia": 2007,
+        "escopo": "média global, toda a cadeia (produção até a perda), sem mudança de uso da terra; não específico do alimento",
+        "cenario_referencia": "hipótese: sem a doação, o alimento teria sido descartado",
+        "massa_elegivel": "quantidade_recebida_kg validada (não a quantidade cadastrada)",
+        "nao_inclui": "emissões de transporte e refrigeração da doação; destino evitado específico",
+        "aprovacao_grupo": "pendente (PC-011)"
+      },
+      "pontos": null,
+      "kg_acumulado_doador": 0.0,
+      "pontos_acumulados_doador": 0,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "regras_recompensa": {
+        "pontos_por_kg": 10,
+        "arredondamento_pontos": "para baixo (inteiro)",
+        "selo_kg_minimo_acumulado": {
+          "Bronze": 50,
+          "Prata": 200,
+          "Ouro": 500
+        },
+        "aviso": "Regra de demonstração do FOMEZERO proposta pela AIPA (DEC-043), não aprovada pelo grupo, não norma."
+      },
+      "termo_doacao_id": null,
+      "termo_doacao_arquivo": null,
+      "portal": {
+        "lancado": false,
+        "protocolo": null,
+        "confirmado_api": false,
+        "meio": null
+      },
+      "ia": {
+        "ocorrencia": "sem_ocorrencia",
+        "confianca": 0.9827,
+        "kg_extraido": 20.0,
+        "alerta_iot": "desconhecido",
+        "iot_monitorado": true,
+        "iot_origem": "simulador",
+        "iot_ativacoes_no_periodo": 0,
+        "iot_ativacao_referencia": null,
+        "alerta_ct03": false,
+        "modelo": "ocorrencia-v2",
+        "limiar_confianca": 0.7
+      },
+      "aviso": "Dados simulados. Não atesta que o alimento é seguro para consumo. CO₂ evitado é estimativa. Pontos e Selo Verde ESG: regra de demonstração, reconhecimento interno, não certificação.",
+      "processado_em": "2026-11-13T21:52:51-03:00",
+      "id_execucao": "EXEC-20261113-215248"
+    },
+    {
+      "versao_contrato": "ct04-v0",
+      "simulado": true,
+      "lote_id": "LOTE-2026-0005",
+      "doador_id": "DOADOR-001",
+      "status": "revisao_humana",
+      "motivo": [
+        "alerta_iot_quebra_cadeia_frio"
+      ],
+      "revisao": {
+        "situacao": "pendente",
+        "decidido_em": null
+      },
+      "quantidade_recebida_kg": null,
+      "origem_quantidade": null,
+      "co2_evitado_kg_co2eq": null,
+      "metodologia_carbono": {
+        "tipo": "estimativa",
+        "fator_kg_co2eq_por_kg": 2.54,
+        "fonte": "FAO (2013). Food wastage footprint: Impacts on natural resources. Summary report, ISBN 978-92-5-107752-8, p. 7 e 18 (F-026)",
+        "calculo_do_fator": "3,3 Gt CO2eq / 1,3 Gt de alimento comestível desperdiçado (cálculo do grupo; não é número publicado pela FAO)",
+        "ano_referencia": 2007,
+        "escopo": "média global, toda a cadeia (produção até a perda), sem mudança de uso da terra; não específico do alimento",
+        "cenario_referencia": "hipótese: sem a doação, o alimento teria sido descartado",
+        "massa_elegivel": "quantidade_recebida_kg validada (não a quantidade cadastrada)",
+        "nao_inclui": "emissões de transporte e refrigeração da doação; destino evitado específico",
+        "aprovacao_grupo": "pendente (PC-011)"
+      },
+      "pontos": null,
+      "kg_acumulado_doador": 0.0,
+      "pontos_acumulados_doador": 0,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "regras_recompensa": {
+        "pontos_por_kg": 10,
+        "arredondamento_pontos": "para baixo (inteiro)",
+        "selo_kg_minimo_acumulado": {
+          "Bronze": 50,
+          "Prata": 200,
+          "Ouro": 500
+        },
+        "aviso": "Regra de demonstração do FOMEZERO proposta pela AIPA (DEC-043), não aprovada pelo grupo, não norma."
+      },
+      "termo_doacao_id": null,
+      "termo_doacao_arquivo": null,
+      "portal": {
+        "lancado": false,
+        "protocolo": null,
+        "confirmado_api": false,
+        "meio": null
+      },
+      "ia": {
+        "ocorrencia": "sem_ocorrencia",
+        "confianca": 0.9189,
+        "kg_extraido": 25.0,
+        "alerta_iot": "quebra_cadeia_frio",
+        "iot_monitorado": true,
+        "iot_origem": "simulador",
+        "iot_ativacoes_no_periodo": 1,
+        "iot_ativacao_referencia": {
+          "tipo_mensagem": "alerta_ativacao",
+          "seq": 4,
+          "ts": "2026-11-16T12:02:00Z",
+          "origem": "simulador",
+          "estado_bruto": null,
+          "fonte_arquivo": "iot_simulado_invalido.log",
+          "linha": 4
+        },
+        "alerta_ct03": false,
+        "modelo": "ocorrencia-v2",
+        "limiar_confianca": 0.7
+      },
+      "aviso": "Dados simulados. Não atesta que o alimento é seguro para consumo. CO₂ evitado é estimativa. Pontos e Selo Verde ESG: regra de demonstração, reconhecimento interno, não certificação.",
+      "processado_em": "2026-11-13T21:52:51-03:00",
+      "id_execucao": "EXEC-20261113-215248"
+    },
+    {
+      "versao_contrato": "ct04-v0",
+      "simulado": true,
+      "lote_id": "LOTE-2026-0006",
+      "doador_id": "DOADOR-003",
+      "status": "revisao_humana",
+      "motivo": [
+        "ocorrencia_avaria",
+        "baixa_confianca"
+      ],
+      "revisao": {
+        "situacao": "pendente",
+        "decidido_em": null
+      },
+      "quantidade_recebida_kg": null,
+      "origem_quantidade": null,
+      "co2_evitado_kg_co2eq": null,
+      "metodologia_carbono": {
+        "tipo": "estimativa",
+        "fator_kg_co2eq_por_kg": 2.54,
+        "fonte": "FAO (2013). Food wastage footprint: Impacts on natural resources. Summary report, ISBN 978-92-5-107752-8, p. 7 e 18 (F-026)",
+        "calculo_do_fator": "3,3 Gt CO2eq / 1,3 Gt de alimento comestível desperdiçado (cálculo do grupo; não é número publicado pela FAO)",
+        "ano_referencia": 2007,
+        "escopo": "média global, toda a cadeia (produção até a perda), sem mudança de uso da terra; não específico do alimento",
+        "cenario_referencia": "hipótese: sem a doação, o alimento teria sido descartado",
+        "massa_elegivel": "quantidade_recebida_kg validada (não a quantidade cadastrada)",
+        "nao_inclui": "emissões de transporte e refrigeração da doação; destino evitado específico",
+        "aprovacao_grupo": "pendente (PC-011)"
+      },
+      "pontos": null,
+      "kg_acumulado_doador": 0.0,
+      "pontos_acumulados_doador": 0,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "regras_recompensa": {
+        "pontos_por_kg": 10,
+        "arredondamento_pontos": "para baixo (inteiro)",
+        "selo_kg_minimo_acumulado": {
+          "Bronze": 50,
+          "Prata": 200,
+          "Ouro": 500
+        },
+        "aviso": "Regra de demonstração do FOMEZERO proposta pela AIPA (DEC-043), não aprovada pelo grupo, não norma."
+      },
+      "termo_doacao_id": null,
+      "termo_doacao_arquivo": null,
+      "portal": {
+        "lancado": false,
+        "protocolo": null,
+        "confirmado_api": false,
+        "meio": null
+      },
+      "ia": {
+        "ocorrencia": "avaria",
+        "confianca": 0.6338,
+        "kg_extraido": 6.0,
+        "alerta_iot": "sem_alerta_registrado",
+        "iot_monitorado": true,
+        "iot_origem": "simulador",
+        "iot_ativacoes_no_periodo": 0,
+        "iot_ativacao_referencia": null,
+        "alerta_ct03": false,
+        "modelo": "ocorrencia-v2",
+        "limiar_confianca": 0.7
+      },
+      "aviso": "Dados simulados. Não atesta que o alimento é seguro para consumo. CO₂ evitado é estimativa. Pontos e Selo Verde ESG: regra de demonstração, reconhecimento interno, não certificação.",
+      "processado_em": "2026-11-13T21:52:51-03:00",
+      "id_execucao": "EXEC-20261113-215248"
+    }
+  ]
+}

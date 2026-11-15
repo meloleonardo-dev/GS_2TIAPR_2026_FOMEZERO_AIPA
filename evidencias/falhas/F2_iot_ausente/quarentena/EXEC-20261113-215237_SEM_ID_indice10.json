@@ -1,0 +1,23 @@
+{
+  "indice_no_arquivo": 10,
+  "campos_invalidos": [
+    "lote_id"
+  ],
+  "registro_bruto": {
+    "lote_id": "",
+    "doador_id": "DOADOR-003",
+    "beneficiario_id": "BENEF-001",
+    "alimento_descricao": "macarrão",
+    "quantidade_disponibilizada_kg": 4.0,
+    "quantidade_recebida_kg": null,
+    "quantidade_aproveitada_kg": null,
+    "status_logistico": "entregue",
+    "estado_termico": null,
+    "evento_atual": null,
+    "entrega_confirmada_em": "2026-11-16T12:00:00-03:00",
+    "confirmacao_entrega_texto": "chegaram 4 kg de macarrão",
+    "doador_nome_ficticio": "Padaria Exemplo (SIMULADO)",
+    "beneficiario_tipo": "ONG",
+    "simulado": true
+  }
+}

@@ -1,0 +1,43 @@
+$ python executar_robo.py --cenario iot_invalido
+(código de saída 0)
+
+[cenário iot_invalido | F4] IoT SIMULADA com linha JSON quebrada, valor não mapeado e alerta simulado (execução separada da física) -> pasta saida\cenarios\iot_invalido
+2026-11-13 21:52:48,207 | INFO | EXEC-20261113-215248 | E0 | - | início da execução (trabalho=iot_invalido, origens IoT aceitas=['simulador'], portal_modo=nenhum, sem_portal=False)
+2026-11-13 21:52:48,311 | INFO | EXEC-20261113-215248 | T1 | - | recursos: disco livre 57117.7 MB, memória disponível 4628.0 MB, CPU 12.7%
+2026-11-13 21:52:49,334 | INFO | EXEC-20261113-215248 | T1 | - | portal SIMULADO fora do ar: subindo em http://127.0.0.1:5050 (modo de falha nenhum)
+2026-11-13 21:52:49,874 | INFO | EXEC-20261113-215248 | T1 | - | health do portal SIMULADO ok
+2026-11-13 21:52:49,874 | INFO | EXEC-20261113-215248 | G0 | - | gateway -> sim
+2026-11-13 21:52:49,877 | INFO | EXEC-20261113-215248 | T2 | - | IoT lida: 1 arquivo(s), 4 mensagens {'telemetria': 3, 'alerta_ativacao': 1}, 1 linha(s) inválida(s)
+2026-11-13 21:52:49,877 | WARNING | EXEC-20261113-215248 | T2 | - | linha da IoT ignorada (iot_simulado_invalido.log:3, JSONDecodeError)
+2026-11-13 21:52:51,324 | INFO | EXEC-20261113-215248 | T2 | - | 3 registro(s) lido(s) de lotes_entregues.json
+2026-11-13 21:52:51,324 | INFO | EXEC-20261113-215248 | G1 | - | gateway -> sim
+2026-11-13 21:52:51,332 | INFO | EXEC-20261113-215248 | G2 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:51,333 | INFO | EXEC-20261113-215248 | G3 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:52:51,333 | INFO | EXEC-20261113-215248 | G4 | LOTE-2026-0003 | gateway -> novo
+2026-11-13 21:52:51,423 | INFO | EXEC-20261113-215248 | T5 | LOTE-2026-0003 | IA: ocorrência=sem_ocorrencia confiança=0.9827 kg_extraido=20.0 kg_ocorrencia=None
+2026-11-13 21:52:51,424 | WARNING | EXEC-20261113-215248 | T6 | LOTE-2026-0003 | valor IoT não mapeado estado=SENSOR_XYZ evento=normal (iot_simulado_invalido.log:2)
+2026-11-13 21:52:51,424 | INFO | EXEC-20261113-215248 | G5 | LOTE-2026-0003 | gateway -> revisao_humana
+2026-11-13 21:52:51,424 | INFO | EXEC-20261113-215248 | G5 | LOTE-2026-0003 | revisão humana: ['evento_iot_desconhecido']
+2026-11-13 21:52:51,427 | INFO | EXEC-20261113-215248 | T10 | LOTE-2026-0003 | status revisao_humana motivo ['evento_iot_desconhecido']
+2026-11-13 21:52:51,427 | INFO | EXEC-20261113-215248 | G2 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:51,427 | INFO | EXEC-20261113-215248 | G3 | LOTE-2026-0005 | gateway -> sim
+2026-11-13 21:52:51,427 | INFO | EXEC-20261113-215248 | G4 | LOTE-2026-0005 | gateway -> novo
+2026-11-13 21:52:51,429 | INFO | EXEC-20261113-215248 | T5 | LOTE-2026-0005 | IA: ocorrência=sem_ocorrencia confiança=0.9189 kg_extraido=25.0 kg_ocorrencia=None
+2026-11-13 21:52:51,430 | INFO | EXEC-20261113-215248 | T6 | LOTE-2026-0005 | ativação quebra_cadeia_frio (alerta_ativacao) origem=simulador seq=4 ts=2026-11-16T12:02:00Z (iot_simulado_invalido.log:4)
+2026-11-13 21:52:51,430 | INFO | EXEC-20261113-215248 | G5 | LOTE-2026-0005 | gateway -> revisao_humana
+2026-11-13 21:52:51,430 | INFO | EXEC-20261113-215248 | G5 | LOTE-2026-0005 | revisão humana: ['alerta_iot_quebra_cadeia_frio']
+2026-11-13 21:52:51,433 | INFO | EXEC-20261113-215248 | T10 | LOTE-2026-0005 | status revisao_humana motivo ['alerta_iot_quebra_cadeia_frio']
+2026-11-13 21:52:51,433 | INFO | EXEC-20261113-215248 | G2 | LOTE-2026-0006 | gateway -> sim
+2026-11-13 21:52:51,433 | INFO | EXEC-20261113-215248 | G3 | LOTE-2026-0006 | gateway -> sim
+2026-11-13 21:52:51,433 | INFO | EXEC-20261113-215248 | G4 | LOTE-2026-0006 | gateway -> novo
+2026-11-13 21:52:51,435 | INFO | EXEC-20261113-215248 | T5 | LOTE-2026-0006 | IA: ocorrência=avaria confiança=0.6338 kg_extraido=6.0 kg_ocorrencia=None
+2026-11-13 21:52:51,435 | INFO | EXEC-20261113-215248 | G5 | LOTE-2026-0006 | gateway -> revisao_humana
+2026-11-13 21:52:51,436 | INFO | EXEC-20261113-215248 | G5 | LOTE-2026-0006 | revisão humana: ['ocorrencia_avaria', 'baixa_confianca']
+2026-11-13 21:52:51,439 | INFO | EXEC-20261113-215248 | T10 | LOTE-2026-0006 | status revisao_humana motivo ['ocorrencia_avaria', 'baixa_confianca']
+2026-11-13 21:52:51,633 | INFO | EXEC-20261113-215248 | T11 | - | fila de revisão humana: 3 lote(s) pendente(s)
+2026-11-13 21:52:51,635 | INFO | EXEC-20261113-215248 | T11 | - | CT-05 gravado (indicadores.json, historico_entregas.csv)
+2026-11-13 21:52:51,666 | INFO | EXEC-20261113-215248 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215248.md
+2026-11-13 21:52:51,667 | INFO | EXEC-20261113-215248 | E1 | - | portal SIMULADO iniciado pelo robô foi encerrado
+
+== EXEC-20261113-215248 | tratados 3 | processado 0 | revisão humana 3 | falha 0 | duplicados 0 | não entregues 0 | taxa de erros 0.0 | 3.45 s
+   relatório: saida\cenarios\iot_invalido\saida\relatorios\relatorio_EXEC-20261113-215248.md | log: saida\cenarios\iot_invalido\saida\logs\EXEC-20261113-215248.log

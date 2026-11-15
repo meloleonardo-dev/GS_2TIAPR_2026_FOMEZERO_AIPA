@@ -1,0 +1,137 @@
+{
+  "modelo": "ocorrencia-v2",
+  "gerado_em": "2026-11-13T21:47:05",
+  "algoritmo": "TF-IDF de palavras (1-2 gramas, tokenizador spaCy pt, sem acento, números -> numtok, letra repetida -> 1) + TF-IDF de caracteres char_wb (3-5, min_df=2) + LogisticRegression (class_weight=balanced, C=10.0)",
+  "treino": "225 da v1 + 500 de ocorrencias_rotuladas_v2_extra.csv",
+  "extracao_kg_versao": 2,
+  "semente": 42,
+  "classes": [
+    "avaria",
+    "divergencia_quantidade",
+    "ilegivel_outro",
+    "problema_temperatura",
+    "sem_ocorrencia"
+  ],
+  "limiar_confianca": 0.7,
+  "limiar_partida": 0.7,
+  "calibracao_limiar": {
+    "metodo": "validação cruzada estratificada de 5 partes só no treino; menor limiar >= 0,70 com zero falso automático fora da dobra",
+    "tabela": [
+      {
+        "limiar": 0.7,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 127,
+        "n": 725
+      },
+      {
+        "limiar": 0.75,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 120,
+        "n": 725
+      },
+      {
+        "limiar": 0.8,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 105,
+        "n": 725
+      },
+      {
+        "limiar": 0.85,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 86,
+        "n": 725
+      },
+      {
+        "limiar": 0.9,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 62,
+        "n": 725
+      },
+      {
+        "limiar": 0.95,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 24,
+        "n": 725
+      }
+    ],
+    "f1_macro_validacao_cruzada_treino": 0.9849
+  },
+  "conjuntos": {
+    "rotulados_v1": {
+      "arquivo": "dados/sinteticos/ocorrencias_rotuladas.csv",
+      "sha256": "f846a642b89b3c068d584b21eb60ecfa849de52fed1bfdbe70ab144d50471fc1",
+      "n_total": 300,
+      "n_treino": 225,
+      "n_teste": 75
+    },
+    "extra_v2": {
+      "arquivo": "dados/sinteticos/ocorrencias_rotuladas_v2_extra.csv",
+      "sha256": "f4aece0e75fdc9ab9d304224de73124d055978c8e3151f9520d11111d6bbac11",
+      "n": 500,
+      "usado_no_treino": true
+    },
+    "desenvolvimento": {
+      "arquivo": "dados/sinteticos/ocorrencias_fora_do_molde.csv",
+      "sha256": "43661920f5f9dd5bb34c4d4649e927a808d1ae138cc1c2453549c61ee9b8524b",
+      "n": 30
+    }
+  },
+  "n_treino": 725,
+  "versoes": {
+    "python": "3.13.5",
+    "scikit-learn": "1.9.1"
+  },
+  "palavras_de_maior_peso_por_classe": {
+    "avaria": [
+      "com",
+      "c:ada",
+      "parte",
+      "e com",
+      "c: com ",
+      "c:com ",
+      "varias",
+      "c:om "
+    ],
+    "divergencia_quantidade": [
+      "o resto",
+      "resto",
+      "do que",
+      "do",
+      "c:ram",
+      "mas",
+      "uma caixa",
+      "pediram"
+    ],
+    "ilegivel_outro": [
+      "k",
+      "oi",
+      "quem",
+      "sala",
+      "sala numtok",
+      "tsete",
+      "tsete numtok",
+      "xpto"
+    ],
+    "problema_temperatura": [
+      "quente",
+      "sem",
+      "gelo",
+      "fora",
+      "morno",
+      "refrigeracao",
+      "tava",
+      "fora da"
+    ],
+    "sem_ocorrencia": [
+      "tudo",
+      "de",
+      "bem",
+      "chegou bem",
+      "aqui",
+      "quilos de",
+      "kg de",
+      "certo"
+    ]
+  },
+  "limitacao": "Conjuntos SINTÉTICOS: os textos do gerador têm rótulo por construção e os 30 'fora do molde' e os 60 do cego v2 foram escritos e rotulados pelo agente de IA da AIPA; nenhum texto teve revisão humana (DEC-044). No TAR-013 os 30 'fora do molde' viraram conjunto de DESENVOLVIMENTO (o gerador v2 e a extração v2 foram ajustados olhando os erros deles), então o resultado neles não mede mais generalização; quem mede é o cego v2 (medir_cego_v2.py). Não há texto real de beneficiário."
+}

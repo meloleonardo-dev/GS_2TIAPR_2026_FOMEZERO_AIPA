@@ -1,0 +1,47 @@
+$ python executar_robo.py --cenario portal_lento
+(código de saída 0)
+
+[cenário portal_lento | F7] timeout (portal lento) -> pasta saida\cenarios\portal_lento
+2026-11-13 21:53:26,100 | INFO | EXEC-20261113-215326 | E0 | - | início da execução (trabalho=portal_lento, origens IoT aceitas=['fisico'], portal_modo=lento, sem_portal=False)
+2026-11-13 21:53:26,204 | INFO | EXEC-20261113-215326 | T1 | - | recursos: disco livre 57116.9 MB, memória disponível 4635.7 MB, CPU 0.0%
+2026-11-13 21:53:27,236 | INFO | EXEC-20261113-215326 | T1 | - | portal SIMULADO fora do ar: subindo em http://127.0.0.1:5050 (modo de falha lento)
+2026-11-13 21:53:27,766 | INFO | EXEC-20261113-215326 | T1 | - | health do portal SIMULADO ok
+2026-11-13 21:53:27,767 | INFO | EXEC-20261113-215326 | G0 | - | gateway -> sim
+2026-11-13 21:53:27,770 | INFO | EXEC-20261113-215326 | T2 | - | IoT lida: 2 arquivo(s), 146 mensagens {'status': 2, 'telemetria': 71, 'ack': 71, 'alerta_normalizacao': 1, 'alerta_ativacao': 1}, 0 linha(s) inválida(s)
+2026-11-13 21:53:28,944 | INFO | EXEC-20261113-215326 | T2 | - | 2 registro(s) lido(s) de lotes_entregues.json
+2026-11-13 21:53:28,944 | INFO | EXEC-20261113-215326 | G1 | - | gateway -> sim
+2026-11-13 21:53:28,953 | INFO | EXEC-20261113-215326 | G2 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:53:28,953 | INFO | EXEC-20261113-215326 | G3 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:53:28,953 | INFO | EXEC-20261113-215326 | G4 | LOTE-2026-0002 | gateway -> novo
+2026-11-13 21:53:29,032 | INFO | EXEC-20261113-215326 | T5 | LOTE-2026-0002 | IA: ocorrência=sem_ocorrencia confiança=0.9719 kg_extraido=12.0 kg_ocorrencia=None
+2026-11-13 21:53:29,032 | INFO | EXEC-20261113-215326 | G5 | LOTE-2026-0002 | gateway -> automatico
+2026-11-13 21:53:29,032 | INFO | EXEC-20261113-215326 | T7 | LOTE-2026-0002 | kg validado 12.0 (confirmacao_beneficiario) -> CO₂ evitado 30.48 kg CO₂eq (estimativa), 120 pontos, acumulado do doador 12.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:53:29,057 | INFO | EXEC-20261113-215326 | G6 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:53:29,058 | INFO | EXEC-20261113-215326 | T8 | LOTE-2026-0002 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0002.pdf
+2026-11-13 21:53:34,081 | WARNING | EXEC-20261113-215326 | T9 | LOTE-2026-0002 | API GET /api/lancamentos/LOTE-2026-0002 tentativa 1/3 falhou: ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=5050): Read timed out. (read timeout=5)
+2026-11-13 21:53:41,105 | WARNING | EXEC-20261113-215326 | T9 | LOTE-2026-0002 | API GET /api/lancamentos/LOTE-2026-0002 tentativa 2/3 falhou: ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=5050): Read timed out. (read timeout=5)
+2026-11-13 21:53:50,110 | WARNING | EXEC-20261113-215326 | T9 | LOTE-2026-0002 | API GET /api/lancamentos/LOTE-2026-0002 tentativa 3/3 falhou: ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=5050): Read timed out. (read timeout=5)
+2026-11-13 21:53:50,110 | INFO | EXEC-20261113-215326 | G7 | LOTE-2026-0002 | gateway -> nao
+2026-11-13 21:53:50,110 | ERROR | EXEC-20261113-215326 | T9 | LOTE-2026-0002 | falha tratada: portal_timeout (3 tentativas esgotadas)
+2026-11-13 21:53:50,115 | INFO | EXEC-20261113-215326 | T10 | LOTE-2026-0002 | status falha motivo ['portal_timeout']
+2026-11-13 21:53:50,115 | INFO | EXEC-20261113-215326 | G2 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:53:50,115 | INFO | EXEC-20261113-215326 | G3 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:53:50,115 | INFO | EXEC-20261113-215326 | G4 | LOTE-2026-0003 | gateway -> novo
+2026-11-13 21:53:50,118 | INFO | EXEC-20261113-215326 | T5 | LOTE-2026-0003 | IA: ocorrência=sem_ocorrencia confiança=0.9827 kg_extraido=20.0 kg_ocorrencia=None
+2026-11-13 21:53:50,118 | INFO | EXEC-20261113-215326 | G5 | LOTE-2026-0003 | gateway -> automatico
+2026-11-13 21:53:50,118 | INFO | EXEC-20261113-215326 | T7 | LOTE-2026-0003 | kg validado 20.0 (confirmacao_beneficiario) -> CO₂ evitado 50.8 kg CO₂eq (estimativa), 200 pontos, acumulado do doador 20.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:53:50,136 | INFO | EXEC-20261113-215326 | G6 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:53:50,136 | INFO | EXEC-20261113-215326 | T8 | LOTE-2026-0003 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0003.pdf
+2026-11-13 21:53:55,149 | WARNING | EXEC-20261113-215326 | T9 | LOTE-2026-0003 | API GET /api/lancamentos/LOTE-2026-0003 tentativa 1/3 falhou: ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=5050): Read timed out. (read timeout=5)
+2026-11-13 21:54:02,158 | WARNING | EXEC-20261113-215326 | T9 | LOTE-2026-0003 | API GET /api/lancamentos/LOTE-2026-0003 tentativa 2/3 falhou: ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=5050): Read timed out. (read timeout=5)
+2026-11-13 21:54:11,171 | WARNING | EXEC-20261113-215326 | T9 | LOTE-2026-0003 | API GET /api/lancamentos/LOTE-2026-0003 tentativa 3/3 falhou: ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=5050): Read timed out. (read timeout=5)
+2026-11-13 21:54:11,171 | INFO | EXEC-20261113-215326 | G7 | LOTE-2026-0003 | gateway -> nao
+2026-11-13 21:54:11,171 | ERROR | EXEC-20261113-215326 | T9 | LOTE-2026-0003 | falha tratada: portal_timeout (3 tentativas esgotadas)
+2026-11-13 21:54:11,174 | INFO | EXEC-20261113-215326 | T10 | LOTE-2026-0003 | status falha motivo ['portal_timeout']
+2026-11-13 21:54:11,435 | INFO | EXEC-20261113-215326 | T11 | - | fila de revisão humana: 0 lote(s) pendente(s)
+2026-11-13 21:54:11,436 | INFO | EXEC-20261113-215326 | T11 | - | CT-05 gravado (indicadores.json, historico_entregas.csv)
+2026-11-13 21:54:11,471 | INFO | EXEC-20261113-215326 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215326.md
+2026-11-13 21:54:11,473 | INFO | EXEC-20261113-215326 | E1 | - | portal SIMULADO iniciado pelo robô foi encerrado
+
+== EXEC-20261113-215326 | tratados 2 | processado 0 | revisão humana 0 | falha 2 | duplicados 0 | não entregues 0 | taxa de erros 1.0 | 45.36 s
+   relatório: saida\cenarios\portal_lento\saida\relatorios\relatorio_EXEC-20261113-215326.md | log: saida\cenarios\portal_lento\saida\logs\EXEC-20261113-215326.log

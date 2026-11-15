@@ -1,0 +1,11 @@
+lote_id;doador_id;beneficiario_id;beneficiario_tipo;entrega_confirmada_em;quantidade_disponibilizada_kg;quantidade_recebida_kg;status;motivo
+LOTE-2026-0001;DOADOR-002;BENEF-001;cozinha_comunitaria;2026-11-11T11:00:00-03:00;8.0;;revisao_humana;alerta_iot_quebra_cadeia_frio,dados_iot_indisponiveis,baixa_confianca
+LOTE-2026-0002;DOADOR-001;BENEF-003;ONG;2026-11-16T09:10:00-03:00;12.0;;revisao_humana;dados_iot_indisponiveis
+LOTE-2026-0003;DOADOR-001;BENEF-002;ONG;2026-11-16T09:40:00-03:00;20.0;;revisao_humana;dados_iot_indisponiveis
+LOTE-2026-0005;DOADOR-001;BENEF-004;ONG;2026-11-16T10:05:00-03:00;25.0;;revisao_humana;dados_iot_indisponiveis
+LOTE-2026-0006;DOADOR-003;BENEF-005;cozinha_comunitaria;2026-11-16T10:20:00-03:00;6.0;;revisao_humana;dados_iot_indisponiveis,ocorrencia_avaria,baixa_confianca
+LOTE-2026-0007;DOADOR-003;BENEF-002;ONG;2026-11-16T10:40:00-03:00;10.0;;revisao_humana;dados_iot_indisponiveis,ocorrencia_avaria
+LOTE-2026-0008;DOADOR-004;BENEF-003;ONG;2026-11-16T11:00:00-03:00;15.0;;revisao_humana;dados_iot_indisponiveis,ocorrencia_divergencia_quantidade,divergencia_kg
+LOTE-2026-0009;DOADOR-004;BENEF-001;cozinha_comunitaria;2026-11-16T11:15:00-03:00;5.0;;revisao_humana;dados_iot_indisponiveis,ocorrencia_problema_temperatura
+LOTE-2026-0010;DOADOR-002;BENEF-004;ONG;2026-11-16T11:30:00-03:00;30.0;;revisao_humana;dados_iot_indisponiveis,ocorrencia_ilegivel_outro,sem_confirmacao
+LOTE-2026-0011;DOADOR-002;BENEF-005;ONG;2026-11-16T11:45:00-03:00;-3.0;;falha;dado_invalido:quantidade_disponibilizada_kg

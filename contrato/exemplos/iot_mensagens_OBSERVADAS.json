@@ -1,0 +1,44 @@
+{
+  "_aviso": "Formato INTERNO do robô depois do adaptador. As duas mensagens são REAIS (origem física): log mosquitto_sub mqtt-20261111-102301.log, linhas 12 e 107, repositório da IoT commit 4b09c42 (04_REFERENCIAS/contexto_grupo/2026-11-13_IOT/repo_amostras_4b09c42/). Chaves observadas, confirmação do Erick pendente (PC-012). O lote de doação LOTE-2026-0001 do CT-03 é sintético; só o alerta é físico.",
+  "mensagens": [
+    {
+      "lote_id": "LOTE-2026-0001",
+      "device_id": "esp32-caixa-01",
+      "seq": 583,
+      "ts": "2026-11-11T13:24:39Z",
+      "ts_valido": null,
+      "tipo_mensagem": "alerta_normalizacao",
+      "evento_bruto": "quebra_cadeia_frio",
+      "estado_bruto": "normalizado",
+      "situacao_termica": "normalizacao",
+      "temp_c": 4.0,
+      "limite_c": null,
+      "duracao_acima_s": null,
+      "severidade": null,
+      "origem": null,
+      "fonte_arquivo": "mqtt-20261111-102301.log",
+      "linha": 12,
+      "payload_raw": "{\"schema\":\"fomezero.alerta.v1\",\"lote_id\":\"LOTE-2026-0001\",\"device_id\":\"esp32-caixa-01\",\"seq\":583,\"ts\":\"2026-11-11T13:24:39Z\",\"evento\":\"quebra_cadeia_frio\",\"estado\":\"normalizado\",\"temp_c\":4.0}"
+    },
+    {
+      "lote_id": "LOTE-2026-0001",
+      "device_id": "esp32-caixa-01",
+      "seq": 630,
+      "ts": "2026-11-11T13:32:35Z",
+      "ts_valido": null,
+      "tipo_mensagem": "alerta_ativacao",
+      "evento_bruto": "quebra_cadeia_frio",
+      "estado_bruto": null,
+      "situacao_termica": "ativacao",
+      "temp_c": 8.2,
+      "limite_c": 5.0,
+      "duracao_acima_s": 31,
+      "severidade": "alta",
+      "origem": "fisico",
+      "fonte_arquivo": "mqtt-20261111-102301.log",
+      "linha": 107,
+      "payload_raw": "{\"schema\":\"fomezero.alerta.v1\",\"lote_id\":\"LOTE-2026-0001\",\"device_id\":\"esp32-caixa-01\",\"seq\":630,\"ts\":\"2026-11-11T13:32:35Z\",\"evento\":\"quebra_cadeia_frio\",\"temp_c\":8.2,\"limite_c\":5.0,\"duracao_acima_s\":31,\"severidade\":\"alta\",\"acao\":\"alerta_visual_app\",\"origem\":\"fisico\"}"
+    }
+  ],
+  "_nota": "ts_valido não vem nas mensagens de alerta (só na telemetria): fica null. A normalização não tem origem: fica null (não inferida). A ativação física às 13:32:35Z é o que leva o lote para revisão humana; a normalização anterior não apaga o histórico."
+}

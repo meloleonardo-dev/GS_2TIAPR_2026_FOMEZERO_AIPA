@@ -1,0 +1,47 @@
+$ python executar_robo.py --cenario erro_api
+(código de saída 0)
+
+[cenário erro_api | F8] erro de API (HTTP 500) -> pasta saida\cenarios\erro_api
+2026-11-13 21:54:28,079 | INFO | EXEC-20261113-215428 | E0 | - | início da execução (trabalho=erro_api, origens IoT aceitas=['fisico'], portal_modo=erro_api, sem_portal=False)
+2026-11-13 21:54:28,183 | INFO | EXEC-20261113-215428 | T1 | - | recursos: disco livre 57116.5 MB, memória disponível 4581.0 MB, CPU 9.7%
+2026-11-13 21:54:29,199 | INFO | EXEC-20261113-215428 | T1 | - | portal SIMULADO fora do ar: subindo em http://127.0.0.1:5050 (modo de falha erro_api)
+2026-11-13 21:54:29,738 | INFO | EXEC-20261113-215428 | T1 | - | health do portal SIMULADO ok
+2026-11-13 21:54:29,738 | INFO | EXEC-20261113-215428 | G0 | - | gateway -> sim
+2026-11-13 21:54:29,742 | INFO | EXEC-20261113-215428 | T2 | - | IoT lida: 2 arquivo(s), 146 mensagens {'status': 2, 'telemetria': 71, 'ack': 71, 'alerta_normalizacao': 1, 'alerta_ativacao': 1}, 0 linha(s) inválida(s)
+2026-11-13 21:54:31,196 | INFO | EXEC-20261113-215428 | T2 | - | 2 registro(s) lido(s) de lotes_entregues.json
+2026-11-13 21:54:31,197 | INFO | EXEC-20261113-215428 | G1 | - | gateway -> sim
+2026-11-13 21:54:31,205 | INFO | EXEC-20261113-215428 | G2 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:54:31,205 | INFO | EXEC-20261113-215428 | G3 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:54:31,205 | INFO | EXEC-20261113-215428 | G4 | LOTE-2026-0002 | gateway -> novo
+2026-11-13 21:54:31,325 | INFO | EXEC-20261113-215428 | T5 | LOTE-2026-0002 | IA: ocorrência=sem_ocorrencia confiança=0.9719 kg_extraido=12.0 kg_ocorrencia=None
+2026-11-13 21:54:31,325 | INFO | EXEC-20261113-215428 | G5 | LOTE-2026-0002 | gateway -> automatico
+2026-11-13 21:54:31,326 | INFO | EXEC-20261113-215428 | T7 | LOTE-2026-0002 | kg validado 12.0 (confirmacao_beneficiario) -> CO₂ evitado 30.48 kg CO₂eq (estimativa), 120 pontos, acumulado do doador 12.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:54:31,366 | INFO | EXEC-20261113-215428 | G6 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:54:31,366 | INFO | EXEC-20261113-215428 | T8 | LOTE-2026-0002 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0002.pdf
+2026-11-13 21:54:31,391 | WARNING | EXEC-20261113-215428 | T9 | LOTE-2026-0002 | API GET /api/lancamentos/LOTE-2026-0002 tentativa 1/3 falhou: HTTPError: HTTP 500
+2026-11-13 21:54:33,394 | WARNING | EXEC-20261113-215428 | T9 | LOTE-2026-0002 | API GET /api/lancamentos/LOTE-2026-0002 tentativa 2/3 falhou: HTTPError: HTTP 500
+2026-11-13 21:54:37,398 | WARNING | EXEC-20261113-215428 | T9 | LOTE-2026-0002 | API GET /api/lancamentos/LOTE-2026-0002 tentativa 3/3 falhou: HTTPError: HTTP 500
+2026-11-13 21:54:37,398 | INFO | EXEC-20261113-215428 | G7 | LOTE-2026-0002 | gateway -> nao
+2026-11-13 21:54:37,398 | ERROR | EXEC-20261113-215428 | T9 | LOTE-2026-0002 | falha tratada: confirmacao_api_falhou (3 tentativas esgotadas)
+2026-11-13 21:54:37,401 | INFO | EXEC-20261113-215428 | T10 | LOTE-2026-0002 | status falha motivo ['confirmacao_api_falhou']
+2026-11-13 21:54:37,401 | INFO | EXEC-20261113-215428 | G2 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:54:37,401 | INFO | EXEC-20261113-215428 | G3 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:54:37,401 | INFO | EXEC-20261113-215428 | G4 | LOTE-2026-0003 | gateway -> novo
+2026-11-13 21:54:37,404 | INFO | EXEC-20261113-215428 | T5 | LOTE-2026-0003 | IA: ocorrência=sem_ocorrencia confiança=0.9827 kg_extraido=20.0 kg_ocorrencia=None
+2026-11-13 21:54:37,404 | INFO | EXEC-20261113-215428 | G5 | LOTE-2026-0003 | gateway -> automatico
+2026-11-13 21:54:37,404 | INFO | EXEC-20261113-215428 | T7 | LOTE-2026-0003 | kg validado 20.0 (confirmacao_beneficiario) -> CO₂ evitado 50.8 kg CO₂eq (estimativa), 200 pontos, acumulado do doador 20.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:54:37,420 | INFO | EXEC-20261113-215428 | G6 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:54:37,420 | INFO | EXEC-20261113-215428 | T8 | LOTE-2026-0003 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0003.pdf
+2026-11-13 21:54:37,444 | WARNING | EXEC-20261113-215428 | T9 | LOTE-2026-0003 | API GET /api/lancamentos/LOTE-2026-0003 tentativa 1/3 falhou: HTTPError: HTTP 500
+2026-11-13 21:54:39,472 | WARNING | EXEC-20261113-215428 | T9 | LOTE-2026-0003 | API GET /api/lancamentos/LOTE-2026-0003 tentativa 2/3 falhou: HTTPError: HTTP 500
+2026-11-13 21:54:43,498 | WARNING | EXEC-20261113-215428 | T9 | LOTE-2026-0003 | API GET /api/lancamentos/LOTE-2026-0003 tentativa 3/3 falhou: HTTPError: HTTP 500
+2026-11-13 21:54:43,499 | INFO | EXEC-20261113-215428 | G7 | LOTE-2026-0003 | gateway -> nao
+2026-11-13 21:54:43,499 | ERROR | EXEC-20261113-215428 | T9 | LOTE-2026-0003 | falha tratada: confirmacao_api_falhou (3 tentativas esgotadas)
+2026-11-13 21:54:43,506 | INFO | EXEC-20261113-215428 | T10 | LOTE-2026-0003 | status falha motivo ['confirmacao_api_falhou']
+2026-11-13 21:54:43,677 | INFO | EXEC-20261113-215428 | T11 | - | fila de revisão humana: 0 lote(s) pendente(s)
+2026-11-13 21:54:43,678 | INFO | EXEC-20261113-215428 | T11 | - | CT-05 gravado (indicadores.json, historico_entregas.csv)
+2026-11-13 21:54:43,696 | INFO | EXEC-20261113-215428 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215428.md
+2026-11-13 21:54:43,698 | INFO | EXEC-20261113-215428 | E1 | - | portal SIMULADO iniciado pelo robô foi encerrado
+
+== EXEC-20261113-215428 | tratados 2 | processado 0 | revisão humana 0 | falha 2 | duplicados 0 | não entregues 0 | taxa de erros 1.0 | 15.61 s
+   relatório: saida\cenarios\erro_api\saida\relatorios\relatorio_EXEC-20261113-215428.md | log: saida\cenarios\erro_api\saida\logs\EXEC-20261113-215428.log

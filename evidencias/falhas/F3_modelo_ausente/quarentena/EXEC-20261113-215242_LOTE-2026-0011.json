@@ -1,0 +1,23 @@
+{
+  "indice_no_arquivo": 9,
+  "campos_invalidos": [
+    "quantidade_disponibilizada_kg"
+  ],
+  "registro_bruto": {
+    "lote_id": "LOTE-2026-0011",
+    "doador_id": "DOADOR-002",
+    "beneficiario_id": "BENEF-005",
+    "alimento_descricao": "feijão",
+    "quantidade_disponibilizada_kg": -3.0,
+    "quantidade_recebida_kg": null,
+    "quantidade_aproveitada_kg": null,
+    "status_logistico": "entregue",
+    "estado_termico": null,
+    "evento_atual": null,
+    "entrega_confirmada_em": "2026-11-16T11:45:00-03:00",
+    "confirmacao_entrega_texto": "recebemos 3 kg de feijão",
+    "doador_nome_ficticio": "Restaurante Exemplo (SIMULADO)",
+    "beneficiario_tipo": "ONG",
+    "simulado": true
+  }
+}

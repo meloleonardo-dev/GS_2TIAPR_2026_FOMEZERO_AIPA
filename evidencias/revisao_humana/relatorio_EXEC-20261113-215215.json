@@ -1,0 +1,643 @@
+{
+  "_aviso": "Relatório gerado pelo robô (execução real) com dados SIMULADOS; evidência da IoT física e simulada nunca misturadas: veja 'modo_iot'.",
+  "id_execucao": "EXEC-20261113-215215",
+  "inicio": "2026-11-13T21:52:15-03:00",
+  "simulado": true,
+  "arquivo_lotes": "entrada\\lotes_entregues.json",
+  "modo_iot": [
+    "fisico"
+  ],
+  "modo_iot_texto": "IoT: evidência FÍSICA (origem fisico; logs reais de 10 e 11/11/2026, commit 4b09c42).",
+  "recursos": {
+    "disco_livre_mb": 57118.6,
+    "disco_uso_pct": 88.3,
+    "memoria_disponivel_mb": 4579.1,
+    "memoria_uso_pct": 71.5,
+    "cpu_pct": 10.8
+  },
+  "portal": "SIMULADO em http://127.0.0.1:5050, no ar (iniciado pelo robô), modo de falha nenhum",
+  "iot_resumo": "2 arquivo(s), 146 mensagens {'status': 2, 'telemetria': 71, 'ack': 71, 'alerta_normalizacao': 1, 'alerta_ativacao': 1}, 0 linha(s) inválida(s)",
+  "modelo": "ocorrencia-v2 carregado (extração do kg v2)",
+  "limiar_confianca": 0.7,
+  "portal_resumo": {
+    "lancamentos": [
+      {
+        "lote_id": "LOTE-2026-0002",
+        "meio": "selenium",
+        "protocolo": "SIM-000001"
+      },
+      {
+        "lote_id": "LOTE-2026-0003",
+        "meio": "selenium",
+        "protocolo": "SIM-000002"
+      },
+      {
+        "lote_id": "LOTE-2026-0005",
+        "meio": "selenium",
+        "protocolo": "SIM-000003"
+      },
+      {
+        "lote_id": "LOTE-2026-0006",
+        "meio": "selenium",
+        "protocolo": "SIM-000004"
+      },
+      {
+        "lote_id": "LOTE-2026-0007",
+        "meio": "selenium",
+        "protocolo": "SIM-000005"
+      }
+    ],
+    "simulado": true,
+    "total_lancamentos": 5
+  },
+  "portal_total_lancamentos": 5,
+  "fim": "2026-11-13T21:52:26-03:00",
+  "duracao_total_s": 10.41,
+  "abortado": false,
+  "arquivo_log": "EXEC-20261113-215215.log",
+  "resumo": {
+    "lotes_no_arquivo": 13,
+    "lotes_tratados": 3,
+    "processado": 2,
+    "revisao_humana": 1,
+    "falha": 0,
+    "ignorado_duplicado": 9,
+    "ignorado_nao_entregue": 1,
+    "ignorados_nao_entregues": 1,
+    "taxa_automacao": 0.6667,
+    "taxa_revisao_humana": 0.3333,
+    "taxa_erros": 0.0
+  },
+  "definicoes": {
+    "lotes_tratados": "entregues, sem contar duplicados nem não entregues",
+    "taxa_erros": "lotes com status falha / lotes tratados",
+    "tempo_de_ciclo_lote": "T3 a T10 por lote, em ms (inclui espera do portal)",
+    "custo_por_processo": "não medido (sem custo real)"
+  },
+  "tempo_de_ciclo_lote_ms": {
+    "n": 11,
+    "media_ms": 513.36,
+    "min_ms": 0.35,
+    "max_ms": 3624.15
+  },
+  "tempo_de_ciclo_por_lote": {
+    "LOTE-2026-0001": 3.3,
+    "LOTE-2026-0002": 0.35,
+    "LOTE-2026-0003": 0.41,
+    "LOTE-2026-0005": 0.35,
+    "LOTE-2026-0006": 3624.15,
+    "LOTE-2026-0007": 2015.28,
+    "LOTE-2026-0008": 0.75,
+    "LOTE-2026-0009": 0.66,
+    "LOTE-2026-0010": 0.63,
+    "LOTE-2026-0011": 0.56,
+    "indice10": 0.5
+  },
+  "tarefas_bpmn": {
+    "T1": {
+      "nome": "Verificar ambiente",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 1650.67,
+      "min_ms": 1650.67,
+      "max_ms": 1650.67
+    },
+    "T2": {
+      "nome": "Ler entradas",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 2727.62,
+      "min_ms": 2727.62,
+      "max_ms": 2727.62
+    },
+    "T3": {
+      "nome": "Validar dados",
+      "execucoes": 12,
+      "erros": 2,
+      "taxa_erros": 0.1667,
+      "motivos_erro": {
+        "dado_invalido": 2
+      },
+      "n": 12,
+      "media_ms": 0.01,
+      "min_ms": 0.01,
+      "max_ms": 0.02
+    },
+    "T4": {
+      "nome": "Checar idempotência",
+      "execucoes": 10,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 10,
+      "media_ms": 0.21,
+      "min_ms": 0.0,
+      "max_ms": 0.33
+    },
+    "T7": {
+      "nome": "Calcular CO₂, pontos e selo",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 0.24,
+      "min_ms": 0.21,
+      "max_ms": 0.27
+    },
+    "T8": {
+      "nome": "Gerar e conferir Termo de Doação",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 26.96,
+      "min_ms": 17.33,
+      "max_ms": 36.6
+    },
+    "T9": {
+      "nome": "Lançar no portal e confirmar via API",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 2784.03,
+      "min_ms": 1988.39,
+      "max_ms": 3579.66
+    },
+    "T10": {
+      "nome": "Gravar estado e CT-04",
+      "execucoes": 3,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 3,
+      "media_ms": 3.29,
+      "min_ms": 2.27,
+      "max_ms": 5.02
+    },
+    "T11": {
+      "nome": "Gravar CT-05",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 369.16,
+      "min_ms": 369.16,
+      "max_ms": 369.16
+    }
+  },
+  "gateways": {
+    "G0": {
+      "sim": 1
+    },
+    "G1": {
+      "sim": 1
+    },
+    "G2": {
+      "sim": 12,
+      "nao (em_transporte)": 1
+    },
+    "G3": {
+      "sim": 10,
+      "nao": 2
+    },
+    "G4": {
+      "decisao_revisao": 3,
+      "duplicado": 9
+    },
+    "G6": {
+      "sim": 2
+    },
+    "G7": {
+      "sim": 2
+    }
+  },
+  "falhas_tratadas": [
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0002",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0003",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0005",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0008",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0009",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0010",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0011",
+      "motivo": "invalido_repetido",
+      "caminho_seguro": "ignorado; já em quarentena"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "indice10",
+      "motivo": "invalido_repetido",
+      "caminho_seguro": "ignorado; já em quarentena"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0002",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    }
+  ],
+  "resultados": [
+    {
+      "indice": 0,
+      "lote_id": "LOTE-2026-0001",
+      "status": "revisao_humana",
+      "motivo": [
+        "alerta_iot_quebra_cadeia_frio",
+        "baixa_confianca",
+        "reprovado_na_revisao"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 1,
+      "lote_id": "LOTE-2026-0002",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 2,
+      "lote_id": "LOTE-2026-0003",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 3,
+      "lote_id": "LOTE-2026-0005",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 4,
+      "lote_id": "LOTE-2026-0006",
+      "status": "processado",
+      "motivo": [],
+      "protocolo": "SIM-000004",
+      "co2_evitado_kg_co2eq": 15.24,
+      "pontos": 60,
+      "selo_verde_esg": null,
+      "selo_situacao": "abaixo_do_minimo"
+    },
+    {
+      "indice": 5,
+      "lote_id": "LOTE-2026-0007",
+      "status": "processado",
+      "motivo": [],
+      "protocolo": "SIM-000005",
+      "co2_evitado_kg_co2eq": 20.32,
+      "pontos": 80,
+      "selo_verde_esg": null,
+      "selo_situacao": "abaixo_do_minimo"
+    },
+    {
+      "indice": 6,
+      "lote_id": "LOTE-2026-0008",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 7,
+      "lote_id": "LOTE-2026-0009",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 8,
+      "lote_id": "LOTE-2026-0010",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 9,
+      "lote_id": "LOTE-2026-0011",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 10,
+      "lote_id": "",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 11,
+      "lote_id": "LOTE-2026-0002",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 12,
+      "lote_id": "LOTE-2026-0004",
+      "status": "ignorado_nao_entregue",
+      "motivo": []
+    }
+  ],
+  "trilhas_bpmn": {
+    "-": [
+      "T1",
+      "G0:sim",
+      "T2",
+      "G1:sim",
+      "T11",
+      "T12"
+    ],
+    "LOTE-2026-0001": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:decisao_revisao",
+      "T10"
+    ],
+    "LOTE-2026-0002": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado",
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0003": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0005": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0006": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:decisao_revisao",
+      "T7",
+      "T8",
+      "G6:sim",
+      "T9",
+      "G7:sim",
+      "T10"
+    ],
+    "LOTE-2026-0007": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:decisao_revisao",
+      "T7",
+      "T8",
+      "G6:sim",
+      "T9",
+      "G7:sim",
+      "T10"
+    ],
+    "LOTE-2026-0008": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0009": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0010": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0011": [
+      "G2:sim",
+      "T3",
+      "G3:nao",
+      "G4:duplicado"
+    ],
+    "indice10": [
+      "G2:sim",
+      "T3",
+      "G3:nao",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0004": [
+      "G2:nao (em_transporte)"
+    ]
+  },
+  "conferencia_gabarito": {
+    "n_registros": 13,
+    "acertos": 4,
+    "erros": 9,
+    "n_lotes_demonstracao": 12,
+    "acertos_lotes_demonstracao": 3,
+    "linhas": [
+      {
+        "indice": 0,
+        "lote_id": "LOTE-2026-0001",
+        "caso": "lote sintético cruzado com o alerta FÍSICO real de 11/11/2026 (ativação 13:32:35Z após normalização)",
+        "esperado": "revisao_humana",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [
+          "alerta_iot_quebra_cadeia_frio"
+        ],
+        "motivo_obtido": [
+          "alerta_iot_quebra_cadeia_frio",
+          "baixa_confianca",
+          "reprovado_na_revisao"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 1,
+        "lote_id": "LOTE-2026-0002",
+        "caso": "normal",
+        "esperado": "processado",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 2,
+        "lote_id": "LOTE-2026-0003",
+        "caso": "normal",
+        "esperado": "processado",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 3,
+        "lote_id": "LOTE-2026-0005",
+        "caso": "normal; DOADOR-001 passa de 50 kg acumulados (12 + 20 + 25 = 57) -> Bronze",
+        "esperado": "processado",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 4,
+        "lote_id": "LOTE-2026-0006",
+        "caso": "normal; doador abaixo do mínimo do selo",
+        "esperado": "processado",
+        "obtido": "processado",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": true
+      },
+      {
+        "indice": 5,
+        "lote_id": "LOTE-2026-0007",
+        "caso": "avaria",
+        "esperado": "revisao_humana",
+        "obtido": "processado",
+        "motivo_esperado_contem": [
+          "ocorrencia_avaria"
+        ],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 6,
+        "lote_id": "LOTE-2026-0008",
+        "caso": "divergência de quantidade (9 de 15 kg)",
+        "esperado": "revisao_humana",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [
+          "divergencia_kg"
+        ],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 7,
+        "lote_id": "LOTE-2026-0009",
+        "caso": "texto de temperatura",
+        "esperado": "revisao_humana",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [
+          "ocorrencia_problema_temperatura"
+        ],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 8,
+        "lote_id": "LOTE-2026-0010",
+        "caso": "texto ilegível, sem kg",
+        "esperado": "revisao_humana",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [
+          "sem_confirmacao"
+        ],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 9,
+        "lote_id": "LOTE-2026-0011",
+        "caso": "inválido: kg negativo",
+        "esperado": "falha",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [
+          "dado_invalido:quantidade_disponibilizada_kg"
+        ],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 10,
+        "lote_id": "",
+        "caso": "inválido: sem lote_id",
+        "esperado": "falha",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [
+          "dado_invalido:lote_id"
+        ],
+        "motivo_obtido": [],
+        "acerto": false
+      },
+      {
+        "indice": 11,
+        "lote_id": "LOTE-2026-0002",
+        "caso": "duplicado exato no mesmo arquivo",
+        "esperado": "ignorado_duplicado",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": true
+      },
+      {
+        "indice": 12,
+        "lote_id": "LOTE-2026-0004",
+        "caso": "em_transporte (fora dos 12 de demonstração)",
+        "esperado": "ignorado_nao_entregue",
+        "obtido": "ignorado_nao_entregue",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": true
+      }
+    ]
+  }
+}

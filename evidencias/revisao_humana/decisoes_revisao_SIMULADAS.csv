@@ -1,0 +1,7 @@
+﻿lote_id;doador_id;motivos;ocorrencia_prevista;confianca;kg_extraido;kg_cadastrado;alerta_iot;texto_confirmacao_mascarado;decisao;kg_aprovado;revisor;observacao
+LOTE-2026-0001;DOADOR-002;alerta_iot_quebra_cadeia_frio,baixa_confianca;sem_ocorrencia;0.3228;8.0;8.0;quebra_cadeia_frio;chegaram 8 kg de iogurte;reprovado;;OP-DEMO;decisão SIMULADA pelo script de demonstração (não é revisão humana real): alerta físico de quebra_cadeia_frio
+LOTE-2026-0006;DOADOR-003;ocorrencia_avaria,baixa_confianca;avaria;0.6338;6.0;6.0;sem_alerta_registrado;recebemos 6 kg de refeição pronta, muito obrigado;aprovado;6;OP-DEMO;decisão SIMULADA pelo script de demonstração (não é revisão humana real): IA errou: texto sem ocorrência
+LOTE-2026-0007;DOADOR-003;ocorrencia_avaria;avaria;0.9375;10.0;10.0;sem_alerta_registrado;recebemos 10 kg de tomate, 2 kg vieram amassados;aprovado;8;OP-DEMO;decisão SIMULADA pelo script de demonstração (não é revisão humana real): 2 kg amassados descontados
+LOTE-2026-0008;DOADOR-004;ocorrencia_divergencia_quantidade,divergencia_kg;divergencia_quantidade;0.9189;9.0;15.0;sem_alerta_registrado;dos 15 kg combinados só chegaram 9 kg de batata;;;;
+LOTE-2026-0009;DOADOR-004;ocorrencia_problema_temperatura;problema_temperatura;0.8179;5.0;5.0;sem_alerta_registrado;recebemos 5 kg de queijo mas chegou morno;;;;
+LOTE-2026-0010;DOADOR-002;ocorrencia_ilegivel_outro,sem_confirmacao;ilegivel_outro;0.7439;;30.0;sem_alerta_registrado;ok, valeu;;;;

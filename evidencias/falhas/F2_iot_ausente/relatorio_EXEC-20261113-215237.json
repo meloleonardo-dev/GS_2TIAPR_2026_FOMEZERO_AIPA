@@ -1,0 +1,746 @@
+{
+  "_aviso": "Relatório gerado pelo robô (execução real) com dados SIMULADOS; evidência da IoT física e simulada nunca misturadas: veja 'modo_iot'.",
+  "id_execucao": "EXEC-20261113-215237",
+  "inicio": "2026-11-13T21:52:37-03:00",
+  "simulado": true,
+  "arquivo_lotes": "entrada\\lotes_entregues.json",
+  "modo_iot": [
+    "fisico"
+  ],
+  "modo_iot_texto": "IoT: evidência FÍSICA (origem fisico; logs reais de 10 e 11/11/2026, commit 4b09c42).",
+  "recursos": {
+    "disco_livre_mb": 57118.2,
+    "disco_uso_pct": 88.3,
+    "memoria_disponivel_mb": 4533.4,
+    "memoria_uso_pct": 71.8,
+    "cpu_pct": 11.1
+  },
+  "portal": "SIMULADO em http://127.0.0.1:5050, no ar (iniciado pelo robô), modo de falha nenhum",
+  "iot_resumo": "0 arquivo(s), 0 mensagens {}, 0 linha(s) inválida(s)",
+  "modelo": "ocorrencia-v2 carregado (extração do kg v2)",
+  "limiar_confianca": 0.7,
+  "portal_resumo": {
+    "lancamentos": [],
+    "simulado": true,
+    "total_lancamentos": 0
+  },
+  "portal_total_lancamentos": 0,
+  "fim": "2026-11-13T21:52:40-03:00",
+  "duracao_total_s": 3.11,
+  "abortado": false,
+  "arquivo_log": "EXEC-20261113-215237.log",
+  "resumo": {
+    "lotes_no_arquivo": 13,
+    "lotes_tratados": 11,
+    "processado": 0,
+    "revisao_humana": 9,
+    "falha": 2,
+    "ignorado_duplicado": 1,
+    "ignorado_nao_entregue": 1,
+    "ignorados_nao_entregues": 1,
+    "taxa_automacao": 0.0,
+    "taxa_revisao_humana": 0.8182,
+    "taxa_erros": 0.1818
+  },
+  "definicoes": {
+    "lotes_tratados": "entregues, sem contar duplicados nem não entregues",
+    "taxa_erros": "lotes com status falha / lotes tratados",
+    "tempo_de_ciclo_lote": "T3 a T10 por lote, em ms (inclui espera do portal)",
+    "custo_por_processo": "não medido (sem custo real)"
+  },
+  "tempo_de_ciclo_lote_ms": {
+    "n": 11,
+    "media_ms": 12.19,
+    "min_ms": 0.23,
+    "max_ms": 86.55
+  },
+  "tempo_de_ciclo_por_lote": {
+    "LOTE-2026-0001": 86.55,
+    "LOTE-2026-0002": 0.23,
+    "LOTE-2026-0003": 6.0,
+    "LOTE-2026-0005": 4.92,
+    "LOTE-2026-0006": 4.78,
+    "LOTE-2026-0007": 5.76,
+    "LOTE-2026-0008": 6.32,
+    "LOTE-2026-0009": 5.07,
+    "LOTE-2026-0010": 5.02,
+    "LOTE-2026-0011": 5.12,
+    "indice10": 4.28
+  },
+  "tarefas_bpmn": {
+    "T1": {
+      "nome": "Verificar ambiente",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 1659.88,
+      "min_ms": 1659.88,
+      "max_ms": 1659.88
+    },
+    "T2": {
+      "nome": "Ler entradas",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 1111.39,
+      "min_ms": 1111.39,
+      "max_ms": 1111.39
+    },
+    "T3": {
+      "nome": "Validar dados",
+      "execucoes": 12,
+      "erros": 2,
+      "taxa_erros": 0.1667,
+      "motivos_erro": {
+        "dado_invalido": 2
+      },
+      "n": 12,
+      "media_ms": 0.01,
+      "min_ms": 0.01,
+      "max_ms": 0.01
+    },
+    "T4": {
+      "nome": "Checar idempotência",
+      "execucoes": 10,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 10,
+      "media_ms": 0.11,
+      "min_ms": 0.0,
+      "max_ms": 0.19
+    },
+    "T5": {
+      "nome": "IA: extrair kg e classificar",
+      "execucoes": 9,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 9,
+      "media_ms": 11.02,
+      "min_ms": 1.54,
+      "max_ms": 83.51
+    },
+    "T6": {
+      "nome": "Regras inteligentes",
+      "execucoes": 9,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 9,
+      "media_ms": 0.02,
+      "min_ms": 0.01,
+      "max_ms": 0.02
+    },
+    "T10": {
+      "nome": "Gravar estado e CT-04",
+      "execucoes": 11,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 11,
+      "media_ms": 2.62,
+      "min_ms": 1.09,
+      "max_ms": 3.47
+    },
+    "T11": {
+      "nome": "Gravar CT-05",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 165.11,
+      "min_ms": 165.11,
+      "max_ms": 165.11
+    }
+  },
+  "gateways": {
+    "G0": {
+      "sim": 1
+    },
+    "G1": {
+      "sim": 1
+    },
+    "G2": {
+      "sim": 12,
+      "nao (em_transporte)": 1
+    },
+    "G3": {
+      "sim": 10,
+      "nao": 2
+    },
+    "G4": {
+      "novo": 9,
+      "duplicado": 1
+    },
+    "G5": {
+      "revisao_humana": 9
+    }
+  },
+  "falhas_tratadas": [
+    {
+      "falha": "F2",
+      "lote_id": null,
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "todos os lotes -> revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0001",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0002",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0003",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0005",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0006",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0007",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0008",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0009",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F2",
+      "lote_id": "LOTE-2026-0010",
+      "motivo": "dados_iot_indisponiveis",
+      "caminho_seguro": "revisão humana"
+    },
+    {
+      "falha": "F4",
+      "lote_id": "LOTE-2026-0011",
+      "motivo": "dado_invalido:quantidade_disponibilizada_kg",
+      "caminho_seguro": "quarentena (EXEC-20261113-215237_LOTE-2026-0011.json); os outros lotes seguem"
+    },
+    {
+      "falha": "F4",
+      "lote_id": "indice10",
+      "motivo": "dado_invalido:lote_id",
+      "caminho_seguro": "quarentena (EXEC-20261113-215237_SEM_ID_indice10.json); os outros lotes seguem"
+    },
+    {
+      "falha": "F5",
+      "lote_id": "LOTE-2026-0002",
+      "motivo": "lote_duplicado",
+      "caminho_seguro": "ignorado; nenhum lançamento novo"
+    }
+  ],
+  "resultados": [
+    {
+      "indice": 0,
+      "lote_id": "LOTE-2026-0001",
+      "status": "revisao_humana",
+      "motivo": [
+        "alerta_iot_quebra_cadeia_frio",
+        "dados_iot_indisponiveis",
+        "baixa_confianca"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 1,
+      "lote_id": "LOTE-2026-0002",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 2,
+      "lote_id": "LOTE-2026-0003",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 3,
+      "lote_id": "LOTE-2026-0005",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 4,
+      "lote_id": "LOTE-2026-0006",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis",
+        "ocorrencia_avaria",
+        "baixa_confianca"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 5,
+      "lote_id": "LOTE-2026-0007",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis",
+        "ocorrencia_avaria"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 6,
+      "lote_id": "LOTE-2026-0008",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis",
+        "ocorrencia_divergencia_quantidade",
+        "divergencia_kg"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 7,
+      "lote_id": "LOTE-2026-0009",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis",
+        "ocorrencia_problema_temperatura"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 8,
+      "lote_id": "LOTE-2026-0010",
+      "status": "revisao_humana",
+      "motivo": [
+        "dados_iot_indisponiveis",
+        "ocorrencia_ilegivel_outro",
+        "sem_confirmacao"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 9,
+      "lote_id": "LOTE-2026-0011",
+      "status": "falha",
+      "motivo": [
+        "dado_invalido:quantidade_disponibilizada_kg"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 10,
+      "lote_id": "",
+      "status": "falha",
+      "motivo": [
+        "dado_invalido:lote_id"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 11,
+      "lote_id": "LOTE-2026-0002",
+      "status": "ignorado_duplicado",
+      "motivo": []
+    },
+    {
+      "indice": 12,
+      "lote_id": "LOTE-2026-0004",
+      "status": "ignorado_nao_entregue",
+      "motivo": []
+    }
+  ],
+  "trilhas_bpmn": {
+    "-": [
+      "T1",
+      "G0:sim",
+      "T2",
+      "G1:sim",
+      "T11",
+      "T12"
+    ],
+    "LOTE-2026-0001": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0002": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10",
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:duplicado"
+    ],
+    "LOTE-2026-0003": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0005": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0006": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0007": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0008": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0009": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0010": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0011": [
+      "G2:sim",
+      "T3",
+      "G3:nao",
+      "T10"
+    ],
+    "indice10": [
+      "G2:sim",
+      "T3",
+      "G3:nao",
+      "T10"
+    ],
+    "LOTE-2026-0004": [
+      "G2:nao (em_transporte)"
+    ]
+  },
+  "conferencia_gabarito": {
+    "n_registros": 13,
+    "acertos": 9,
+    "erros": 4,
+    "n_lotes_demonstracao": 12,
+    "acertos_lotes_demonstracao": 8,
+    "linhas": [
+      {
+        "indice": 0,
+        "lote_id": "LOTE-2026-0001",
+        "caso": "lote sintético cruzado com o alerta FÍSICO real de 11/11/2026 (ativação 13:32:35Z após normalização)",
+        "esperado": "revisao_humana",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [
+          "alerta_iot_quebra_cadeia_frio"
+        ],
+        "motivo_obtido": [
+          "alerta_iot_quebra_cadeia_frio",
+          "dados_iot_indisponiveis",
+          "baixa_confianca"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 1,
+        "lote_id": "LOTE-2026-0002",
+        "caso": "normal",
+        "esperado": "processado",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis"
+        ],
+        "acerto": false
+      },
+      {
+        "indice": 2,
+        "lote_id": "LOTE-2026-0003",
+        "caso": "normal",
+        "esperado": "processado",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis"
+        ],
+        "acerto": false
+      },
+      {
+        "indice": 3,
+        "lote_id": "LOTE-2026-0005",
+        "caso": "normal; DOADOR-001 passa de 50 kg acumulados (12 + 20 + 25 = 57) -> Bronze",
+        "esperado": "processado",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis"
+        ],
+        "acerto": false
+      },
+      {
+        "indice": 4,
+        "lote_id": "LOTE-2026-0006",
+        "caso": "normal; doador abaixo do mínimo do selo",
+        "esperado": "processado",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis",
+          "ocorrencia_avaria",
+          "baixa_confianca"
+        ],
+        "acerto": false
+      },
+      {
+        "indice": 5,
+        "lote_id": "LOTE-2026-0007",
+        "caso": "avaria",
+        "esperado": "revisao_humana",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [
+          "ocorrencia_avaria"
+        ],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis",
+          "ocorrencia_avaria"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 6,
+        "lote_id": "LOTE-2026-0008",
+        "caso": "divergência de quantidade (9 de 15 kg)",
+        "esperado": "revisao_humana",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [
+          "divergencia_kg"
+        ],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis",
+          "ocorrencia_divergencia_quantidade",
+          "divergencia_kg"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 7,
+        "lote_id": "LOTE-2026-0009",
+        "caso": "texto de temperatura",
+        "esperado": "revisao_humana",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [
+          "ocorrencia_problema_temperatura"
+        ],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis",
+          "ocorrencia_problema_temperatura"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 8,
+        "lote_id": "LOTE-2026-0010",
+        "caso": "texto ilegível, sem kg",
+        "esperado": "revisao_humana",
+        "obtido": "revisao_humana",
+        "motivo_esperado_contem": [
+          "sem_confirmacao"
+        ],
+        "motivo_obtido": [
+          "dados_iot_indisponiveis",
+          "ocorrencia_ilegivel_outro",
+          "sem_confirmacao"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 9,
+        "lote_id": "LOTE-2026-0011",
+        "caso": "inválido: kg negativo",
+        "esperado": "falha",
+        "obtido": "falha",
+        "motivo_esperado_contem": [
+          "dado_invalido:quantidade_disponibilizada_kg"
+        ],
+        "motivo_obtido": [
+          "dado_invalido:quantidade_disponibilizada_kg"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 10,
+        "lote_id": "",
+        "caso": "inválido: sem lote_id",
+        "esperado": "falha",
+        "obtido": "falha",
+        "motivo_esperado_contem": [
+          "dado_invalido:lote_id"
+        ],
+        "motivo_obtido": [
+          "dado_invalido:lote_id"
+        ],
+        "acerto": true
+      },
+      {
+        "indice": 11,
+        "lote_id": "LOTE-2026-0002",
+        "caso": "duplicado exato no mesmo arquivo",
+        "esperado": "ignorado_duplicado",
+        "obtido": "ignorado_duplicado",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": true
+      },
+      {
+        "indice": 12,
+        "lote_id": "LOTE-2026-0004",
+        "caso": "em_transporte (fora dos 12 de demonstração)",
+        "esperado": "ignorado_nao_entregue",
+        "obtido": "ignorado_nao_entregue",
+        "motivo_esperado_contem": [],
+        "motivo_obtido": [],
+        "acerto": true
+      }
+    ]
+  }
+}

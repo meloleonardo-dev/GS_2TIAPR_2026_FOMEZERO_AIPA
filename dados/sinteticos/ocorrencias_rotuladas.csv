@@ -1,0 +1,301 @@
+id;texto;classe;kg_recebido_gabarito;kg_cadastrado;origem;rotulado_por;revisao_humana
+SIN-0232;recebi vinte e seis quilos de leite, estava em temperatura ambiente;problema_temperatura;26.0;26.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0231;O iogurte chegou morno, 27kg;problema_temperatura;27.0;27.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0001;entrega confirmada: sessenta e sete quilos de pão francês;sem_ocorrencia;67.0;67.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0031;recebemos 46 kgs de carne moída, tudo certo;sem_ocorrencia;46.0;46.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0206;recebemos 43kg de leite mas chegou quente;problema_temperatura;43.0;43.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0242;recebido.;ilegivel_outro;;36.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0255;rceebido;ilegivel_outro;;12.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0035;manetiga recebido, 38,5 kg, tudo em ordem;sem_ocorrencia;38.5;38.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0023;chegaram 54 kg de batata em bom estado;sem_ocorrencia;54.0;54.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0258;ok;ilegivel_outro;;76.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0169;a doacao era de 43 quilos mas vieram 29kg;divergencia_quantidade;29.0;43.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0075;recebi 74kg de pão francês mas a caixa estava furada;avaria;74.0;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0017;entrega confirmada: 72kg de requeijão;sem_ocorrencia;72.0;72.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0246;confirmo;ilegivel_outro;;26.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0136;dos noventa e quatro quilos combinados só chegaram setenta e dois quilos.;divergencia_quantidade;72.0;94.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0296;naysjwkr;ilegivel_outro;;31.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0200;chegaram 28,5 quilos de presunto fora da refrigeracao.;problema_temperatura;28.5;28.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0011;recebemos a doacao de 76 kg de pao de forma, muito obrigado!;sem_ocorrencia;76.0;76.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0103;recebi 34 kilos de feijão mas a caixa estava furada;avaria;34.0;34.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0157;recebemos 58,5 kgs de batata, mas o cdaastro dizia 86,5 kg!!;divergencia_quantidade;58.5;86.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0226;recebi 32 quilos de carne moída, estava em temperatura ambiente;problema_temperatura;32.0;32.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0053;recebemos 63,5 quilos de frango, tudo certo;sem_ocorrencia;63.5;63.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0188;A refeicao pronta veio quente, recebemos 75 kgs;problema_temperatura;75.0;75.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0143;faltaram 8 kg de quiejo;divergencia_quantidade;;26.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0107;"recebemos 69 kilos de macarrão; 19,5kg com avaria na caixa";avaria;69.0;69.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0087;recebemos cinquenta e um quilos de frango, 18,5 kgs vieram amassados;avaria;51.0;51.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0263;favor verifciar;ilegivel_outro;;4.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0288;obrigdao;ilegivel_outro;;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0256;mandei foto no grupo;ilegivel_outro;;18.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0274;hivnps;ilegivel_outro;;2.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0280;depois eu vejo :);ilegivel_outro;;25.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0095;chegou 36 kg de banana, algumas unidades mofadas :);avaria;36.0;36.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0236;recebemos 44kg de manteiga mas chegou quente;problema_temperatura;44.0;44.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0278;ehvvc;ilegivel_outro;;13.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0261;ligar para o respnosável;ilegivel_outro;;27.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0235;a manteiga veio quente, recebemos 65 kgs;problema_temperatura;65.0;65.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0033;chegaram 34kg de presunto em bom estado;sem_ocorrencia;34.0;34.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0205;a caixa tremica chegou sem gelo, 7kg de requeijao!;problema_temperatura;7.0;7.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0185;5 kgs de leite entregues, mas a temperatura estava alta;problema_temperatura;5.0;5.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0013;confirmo o reecbimento de 70kg de abobrinha. obrigado!;sem_ocorrencia;70.0;70.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0241;entregue;ilegivel_outro;;64.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0252;recbeido;ilegivel_outro;;25.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0045;a abobrinha chegou certinho, setenta e sete quilos;sem_ocorrencia;77.0;77.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0091;recebi setenta e três quilos de refeição pronta mas a caixa estava furada;avaria;73.0;73.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0139;dos quatro quilos combinados so chegaram 3 kilos;divergencia_quantidade;3.0;4.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0149;a doação era de 74 kilos mas vieram 60 quilos;divergencia_quantidade;60.0;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0253;pode ser;ilegivel_outro;;4.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0041;recebemos 48 quilos de cenoura, tudo certo;sem_ocorrencia;48.0;48.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0106;recebemos 29 kilos de banana, 5,5 kg vieram amassados;avaria;29.0;29.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0051;entregaram 76kg de peixe hoje cedo, tudo ok;sem_ocorrencia;76.0;76.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0215;A carne moída chegou morno, quarenta e seis quilos;problema_temperatura;46.0;46.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0145;recebemos 8 kgs de laranja, mas o cadastro dizia 10 quilos;divergencia_quantidade;8.0;10.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0026;entrgea confirmada: sessenta e cinco quilos de macarrão!;sem_ocorrencia;65.0;65.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0105;recebemos 2 kg de batata porém 0,5 quilos podres;avaria;2.0;2.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0191;chegaram 56 kgs de peixe fora da refrigeração;problema_temperatura;56.0;56.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0052;recebi 64 kilos de carne moída, tudo conforme o combinado;sem_ocorrencia;64.0;64.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0154;chegaram apenas 22 kg de queijo, faltou uma ciaxa;divergencia_quantidade;22.0;33.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0285;alguem pode me ligar?;ilegivel_outro;;22.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0113;quarenta e sete quilos de iogurte entregues, mas 11,5kg estavam danificados!;avaria;47.0;47.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0250;boa trade;ilegivel_outro;;47.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0076;chegaram 42 kilos de macarrão, várias unidades amassadas.;avaria;42.0;42.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0085;recebi 41 kgs de manteiga mas a caixa estava furada;avaria;41.0;41.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0216;47 kilos de peixe, o gelo tinha derretido;problema_temperatura;47.0;47.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0276;alguém pode me ligar?;ilegivel_outro;;7.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0021;chegou tudo: 33 kgs de arroz;sem_ocorrencia;33.0;33.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0164;recebemos 24 kilos de batata, mas o cadastro diiza vinte e nove quilos!!;divergencia_quantidade;24.0;29.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0119;recebemos cinquenta e sete quilos de mamao porem dezessete quilos podres;avaria;57.0;57.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0282;xpto 816;ilegivel_outro;;73.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0124;veio menos queijo do que o cadastrado: trinta e sete quilos!;divergencia_quantidade;37.0;55.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0148;46 kg de pão de forma recebidos, esperávamos 66kg;divergencia_quantidade;46.0;66.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0179;a doação era de 65 kgs mas vieram 41 kgs;divergencia_quantidade;41.0;65.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0055;40 kgs de queijo recebidos sem problemas!;sem_ocorrencia;40.0;40.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0272;foi;ilegivel_outro;;15.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0114;chegou 13 kg de presunto, algumas unidades mofadas;avaria;13.0;13.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0150;faltaram 4 kilos de tomate;divergencia_quantidade;;18.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0008;recebemos 37 kilos de requeijao, tudo certo :);sem_ocorrencia;37.0;37.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0060;recebemos a doação de cinquenta e cinco quilos de macarrão, muito obrigado;sem_ocorrencia;55.0;55.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0120;recebemos 48,5 kgs de abobrinha, 19,5 kg vieram amassados;avaria;48.5;48.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0057;chegou tudo: 19,5kg de cenoura;sem_ocorrencia;19.5;19.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0230;a caixa térmica chegou sem gelo, 65 kilos de presunto;problema_temperatura;65.0;65.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0032;abobrinha recebido, 67 kg, tudo em ordem;sem_ocorrencia;67.0;67.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0167;dos 63 kg combinados so chegaram 50 kg;divergencia_quantidade;50.0;63.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0038;vieram 14 quilos de manteiga, embalagem perfetia;sem_ocorrencia;14.0;14.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0221;a caixa termica chegou sem gelo, setenta e nove quilos de frango;problema_temperatura;79.0;79.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0223;O presunto veio quente, recebemos 77kg;problema_temperatura;77.0;77.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0109;chegaram 61 kg de manteiga, varias unidades amassadas;avaria;61.0;61.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0040;chegou tudo: 59 quilos de leite;sem_ocorrencia;59.0;59.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0173;dos 11 kgs combindaos só chegaram 9 kgs.;divergencia_quantidade;9.0;11.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0159;31kg de queijo recebidos, esperavamos 45 kgs;divergencia_quantidade;31.0;45.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0056;chuchu recebido, 7 kg, tudo em ordem;sem_ocorrencia;7.0;7.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0128;recebi 53,5 kg de maçã, faltando 22 kilos;divergencia_quantidade;53.5;75.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0122;contamos 22kg de chuchu, está faltando 7 kg;divergencia_quantidade;22.0;29.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0195;4kg de requeijão, o gelo tinha derretido;problema_temperatura;4.0;4.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0249;aguardando;ilegivel_outro;;49.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0277;favor verificar;ilegivel_outro;;2.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0138;dos sessenta e um quilos combinados só chegaram quarenta e quatro quilos;divergencia_quantidade;44.0;61.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0189;chegaram trinta e cinco quilos de leite fora da refrigeração;problema_temperatura;35.0;35.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0202;o iogurte chegou morno, 62 kg;problema_temperatura;62.0;62.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0141;a doação era de 116kg mas viream 77kg;divergencia_quantidade;77.0;116.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0007;o iogurte chegou certinho, vinte e cinco quilos;sem_ocorrencia;25.0;25.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0010;vieram 68 kilos de manteiga, embalagem perfeita;sem_ocorrencia;68.0;68.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0118;recebi 42 quilos de manteiga, a embalagem veio rasgada;avaria;42.0;42.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0257;iimtnh;ilegivel_outro;;34.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0064;1kg de iogurte entregues, mas 0,5 kilos estavam danificados;avaria;1.0;1.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0176;recebemos 60,5kg de batata, mas o cadastro dizia 93,5 quilos;divergencia_quantidade;60.5;93.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0046;recebi 5 kgs de pão francês, tudo conforme o combinado;sem_ocorrencia;5.0;5.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0016;vieram 59 quilos de queijo, embalagem perfeita;sem_ocorrencia;59.0;59.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0005;recebemos quarenta e quatro quilos de presunto, tudo certo;sem_ocorrencia;44.0;44.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0273;dwersdh!!;ilegivel_outro;;80.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0207;65 quilos de peixe, o gelo tinha derretido;problema_temperatura;65.0;65.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0163;chegaram apenas setenta e cinco quilos de pão francês, faltou uma caixa!!;divergencia_quantidade;75.0;92.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0078;vieram 19,5 quilos de laranja e 5 quilos estavam quebrados;avaria;19.5;19.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0063;a refeiãço pronta chegou com vazamento, recebemos 3 kilos!;avaria;3.0;3.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0094;vieram 34 quilos de feijão e 12 quilos estavam quebrados;avaria;34.0;34.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0275;zah;ilegivel_outro;;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0183;recebemos 47kg de piexe mas chegou quente;problema_temperatura;47.0;47.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0297;obrigado;ilegivel_outro;;19.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0174;a doação era de 2kg mas viream 1 quilo;divergencia_quantidade;1.0;2.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0093;recebi 67kg de chuchu mas a caixa estava furada;avaria;67.0;67.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0229;12kg de iogurte entregues, mas a temperatura estava alta;problema_temperatura;12.0;12.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0219;recebemos 68kg de carne moída, a caixa estava quente e úmida;problema_temperatura;68.0;68.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0104;recebi 40,5 kilos de requeijão mas a caixa estava furada;avaria;40.5;40.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0068;chegaram 32,5 quilos de presunto mas patre estava estragada.;avaria;32.5;32.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0130;veio menos banana do que o cadastrado: trinta e seis quilos;divergencia_quantidade;36.0;46.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0071;recebi 74kg de queijo mas a caixa estava fuarda;avaria;74.0;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0204;cheagram 20 kgs de requeijão fora da refrigeração;problema_temperatura;20.0;20.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0080;recebemos 48,5 kilos de macarrao, 18kg vieram amassados;avaria;48.5;48.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0271;ligar para o responsável;ilegivel_outro;;5.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0006;recebemos setenta e dois quilos de carne moida, tudo certo;sem_ocorrencia;72.0;72.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0121;vinte e sete quilos de frango recebidos, espreavamos 43 kgs!!;divergencia_quantidade;27.0;43.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0036;chegou tudo: 3 kgs de pão francês;sem_ocorrencia;3.0;3.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0096;vieram 10kg de cenoura e 1,5 quilos estavam quebrados;avaria;10.0;10.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0086;sete quilos de pão de forma entregues, mas 1kg estavam danificados;avaria;7.0;7.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0144;contamos oito quilos de arroz, esta faltando quatro quilos;divergencia_quantidade;8.0;12.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0073;chegaram 8,5 kilos de iogurte, várias unidades amassadas :);avaria;8.5;8.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0129;recebemos quarenta e oito quilos de iogurte, mas o cadastro dizia 58 quilos!!;divergencia_quantidade;48.0;58.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0015;chegou tudo: 30 kg de mamao;sem_ocorrencia;30.0;30.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0233;chegaram 64 quilos de refeição pronta e o termômetro marcava 14 graus;problema_temperatura;64.0;64.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0298;qual o hoarrio amanha;ilegivel_outro;;66.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0066;vieram 31kg de requeijão e 5,5 kgs estavam quebrados;avaria;31.0;31.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0186;O peixe cehgou morno, dois quilos;problema_temperatura;2.0;2.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0137;sessenta e dois quilos de frango recebidos, esperávamos 83 kg;divergencia_quantidade;62.0;83.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0042;entrega confirmada: 6 quilos de chuchu;sem_ocorrencia;6.0;6.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0147;dos 71kg combinados só chegaarm 52 kgs;divergencia_quantidade;52.0;71.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0072;recebi 55 kg de batata mas a caixa estava furada;avaria;55.0;55.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0034;A manteiga chegou certinho, 60 kgs;sem_ocorrencia;60.0;60.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0058;recebi 61kg de iogurte, tudo conforme o combinado;sem_ocorrencia;61.0;61.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0289;algéum pode me ligar?.;ilegivel_outro;;29.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0027;entregraam 75 quilos de frango hoje cedo, tudo ok;sem_ocorrencia;75.0;75.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0090;vieram 62 kg de iogurte e 15 quilos estavam quebrados!;avaria;62.0;62.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0266;xpto 745!;ilegivel_outro;;52.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0248;agluém pode me ligar?;ilegivel_outro;;22.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0222;frango recebido (40 kilos) mas não estava frio;problema_temperatura;40.0;40.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0225;o frango chegou morno, 49 kgs;problema_temperatura;49.0;49.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0102;chegou cinquenta e seis quilos de chuchu, algumas unidades mofadas :);avaria;56.0;56.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0070;O arorz chegou com vazamento, recebemos 32 quilos;avaria;32.0;32.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0092;recebemos 64kg de batata porém 10 kg podres;avaria;64.0;64.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0293;jclsun;ilegivel_outro;;77.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0238;a caixa termica chegou sem gelo, vinte e sete quilos de requeijao;problema_temperatura;27.0;27.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0265;receibdo;ilegivel_outro;;42.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0037;chegraam 70kg de tomate em bom estado;sem_ocorrencia;70.0;70.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0083;"recebemos dezenove quilos de alface; 5 quilos com avaria na caixa";avaria;19.0;19.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0054;O tomate chegou certinho, trinta e oito quilos;sem_ocorrencia;38.0;38.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0291;foi.;ilegivel_outro;;75.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0077;recebi 27 quilos de requeijão, a embalagem veio rasgada;avaria;27.0;27.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0009;42 kgs de maçã recebidos sem problemas;sem_ocorrencia;42.0;42.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0012;recebemos sessenta e quatro quilos de maçã, tudo certo;sem_ocorrencia;64.0;64.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0133;contamos 70 kgs de cenoura, está faltando 22kg.;divergencia_quantidade;70.0;92.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0247;sim;ilegivel_outro;;54.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0228;49 kgs de refeição pronta, o gelo tinha derretido;problema_temperatura;49.0;49.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0196;a caixa térmica chegou sem gelo, 63 kg de queijo :);problema_temperatura;63.0;63.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0126;a doacao era de 35 kilos mas vieram 25 kgs :);divergencia_quantidade;25.0;35.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0108;o pão francês chegou com vazamento, recebemos 30 kilos;avaria;30.0;30.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0039;vinte e oito quilos de maca recebidos sem problemas;sem_ocorrencia;28.0;28.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0088;recebemos 16kg de tomate, 5,5 kg vieram amassados;avaria;16.0;16.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0286;não sei ifnormar;ilegivel_outro;;18.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0264;depois eu vejo;ilegivel_outro;;30.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0020;O arroz chegou certinho, 56 kilos;sem_ocorrencia;56.0;56.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0299;confimro;ilegivel_outro;;50.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0084;recebi 63 quilos de tomate, a emblaagem veio rasgada;avaria;63.0;63.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0003;chegaram 67kg de macarrao em bom estado!!;sem_ocorrencia;67.0;67.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0014;recebemos 54,5 kilos de presunto, tudo certo;sem_ocorrencia;54.5;54.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0227;a caixa térmica chegou sem gelo, setenta e quatro quilos de refeição pronta;problema_temperatura;74.0;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0025;recebi 77 kg de feijão, tudo conforme o combinado;sem_ocorrencia;77.0;77.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0218;recebemos setenta e quatro quilos de manteiga, a caixa estava quente e úmida!!;problema_temperatura;74.0;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0197;chegou vinte quilos de iogurte sem estar gelado;problema_temperatura;20.0;20.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0284;não sei ifnormar.;ilegivel_outro;;32.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0082;recebi 4,5 kgs de tomate, a embalagem veio rasgada;avaria;4.5;4.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0243;fzgl;ilegivel_outro;;24.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0160;contamos 12 kg de alface, está faltando 6 kgs;divergencia_quantidade;12.0;18.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0224;a caixa térmica chegou sem gelo, 20 kilos de frango!;problema_temperatura;20.0;20.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0112;recebi 35kg de presunto mas a caixa estava fruada!;avaria;35.0;35.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0170;a doação era de 8,5kg mas vieram 6,5 kilos;divergencia_quantidade;6.5;8.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0079;O frango chegou com vazamento, recebemos sessenta e cinco quilos;avaria;65.0;65.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0199;O frango chegou morno, 23,5kg;problema_temperatura;23.5;23.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0182;recebemos 60 kgs de manteiga, a caixa estava quente e úmida;problema_temperatura;60.0;60.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0135;chegaram apenas 44 quilos de iogurte, faltou uma caixa;divergencia_quantidade;44.0;69.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0049;recebi 59 kilos de macarrão, tudo conforme o combinado!!;sem_ocorrencia;59.0;59.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0030;chegaram 62kg de chuchu em bom estado;sem_ocorrencia;62.0;62.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0127;dos cinco quilos combinados so chegaram quatro quilos;divergencia_quantidade;4.0;5.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0294;teste!!;ilegivel_outro;;33.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0059;recebemos 15 quilos de refeição pronta, tudo certo;sem_ocorrencia;15.0;15.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0267;qual o horário amanhã;ilegivel_outro;;49.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0134;dos trinta quilos combinados so chegaram 26kg;divergencia_quantidade;26.0;30.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0155;chegaram apenas 29 kgs de carne moída, faltou uma caixa;divergencia_quantidade;29.0;34.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0175;recebemos 19 kilos de tomate, mas o cadatsro dizia 23 kgs;divergencia_quantidade;19.0;23.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0004;recebemos a doçaão de 57 kg de alface, muito obrigado;sem_ocorrencia;57.0;57.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0101;recebi trinta e tres quilos de iogurte, a embalagem veio rasgada;avaria;33.0;33.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0069;chegou 39kg de carne moída, algumas unidades mofadas;avaria;39.0;39.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0065;recebemos 1,5 kgs de queijo porem 0,5 kilos podres;avaria;1.5;1.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0201;recebi 69kg de refeição pronta, estava em temperatura ambiente.;problema_temperatura;69.0;69.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0177;dos 53 quilos combinados só chegaram trinta e três quilos;divergencia_quantidade;33.0;53.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0240;chegou 1,5 kilos de manteiga sem estar gelado;problema_temperatura;1.5;1.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0213;chegaram 66 kg de peixe e o termômetro marcava 12 graus;problema_temperatura;66.0;66.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0166;chegaram apenas 65kg de leite, faltou uma ciaxa;divergencia_quantidade;65.0;100.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0099;recebemos 45 quilos de pão francês, 17,5 kilos veiram amassados;avaria;45.0;45.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0111;chegaram 65 kg de queijo mas parte estava estragada;avaria;65.0;65.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0116;recebi 19,5kg de macarrao, a embalagem veio rasgada;avaria;19.5;19.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0151;veio menos pao de forma do que o cadastrado: nove quilos;divergencia_quantidade;9.0;14.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0251;favor verificar!!;ilegivel_outro;;24.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0146;recebemos 51,5kg de iogurte, mas o cadastro dizia 79,5 kilos;divergencia_quantidade;51.5;79.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0203;recebemos 46kg de requeijão, a caixa estava quente e úmida;problema_temperatura;46.0;46.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0181;quarenta e oito quilos de queijo, o gelo tinha derretido;problema_temperatura;48.0;48.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0295;recebido;ilegivel_outro;;3.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0214;chegou 38 kgs de peixe sem estar gelado;problema_temperatura;38.0;38.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0212;O iogurte veio quente, recebemos dezesseis quilos;problema_temperatura;16.0;16.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0262;vavuksqt;ilegivel_outro;;55.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0269;teste;ilegivel_outro;;51.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0115;"recebemos 61 kg de abobrinha; 12 kgs com avaria na caixa";avaria;61.0;61.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0022;entrega confirmada: 61 kgs de pao frances;sem_ocorrencia;61.0;61.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0067;recebi 37 kgs de batata, a embalagem veio rasgada;avaria;37.0;37.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0187;recebemos quarenta e oito quilos de presunto mas chegou quente;problema_temperatura;48.0;48.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0097;chegaram 28 kilos de iogurte, varias uniddaes amassadas;avaria;28.0;28.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0279;boa tarde;ilegivel_outro;;66.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0259;vfgrvt!;ilegivel_outro;;34.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0081;chegou trinta e três quilos de macarrão, algumas unidades mofadas!;avaria;33.0;33.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0029;vieram vinte e oito quilos de iogurte, embalagem perfeita;sem_ocorrencia;28.0;28.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0100;recebemos 10,5 kilos de reefição pronta porém 4kg podres;avaria;10.5;10.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0192;peixe recebido (72 kg) mas não estava frio;problema_temperatura;72.0;72.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0300;entregue :);ilegivel_outro;;60.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0162;74 kgs de mamão recebidos, esperávamos 93 kilos;divergencia_quantidade;74.0;93.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0193;chegaram cinquenta e sete quilos de iogurte e o termômetro marcava 20 graus;problema_temperatura;57.0;57.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0184;75kg de carne moída entregues, mas a temperatura estava alta;problema_temperatura;75.0;75.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0089;51 kgs de refeição pronta entregues, mas 10,5 quilos esatvam danificados;avaria;51.0;51.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0180;4 quilos de tomate recebidos, esperávamos 5 kilos;divergencia_quantidade;4.0;5.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0018;vieram 63,5 quilos de cenoura, embalagem perfeita;sem_ocorrencia;63.5;63.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0209;a caixa térmica chegou sem gelo, 74 kilos de frango;problema_temperatura;74.0;74.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0153;78,5 kilos de pão de forma recebidos, esperávamos 95,5 quilos;divergencia_quantidade;78.5;95.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0131;entregaram 72 kg de carne moída, menos do que o prometido!!;divergencia_quantidade;72.0;88.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0024;chegou tudo: 51 kgs de mnateiga;sem_ocorrencia;51.0;51.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0245;?;ilegivel_outro;;26.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0074;a maçã chegou com vazamento, recebemos 34 kgs;avaria;34.0;34.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0244;cofnirmo;ilegivel_outro;;6.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0287;foi!!;ilegivel_outro;;43.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0171;a doação era de 78kg mas vieram 49 kgs;divergencia_quantidade;49.0;78.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0110;recebi 58,5 kgs de laranja mas a caixa estava furada;avaria;58.5;58.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0260;não sei informar;ilegivel_outro;;27.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0061;O requeijão chegou com vazamento, recebemos 29 kgs;avaria;29.0;29.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0117;recebemos 21 kgs de abobrinha, cinco quilos vieram amassados;avaria;21.0;21.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0123;faltaram sete quilos de mamão;divergencia_quantidade;;23.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0178;reecbi 17 kg de alface, faltando 8 kgs;divergencia_quantidade;17.0;25.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0028;entregaram 40 quilos de batata hoje cedo, tudo ok.;sem_ocorrencia;40.0;40.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0047;confirmo o recebimento de 30kg de abobrinha. obrigado!;sem_ocorrencia;30.0;30.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0217;recebemos 20 kilos de iogurte mas chegou quente;problema_temperatura;20.0;20.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0125;a doação era de 33 quilos mas vieram vinte e três quilos;divergencia_quantidade;23.0;33.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0194;76 quilos de manteiga entregues, mas a temperatura estava alta;problema_temperatura;76.0;76.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0270;klvtlv;ilegivel_outro;;38.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0165;contamos cinquenta e cinco quilos de iogurte, esta faltando trinta e um quilos;divergencia_quantidade;55.0;86.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0210;chegaram 21 quilos de queijo fora da refrigeracao;problema_temperatura;21.0;21.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0208;a caixa térmica chegou sem gelo, 3 quilos de presnuto;problema_temperatura;3.0;3.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0062;chegou 1 kilos de tomate, algumas unidades mofadas;avaria;1.0;1.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0281;boa tadre;ilegivel_outro;;75.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0239;O queijo chegou morno, 32 kgs;problema_temperatura;32.0;32.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0044;confirmo o recebimento de 62,5 kilos de laranja. obrigado!;sem_ocorrencia;62.5;62.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0283;lndho;ilegivel_outro;;4.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0158;a doação era de 52 quilos mas viearm quarenta e quatro quilos;divergencia_quantidade;44.0;52.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0142;recebemos nove quilos de mamão, mas o cadastro dizia 13 quilos;divergencia_quantidade;9.0;13.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0156;chegaram apenas sessenta quilos de batata, flatou uma caixa;divergencia_quantidade;60.0;90.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0292;qual o horario amanha;ilegivel_outro;;33.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0140;chegaram apenas vinte e seis quilos de frango, faltou uma caixa;divergencia_quantidade;26.0;38.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0268;xpto 312;ilegivel_outro;;30.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0002;recebi 64 quilos de cenoura, tudo conforme o combinado;sem_ocorrencia;64.0;64.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0132;quantidade diferente: chegraam 77 kgs de queijo e não 95kg;divergencia_quantidade;77.0;95.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0168;chegraam apenas vinte e nove quilos de tomate, faltou uma caixa;divergencia_quantidade;29.0;35.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0161;setenta e cinco quilos de leite recebidos, espreávamos noventa e oito quilos;divergencia_quantidade;75.0;98.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0043;entrega confirmada: 76kg de carne moída;sem_ocorrencia;76.0;76.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0190;recebemos quarenta e sete quilos de manteiga, a caixa estava quente e úmida;problema_temperatura;47.0;47.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0098;chegou 2 quilos de leite, algumas unidades mofadas.;avaria;2.0;2.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0234;recebemos 23 kg de carne moída, a caixa estava quente e úmida;problema_temperatura;23.0;23.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0152;faltaram catorze quilos de queijo;divergencia_quantidade;;39.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0019;entrega confirmada: 28 kg de peixe!;sem_ocorrencia;28.0;28.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0211;22 kilos de iogurte entregues, mas a temperatura estava alta;problema_temperatura;22.0;22.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0048;pao de forma recebido, quarenta quilos, tudo em ordem;sem_ocorrencia;40.0;40.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0050;47,5 quilos de macararo recebidos sem problemas;sem_ocorrencia;47.5;47.5;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0220;recebemos sessenta e três quilos de leite, a caixa estava quente e úmida;problema_temperatura;63.0;63.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0237;recebemos vinte e sete quilos de requeijão, a caixa estava quente e úmida!!;problema_temperatura;27.0;27.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0290;?.;ilegivel_outro;;4.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0172;entregaram 78kg de pao frances, menos do que o prometido;divergencia_quantidade;78.0;118.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0254;confirmo!!;ilegivel_outro;;44.0;SINTETICO_gerador;gerador (rótulo por construção);nao
+SIN-0198;O frango chegou morno, 37 kilos;problema_temperatura;37.0;37.0;SINTETICO_gerador;gerador (rótulo por construção);nao

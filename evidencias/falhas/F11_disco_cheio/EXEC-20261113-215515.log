@@ -1,0 +1,6 @@
+2026-11-13 21:55:15,510 | INFO | EXEC-20261113-215515 | E0 | - | início da execução (trabalho=disco_cheio, origens IoT aceitas=['fisico'], portal_modo=nenhum, sem_portal=False)
+2026-11-13 21:55:15,615 | INFO | EXEC-20261113-215515 | T1 | - | recursos: disco livre 57115.5 MB, memória disponível 4619.9 MB, CPU 13.9%
+2026-11-13 21:55:15,615 | CRITICAL | EXEC-20261113-215515 | T1 | - | disco livre 57115.5 MB < mínimo 999999999 MB
+2026-11-13 21:55:15,615 | INFO | EXEC-20261113-215515 | G0 | - | gateway -> nao_ambiente
+2026-11-13 21:55:15,615 | CRITICAL | EXEC-20261113-215515 | E-fim | - | execução abortada com segurança antes de gravar qualquer saída de lote
+2026-11-13 21:55:15,630 | INFO | EXEC-20261113-215515 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215515.md

@@ -1,0 +1,10 @@
+﻿lote_id;doador_id;motivos;ocorrencia_prevista;confianca;kg_extraido;kg_cadastrado;alerta_iot;texto_confirmacao_mascarado;decisao;kg_aprovado;revisor
+LOTE-2026-0001;DOADOR-002;alerta_iot_quebra_cadeia_frio,modelo_indisponivel;;;8.0;8.0;quebra_cadeia_frio;chegaram 8 kg de iogurte;;;
+LOTE-2026-0002;DOADOR-001;modelo_indisponivel;;;12.0;12.0;sem_alerta_registrado;recebemos 12 kg de pão, tudo certo;;;
+LOTE-2026-0003;DOADOR-001;modelo_indisponivel;;;20.0;20.0;sem_alerta_registrado;confirmo o recebimento de 20 kg de cenoura, tudo em ordem;;;
+LOTE-2026-0005;DOADOR-001;modelo_indisponivel;;;25.0;25.0;sem_alerta_registrado;chegaram 25 kg de banana em bom estado;;;
+LOTE-2026-0006;DOADOR-003;modelo_indisponivel;;;6.0;6.0;sem_alerta_registrado;recebemos 6 kg de refeição pronta, muito obrigado;;;
+LOTE-2026-0007;DOADOR-003;modelo_indisponivel;;;10.0;10.0;sem_alerta_registrado;recebemos 10 kg de tomate, 2 kg vieram amassados;;;
+LOTE-2026-0008;DOADOR-004;modelo_indisponivel,divergencia_kg;;;9.0;15.0;sem_alerta_registrado;dos 15 kg combinados só chegaram 9 kg de batata;;;
+LOTE-2026-0009;DOADOR-004;modelo_indisponivel;;;5.0;5.0;sem_alerta_registrado;recebemos 5 kg de queijo mas chegou morno;;;
+LOTE-2026-0010;DOADOR-002;modelo_indisponivel,sem_confirmacao;;;;30.0;sem_alerta_registrado;ok, valeu;;;

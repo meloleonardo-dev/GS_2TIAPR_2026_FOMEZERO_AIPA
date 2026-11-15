@@ -1,0 +1,56 @@
+{
+  "_aviso": "SIMULADO. Nomes do 'modelo de aplicação' proposto pelo Erick v1.0 (11/11/2026), não confirmado (PEN-001); campos marcados no CT-04_PROPOSTA.md como acréscimo da AIPA: confirmacao_entrega_texto, doador_nome_ficticio, beneficiario_tipo, simulado. Nenhum dado pessoal real.",
+  "lotes": [
+    {
+      "lote_id": "LOTE-2026-0002",
+      "doador_id": "DOADOR-001",
+      "beneficiario_id": "BENEF-003",
+      "alimento_descricao": "pão francês",
+      "quantidade_disponibilizada_kg": 12.0,
+      "quantidade_recebida_kg": null,
+      "quantidade_aproveitada_kg": null,
+      "status_logistico": "entregue",
+      "estado_termico": null,
+      "evento_atual": null,
+      "entrega_confirmada_em": "2026-11-16T10:30:00-03:00",
+      "confirmacao_entrega_texto": "recebemos 12 kg de pão, tudo certo",
+      "doador_nome_ficticio": "Mercado Exemplo (SIMULADO)",
+      "beneficiario_tipo": "ONG",
+      "simulado": true
+    },
+    {
+      "lote_id": "LOTE-2026-0001",
+      "doador_id": "DOADOR-002",
+      "beneficiario_id": "BENEF-001",
+      "alimento_descricao": "iogurte",
+      "quantidade_disponibilizada_kg": 8.0,
+      "quantidade_recebida_kg": null,
+      "quantidade_aproveitada_kg": null,
+      "status_logistico": "entregue",
+      "estado_termico": "ALERTA",
+      "evento_atual": "quebra_cadeia_frio",
+      "entrega_confirmada_em": "2026-11-11T11:00:00-03:00",
+      "confirmacao_entrega_texto": "chegaram 8 kg de iogurte",
+      "doador_nome_ficticio": "Restaurante Exemplo (SIMULADO)",
+      "beneficiario_tipo": "cozinha_comunitaria",
+      "simulado": true
+    },
+    {
+      "lote_id": "LOTE-2026-0004",
+      "doador_id": "DOADOR-001",
+      "beneficiario_id": "BENEF-002",
+      "alimento_descricao": "banana",
+      "quantidade_disponibilizada_kg": 15.0,
+      "quantidade_recebida_kg": null,
+      "quantidade_aproveitada_kg": null,
+      "status_logistico": "em_transporte",
+      "estado_termico": null,
+      "evento_atual": null,
+      "entrega_confirmada_em": null,
+      "confirmacao_entrega_texto": null,
+      "doador_nome_ficticio": "Mercado Exemplo (SIMULADO)",
+      "beneficiario_tipo": "ONG",
+      "simulado": true
+    }
+  ]
+}

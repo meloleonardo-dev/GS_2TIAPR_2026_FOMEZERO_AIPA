@@ -1,0 +1,693 @@
+{
+  "_aviso": "Métricas MEDIDAS por treinar_modelo.py em dados SINTÉTICOS. Conjuntos SINTÉTICOS: os 300 textos têm rótulo por construção do gerador e os 30 'fora do molde' foram escritos e rotulados pelo agente de IA da AIPA; nenhum texto teve revisão humana (DEC-044). Os moldes são poucos e o vocabulário é pequeno, então as métricas do teste tendem a ser otimistas; o conjunto 'fora do molde' mede um pouco da generalização, com n = 30. Não há texto real de beneficiário.",
+  "data": "2026-11-13",
+  "modelo": "ocorrencia-v1",
+  "limiar_confianca_usado": 0.7,
+  "calibracao_limiar_treino": [
+    {
+      "limiar": 0.7,
+      "falso_automatico_oof": 0,
+      "seguiriam_automatico_oof": 30,
+      "n": 225
+    },
+    {
+      "limiar": 0.75,
+      "falso_automatico_oof": 0,
+      "seguiriam_automatico_oof": 26,
+      "n": 225
+    },
+    {
+      "limiar": 0.8,
+      "falso_automatico_oof": 0,
+      "seguiriam_automatico_oof": 20,
+      "n": 225
+    },
+    {
+      "limiar": 0.85,
+      "falso_automatico_oof": 0,
+      "seguiriam_automatico_oof": 11,
+      "n": 225
+    },
+    {
+      "limiar": 0.9,
+      "falso_automatico_oof": 0,
+      "seguiriam_automatico_oof": 3,
+      "n": 225
+    },
+    {
+      "limiar": 0.95,
+      "falso_automatico_oof": 0,
+      "seguiriam_automatico_oof": 0,
+      "n": 225
+    }
+  ],
+  "teste": {
+    "conjunto": "teste (25% do sintético)",
+    "n": 75,
+    "distribuicao_classes": {
+      "sem_ocorrencia": 15,
+      "avaria": 15,
+      "divergencia_quantidade": 15,
+      "problema_temperatura": 15,
+      "ilegivel_outro": 15
+    },
+    "ml": {
+      "acuracia": 0.9867,
+      "f1_macro": 0.9867,
+      "por_classe": {
+        "sem_ocorrencia": {
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "suporte": 15
+        },
+        "avaria": {
+          "precisao": 0.9375,
+          "revocacao": 1.0,
+          "f1": 0.9677,
+          "suporte": 15
+        },
+        "divergencia_quantidade": {
+          "precisao": 1.0,
+          "revocacao": 0.9333,
+          "f1": 0.9655,
+          "suporte": 15
+        },
+        "problema_temperatura": {
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "suporte": 15
+        },
+        "ilegivel_outro": {
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "suporte": 15
+        }
+      },
+      "matriz_confusao": {
+        "linhas_real_colunas_previsto": [
+          "sem_ocorrencia",
+          "avaria",
+          "divergencia_quantidade",
+          "problema_temperatura",
+          "ilegivel_outro"
+        ],
+        "valores": [
+          [
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            15,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            15
+          ]
+        ]
+      }
+    },
+    "linha_de_base_palavras_chave": {
+      "acuracia": 0.92,
+      "f1_macro": 0.9208,
+      "por_classe": {
+        "sem_ocorrencia": {
+          "precisao": 0.7368,
+          "revocacao": 0.9333,
+          "f1": 0.8235,
+          "suporte": 15
+        },
+        "avaria": {
+          "precisao": 1.0,
+          "revocacao": 0.9333,
+          "f1": 0.9655,
+          "suporte": 15
+        },
+        "divergencia_quantidade": {
+          "precisao": 0.9167,
+          "revocacao": 0.7333,
+          "f1": 0.8148,
+          "suporte": 15
+        },
+        "problema_temperatura": {
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "suporte": 15
+        },
+        "ilegivel_outro": {
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "suporte": 15
+        }
+      },
+      "matriz_confusao": {
+        "linhas_real_colunas_previsto": [
+          "sem_ocorrencia",
+          "avaria",
+          "divergencia_quantidade",
+          "problema_temperatura",
+          "ilegivel_outro"
+        ],
+        "valores": [
+          [
+            14,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            14,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            15
+          ]
+        ]
+      }
+    },
+    "falso_automatico_so_classificador": {
+      "ml": 0
+    },
+    "roteamento_regras_de_texto_R4_a_R7": {
+      "ml": {
+        "seguiriam_automatico": 10,
+        "taxa_automacao": 0.1333,
+        "falso_automatico": 0,
+        "sem_ocorrencia_reais": 15,
+        "sem_ocorrencia_automaticos": 10,
+        "taxa_automacao_dos_sem_ocorrencia": 0.6667
+      },
+      "linha_de_base_palavras_chave": {
+        "seguiriam_automatico": 15,
+        "taxa_automacao": 0.2,
+        "falso_automatico": 1,
+        "sem_ocorrencia_reais": 15,
+        "sem_ocorrencia_automaticos": 14,
+        "taxa_automacao_dos_sem_ocorrencia": 0.9333
+      }
+    },
+    "extracao_kg": {
+      "n": 75,
+      "acerto_kg_exato": 1.0,
+      "acertos": 75,
+      "n_com_kg_no_gabarito": 59,
+      "nao_encontrado": 0,
+      "pct_nao_encontrado": 0.0,
+      "valor_errado": 0,
+      "kg_extraido_sem_kg_no_gabarito": 0
+    }
+  },
+  "fora_do_molde": {
+    "conjunto": "fora do molde",
+    "n": 30,
+    "distribuicao_classes": {
+      "sem_ocorrencia": 6,
+      "avaria": 6,
+      "divergencia_quantidade": 6,
+      "problema_temperatura": 6,
+      "ilegivel_outro": 6
+    },
+    "ml": {
+      "acuracia": 0.4667,
+      "f1_macro": 0.4612,
+      "por_classe": {
+        "sem_ocorrencia": {
+          "precisao": 0.25,
+          "revocacao": 0.1667,
+          "f1": 0.2,
+          "suporte": 6
+        },
+        "avaria": {
+          "precisao": 0.3333,
+          "revocacao": 0.3333,
+          "f1": 0.3333,
+          "suporte": 6
+        },
+        "divergencia_quantidade": {
+          "precisao": 0.4,
+          "revocacao": 0.6667,
+          "f1": 0.5,
+          "suporte": 6
+        },
+        "problema_temperatura": {
+          "precisao": 0.6,
+          "revocacao": 0.5,
+          "f1": 0.5455,
+          "suporte": 6
+        },
+        "ilegivel_outro": {
+          "precisao": 0.8,
+          "revocacao": 0.6667,
+          "f1": 0.7273,
+          "suporte": 6
+        }
+      },
+      "matriz_confusao": {
+        "linhas_real_colunas_previsto": [
+          "sem_ocorrencia",
+          "avaria",
+          "divergencia_quantidade",
+          "problema_temperatura",
+          "ilegivel_outro"
+        ],
+        "valores": [
+          [
+            1,
+            1,
+            3,
+            0,
+            1
+          ],
+          [
+            2,
+            2,
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            4
+          ]
+        ]
+      }
+    },
+    "linha_de_base_palavras_chave": {
+      "acuracia": 0.4,
+      "f1_macro": 0.2523,
+      "por_classe": {
+        "sem_ocorrencia": {
+          "precisao": 0.3,
+          "revocacao": 1.0,
+          "f1": 0.4615,
+          "suporte": 6
+        },
+        "avaria": {
+          "precisao": 0.0,
+          "revocacao": 0.0,
+          "f1": 0.0,
+          "suporte": 6
+        },
+        "divergencia_quantidade": {
+          "precisao": 0.0,
+          "revocacao": 0.0,
+          "f1": 0.0,
+          "suporte": 6
+        },
+        "problema_temperatura": {
+          "precisao": 0.0,
+          "revocacao": 0.0,
+          "f1": 0.0,
+          "suporte": 6
+        },
+        "ilegivel_outro": {
+          "precisao": 0.6667,
+          "revocacao": 1.0,
+          "f1": 0.8,
+          "suporte": 6
+        }
+      },
+      "matriz_confusao": {
+        "linhas_real_colunas_previsto": [
+          "sem_ocorrencia",
+          "avaria",
+          "divergencia_quantidade",
+          "problema_temperatura",
+          "ilegivel_outro"
+        ],
+        "valores": [
+          [
+            6,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1,
+            0,
+            2
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            6
+          ]
+        ]
+      }
+    },
+    "falso_automatico_so_classificador": {
+      "ml": 0
+    },
+    "roteamento_regras_de_texto_R4_a_R7": {
+      "ml": {
+        "seguiriam_automatico": 0,
+        "taxa_automacao": 0.0,
+        "falso_automatico": 0,
+        "sem_ocorrencia_reais": 6,
+        "sem_ocorrencia_automaticos": 0,
+        "taxa_automacao_dos_sem_ocorrencia": 0.0
+      },
+      "linha_de_base_palavras_chave": {
+        "seguiriam_automatico": 16,
+        "taxa_automacao": 0.5333,
+        "falso_automatico": 10,
+        "sem_ocorrencia_reais": 6,
+        "sem_ocorrencia_automaticos": 6,
+        "taxa_automacao_dos_sem_ocorrencia": 1.0
+      }
+    },
+    "extracao_kg": {
+      "n": 30,
+      "acerto_kg_exato": 0.8667,
+      "acertos": 26,
+      "n_com_kg_no_gabarito": 22,
+      "nao_encontrado": 1,
+      "pct_nao_encontrado": 0.0455,
+      "valor_errado": 3,
+      "kg_extraido_sem_kg_no_gabarito": 0
+    }
+  },
+  "erros_classificacao": [
+    {
+      "conjunto": "teste",
+      "id": "SIN-0128",
+      "texto": "recebi 53,5 kg de maçã, faltando 22 kilos",
+      "real": "divergencia_quantidade",
+      "previsto": "avaria",
+      "confianca": 0.4269,
+      "causa_provavel_heuristica": "palavras compartilhadas entre classes nos moldes"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-01",
+      "texto": "show, os 8 quilo de banana tão aqui na mesa",
+      "real": "sem_ocorrencia",
+      "previsto": "ilegivel_outro",
+      "confianca": 0.3734,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (5/9 palavras: show, os, tao, aqui, mesa)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-02",
+      "texto": "valeu demais!!! 15kg de arroz já na despensa da cozinha",
+      "real": "sem_ocorrencia",
+      "previsto": "avaria",
+      "confianca": 0.2584,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (5/10 palavras: valeu, demais, ja, despensa, cozinha)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-03",
+      "texto": "Pessoal, passando pra avisar que a doação de hoje (doze quilos de laranja) foi guardada e a criançada vai adorar, gratidão",
+      "real": "sem_ocorrencia",
+      "previsto": "divergencia_quantidade",
+      "confianca": 0.3343,
+      "causa_provavel_heuristica": "palavras compartilhadas entre classes nos moldes"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-04",
+      "texto": "beleza, 3,5 kg de pão de forma guardados",
+      "real": "sem_ocorrencia",
+      "previsto": "divergencia_quantidade",
+      "confianca": 0.4601,
+      "causa_provavel_heuristica": "palavras compartilhadas entre classes nos moldes"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-05",
+      "texto": "a moça do mercado deixou 40 kilos de batata, conferido e guardado",
+      "real": "sem_ocorrencia",
+      "previsto": "divergencia_quantidade",
+      "confianca": 0.5882,
+      "causa_provavel_heuristica": "palavras compartilhadas entre classes nos moldes"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-07",
+      "texto": "6 kg de maçã aqui, mas metade tá machucada e pisada",
+      "real": "avaria",
+      "previsto": "sem_ocorrencia",
+      "confianca": 0.3317,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (5/10 palavras: aqui, metade, ta, machucada, pisada)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-08",
+      "texto": "o saco do arroz abriu no caminho e espalhou grão pelo carro todo, sobrou uns 9 kg",
+      "real": "avaria",
+      "previsto": "divergencia_quantidade",
+      "confianca": 0.5668,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (11/16 palavras: saco, abriu, no, caminho, espalhou)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-10",
+      "texto": "pão veio todo esmagado, deu pra aproveitar pouco dos 5 kg",
+      "real": "avaria",
+      "previsto": "divergencia_quantidade",
+      "confianca": 0.6658,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (6/10 palavras: todo, esmagado, deu, pra, aproveitar)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-11",
+      "texto": "banana preta e melando, bicho em volta, 7 kg",
+      "real": "avaria",
+      "previsto": "sem_ocorrencia",
+      "confianca": 0.3046,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (4/8 palavras: preta, melando, bicho, volta)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-13",
+      "texto": "pediram vinte, vieram doze quilos",
+      "real": "divergencia_quantidade",
+      "previsto": "sem_ocorrencia",
+      "confianca": 0.3157,
+      "causa_provavel_heuristica": "nenhuma palavra de ocorrência conhecida pelo modelo"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-15",
+      "texto": "no app tava 25 kg mas na balança deu 18",
+      "real": "divergencia_quantidade",
+      "previsto": "avaria",
+      "confianca": 0.3853,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (5/8 palavras: no, app, tava, balanca, deu)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-19",
+      "texto": "o iogurte tava suando e mole, parece que ficou no sol, 6 kg",
+      "real": "problema_temperatura",
+      "previsto": "divergencia_quantidade",
+      "confianca": 0.4037,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (7/12 palavras: tava, suando, mole, parece, ficou)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-23",
+      "texto": "carne moída veio pingando água e com cheiro forte, 5 kg",
+      "real": "problema_temperatura",
+      "previsto": "avaria",
+      "confianca": 0.3766,
+      "causa_provavel_heuristica": "palavras compartilhadas entre classes nos moldes"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-24",
+      "texto": "o motorista disse que o carro ficou parado no calor por duas horas com o presunto dentro, recebemos 4 kg",
+      "real": "problema_temperatura",
+      "previsto": "avaria",
+      "confianca": 0.2949,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (11/19 palavras: motorista, disse, carro, ficou, parado)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-27",
+      "texto": "manda o comprovante no zap",
+      "real": "ilegivel_outro",
+      "previsto": "problema_temperatura",
+      "confianca": 0.3015,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (4/5 palavras: manda, comprovante, no, zap)"
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-30",
+      "texto": "esse número é da ong?",
+      "real": "ilegivel_outro",
+      "previsto": "problema_temperatura",
+      "confianca": 0.5189,
+      "causa_provavel_heuristica": "vocabulário não visto no treino (3/5 palavras: esse, numero, ong)"
+    }
+  ],
+  "erros_extracao_kg": [
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-10",
+      "texto": "pão veio todo esmagado, deu pra aproveitar pouco dos 5 kg",
+      "kg_gabarito": 5.0,
+      "kg_extraido": null
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-12",
+      "texto": "as bandejas de ovos chegaram com várias trincadas, mais ou menos dois quilos perdidos de dez",
+      "kg_gabarito": 10.0,
+      "kg_extraido": 2.0
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-15",
+      "texto": "no app tava 25 kg mas na balança deu 18",
+      "kg_gabarito": 18.0,
+      "kg_extraido": 25.0
+    },
+    {
+      "conjunto": "fora_do_molde",
+      "id": "FM-17",
+      "texto": "tinha que ser 40 kilos de laranja, mas o motorista trouxe 32",
+      "kg_gabarito": 32.0,
+      "kg_extraido": 40.0
+    }
+  ],
+  "palavras_de_maior_peso_por_classe": {
+    "avaria": [
+      "com",
+      "amassados",
+      "unidades",
+      "estavam",
+      "vieram amassados",
+      "recebi",
+      "recebemos",
+      "podres"
+    ],
+    "divergencia_quantidade": [
+      "faltaram",
+      "faltando",
+      "mas o",
+      "recebidos",
+      "quilos",
+      "uma caixa",
+      "apenas",
+      "uma"
+    ],
+    "ilegivel_outro": [
+      "xpto",
+      "xpto numtok",
+      "entregue",
+      "foi",
+      "confirmo",
+      "boa",
+      "favor",
+      "pode"
+    ],
+    "problema_temperatura": [
+      "quente",
+      "chegou",
+      "temperatura",
+      "morno",
+      "gelo",
+      "estava",
+      "peixe",
+      "da refrigeracao"
+    ],
+    "sem_ocorrencia": [
+      "tudo",
+      "chegou certinho",
+      "certinho",
+      "certo",
+      "tudo certo",
+      "confirmada",
+      "entrega confirmada",
+      "entrega"
+    ]
+  }
+}

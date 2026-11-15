@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block titulo %}Novo lançamento{% endblock %}
+{% block corpo %}
+<h2>Lançar pontos e Selo Verde ESG</h2>
+<form method="post" action="/lancamentos" id="form-lancamento">
+  <label for="lote_id">Lote de doação</label>
+  <input id="lote_id" name="lote_id" required>
+  <label for="doador_id">Doador (código)</label>
+  <input id="doador_id" name="doador_id" required>
+  <label for="kg">Quantidade recebida validada (kg)</label>
+  <input id="kg" name="kg" required>
+  <label for="co2">CO₂ evitado (kg CO₂eq) — estimativa</label>
+  <input id="co2" name="co2" required>
+  <label for="pontos">Pontos</label>
+  <input id="pontos" name="pontos" required>
+  <label for="selo">Selo Verde ESG</label>
+  <select id="selo" name="selo">
+    <option value="">(sem selo)</option>
+    <option value="Bronze">Bronze</option>
+    <option value="Prata">Prata</option>
+    <option value="Ouro">Ouro</option>
+  </select>
+  <button id="enviar" type="submit">Registrar</button>
+</form>
+{% endblock %}

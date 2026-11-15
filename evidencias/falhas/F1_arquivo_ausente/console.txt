@@ -1,0 +1,17 @@
+$ python executar_robo.py --cenario arquivo_ausente
+(código de saída 0)
+
+[cenário arquivo_ausente | F1] arquivo de lotes ausente -> pasta saida\cenarios\arquivo_ausente
+2026-11-13 21:52:31,480 | INFO | EXEC-20261113-215231 | E0 | - | início da execução (trabalho=arquivo_ausente, origens IoT aceitas=['fisico'], portal_modo=nenhum, sem_portal=False)
+2026-11-13 21:52:31,584 | INFO | EXEC-20261113-215231 | T1 | - | recursos: disco livre 57118.3 MB, memória disponível 4302.3 MB, CPU 8.0%
+2026-11-13 21:52:32,603 | INFO | EXEC-20261113-215231 | T1 | - | portal SIMULADO fora do ar: subindo em http://127.0.0.1:5050 (modo de falha nenhum)
+2026-11-13 21:52:33,128 | INFO | EXEC-20261113-215231 | T1 | - | health do portal SIMULADO ok
+2026-11-13 21:52:33,128 | INFO | EXEC-20261113-215231 | G0 | - | gateway -> sim
+2026-11-13 21:52:33,132 | INFO | EXEC-20261113-215231 | T2 | - | IoT lida: 2 arquivo(s), 146 mensagens {'status': 2, 'telemetria': 71, 'ack': 71, 'alerta_normalizacao': 1, 'alerta_ativacao': 1}, 0 linha(s) inválida(s)
+2026-11-13 21:52:34,284 | ERROR | EXEC-20261113-215231 | T2 | - | entrada_ausente: lotes_entregues.json não existe; nada a processar
+2026-11-13 21:52:34,284 | INFO | EXEC-20261113-215231 | G1 | - | gateway -> nao
+2026-11-13 21:52:34,321 | INFO | EXEC-20261113-215231 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215231.md
+2026-11-13 21:52:34,323 | INFO | EXEC-20261113-215231 | E1 | - | portal SIMULADO iniciado pelo robô foi encerrado
+
+== EXEC-20261113-215231 | tratados 0 | processado 0 | revisão humana 0 | falha 0 | duplicados 0 | não entregues 0 | taxa de erros None | 2.83 s
+   relatório: saida\cenarios\arquivo_ausente\saida\relatorios\relatorio_EXEC-20261113-215231.md | log: saida\cenarios\arquivo_ausente\saida\logs\EXEC-20261113-215231.log

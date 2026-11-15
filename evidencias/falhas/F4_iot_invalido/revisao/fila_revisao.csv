@@ -1,0 +1,4 @@
+﻿lote_id;doador_id;motivos;ocorrencia_prevista;confianca;kg_extraido;kg_cadastrado;alerta_iot;texto_confirmacao_mascarado;decisao;kg_aprovado;revisor
+LOTE-2026-0003;DOADOR-001;evento_iot_desconhecido;sem_ocorrencia;0.9827;20.0;20.0;desconhecido;confirmo o recebimento de 20 kg de cenoura, tudo em ordem;;;
+LOTE-2026-0005;DOADOR-001;alerta_iot_quebra_cadeia_frio;sem_ocorrencia;0.9189;25.0;25.0;quebra_cadeia_frio;chegaram 25 kg de banana em bom estado;;;
+LOTE-2026-0006;DOADOR-003;ocorrencia_avaria,baixa_confianca;avaria;0.6338;6.0;6.0;sem_alerta_registrado;recebemos 6 kg de refeição pronta, muito obrigado;;;

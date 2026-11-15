@@ -1,0 +1,35 @@
+2026-11-13 21:54:14,241 | INFO | EXEC-20261113-215414 | E0 | - | início da execução (trabalho=portal_lento, origens IoT aceitas=['fisico'], portal_modo=nenhum, sem_portal=False)
+2026-11-13 21:54:14,344 | INFO | EXEC-20261113-215414 | T1 | - | recursos: disco livre 57116.6 MB, memória disponível 4599.2 MB, CPU 2.8%
+2026-11-13 21:54:15,365 | INFO | EXEC-20261113-215414 | T1 | - | portal SIMULADO fora do ar: subindo em http://127.0.0.1:5050 (modo de falha nenhum)
+2026-11-13 21:54:15,893 | INFO | EXEC-20261113-215414 | T1 | - | health do portal SIMULADO ok
+2026-11-13 21:54:15,893 | INFO | EXEC-20261113-215414 | G0 | - | gateway -> sim
+2026-11-13 21:54:15,897 | INFO | EXEC-20261113-215414 | T2 | - | IoT lida: 2 arquivo(s), 146 mensagens {'status': 2, 'telemetria': 71, 'ack': 71, 'alerta_normalizacao': 1, 'alerta_ativacao': 1}, 0 linha(s) inválida(s)
+2026-11-13 21:54:17,110 | INFO | EXEC-20261113-215414 | T2 | - | backup do estado: estado_EXEC-20261113-215414.zip
+2026-11-13 21:54:17,110 | INFO | EXEC-20261113-215414 | T2 | - | 2 registro(s) lido(s) de lotes_entregues.json
+2026-11-13 21:54:17,110 | INFO | EXEC-20261113-215414 | G1 | - | gateway -> sim
+2026-11-13 21:54:17,111 | INFO | EXEC-20261113-215414 | G2 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:54:17,112 | INFO | EXEC-20261113-215414 | G3 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:54:17,112 | INFO | EXEC-20261113-215414 | G4 | LOTE-2026-0002 | gateway -> retomar
+2026-11-13 21:54:17,112 | INFO | EXEC-20261113-215414 | T4 | LOTE-2026-0002 | retomando lote pendente da etapa T9 (motivo anterior ['portal_timeout'])
+2026-11-13 21:54:17,112 | INFO | EXEC-20261113-215414 | T7 | LOTE-2026-0002 | kg validado 12.0 (confirmacao_beneficiario) -> CO₂ evitado 30.48 kg CO₂eq (estimativa), 120 pontos, acumulado do doador 12.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:54:17,140 | INFO | EXEC-20261113-215414 | G6 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:54:17,140 | INFO | EXEC-20261113-215414 | T8 | LOTE-2026-0002 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0002.pdf
+2026-11-13 21:54:20,396 | INFO | EXEC-20261113-215414 | T9 | LOTE-2026-0002 | lançado pelo Selenium, protocolo SIM-000001
+2026-11-13 21:54:20,414 | INFO | EXEC-20261113-215414 | T9 | LOTE-2026-0002 | lançamento confirmado pela API REST (protocolo SIM-000001, meio selenium)
+2026-11-13 21:54:20,414 | INFO | EXEC-20261113-215414 | G7 | LOTE-2026-0002 | gateway -> sim
+2026-11-13 21:54:20,418 | INFO | EXEC-20261113-215414 | T10 | LOTE-2026-0002 | status processado motivo []
+2026-11-13 21:54:20,419 | INFO | EXEC-20261113-215414 | G2 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:54:20,419 | INFO | EXEC-20261113-215414 | G3 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:54:20,419 | INFO | EXEC-20261113-215414 | G4 | LOTE-2026-0003 | gateway -> retomar
+2026-11-13 21:54:20,419 | INFO | EXEC-20261113-215414 | T4 | LOTE-2026-0003 | retomando lote pendente da etapa T9 (motivo anterior ['portal_timeout'])
+2026-11-13 21:54:20,419 | INFO | EXEC-20261113-215414 | T7 | LOTE-2026-0003 | kg validado 20.0 (confirmacao_beneficiario) -> CO₂ evitado 50.8 kg CO₂eq (estimativa), 200 pontos, acumulado do doador 32.0 kg -> selo abaixo_do_minimo
+2026-11-13 21:54:20,434 | INFO | EXEC-20261113-215414 | G6 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:54:20,434 | INFO | EXEC-20261113-215414 | T8 | LOTE-2026-0003 | Termo de Doação gerado e conferido: TERMO_LOTE-2026-0003.pdf
+2026-11-13 21:54:22,354 | INFO | EXEC-20261113-215414 | T9 | LOTE-2026-0003 | lançado pelo Selenium, protocolo SIM-000002
+2026-11-13 21:54:22,359 | INFO | EXEC-20261113-215414 | T9 | LOTE-2026-0003 | lançamento confirmado pela API REST (protocolo SIM-000002, meio selenium)
+2026-11-13 21:54:22,359 | INFO | EXEC-20261113-215414 | G7 | LOTE-2026-0003 | gateway -> sim
+2026-11-13 21:54:22,366 | INFO | EXEC-20261113-215414 | T10 | LOTE-2026-0003 | status processado motivo []
+2026-11-13 21:54:22,725 | INFO | EXEC-20261113-215414 | T11 | - | fila de revisão humana: 0 lote(s) pendente(s)
+2026-11-13 21:54:22,727 | INFO | EXEC-20261113-215414 | T11 | - | CT-05 gravado (indicadores.json, historico_entregas.csv)
+2026-11-13 21:54:22,763 | INFO | EXEC-20261113-215414 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215414.md
+2026-11-13 21:54:24,900 | INFO | EXEC-20261113-215414 | E1 | - | portal SIMULADO iniciado pelo robô foi encerrado

@@ -1,0 +1,258 @@
+{
+  "_aviso": "Relatório gerado pelo robô (execução real) com dados SIMULADOS; evidência da IoT física e simulada nunca misturadas: veja 'modo_iot'.",
+  "id_execucao": "EXEC-20261113-215414",
+  "inicio": "2026-11-13T21:54:14-03:00",
+  "simulado": true,
+  "arquivo_lotes": "entrada\\lotes_entregues.json",
+  "modo_iot": [
+    "fisico"
+  ],
+  "modo_iot_texto": "IoT: evidência FÍSICA (origem fisico; logs reais de 10 e 11/11/2026, commit 4b09c42).",
+  "recursos": {
+    "disco_livre_mb": 57116.6,
+    "disco_uso_pct": 88.3,
+    "memoria_disponivel_mb": 4599.2,
+    "memoria_uso_pct": 71.4,
+    "cpu_pct": 2.8
+  },
+  "portal": "SIMULADO em http://127.0.0.1:5050, no ar (iniciado pelo robô), modo de falha nenhum",
+  "iot_resumo": "2 arquivo(s), 146 mensagens {'status': 2, 'telemetria': 71, 'ack': 71, 'alerta_normalizacao': 1, 'alerta_ativacao': 1}, 0 linha(s) inválida(s)",
+  "modelo": "ocorrencia-v2 carregado (extração do kg v2)",
+  "limiar_confianca": 0.7,
+  "portal_resumo": {
+    "lancamentos": [
+      {
+        "lote_id": "LOTE-2026-0002",
+        "meio": "selenium",
+        "protocolo": "SIM-000001"
+      },
+      {
+        "lote_id": "LOTE-2026-0003",
+        "meio": "selenium",
+        "protocolo": "SIM-000002"
+      }
+    ],
+    "simulado": true,
+    "total_lancamentos": 2
+  },
+  "portal_total_lancamentos": 2,
+  "fim": "2026-11-13T21:54:22-03:00",
+  "duracao_total_s": 8.51,
+  "abortado": false,
+  "arquivo_log": "EXEC-20261113-215414.log",
+  "resumo": {
+    "lotes_no_arquivo": 2,
+    "lotes_tratados": 2,
+    "processado": 2,
+    "revisao_humana": 0,
+    "falha": 0,
+    "ignorado_duplicado": 0,
+    "ignorado_nao_entregue": 0,
+    "ignorados_nao_entregues": 0,
+    "taxa_automacao": 1.0,
+    "taxa_revisao_humana": 0.0,
+    "taxa_erros": 0.0
+  },
+  "definicoes": {
+    "lotes_tratados": "entregues, sem contar duplicados nem não entregues",
+    "taxa_erros": "lotes com status falha / lotes tratados",
+    "tempo_de_ciclo_lote": "T3 a T10 por lote, em ms (inclui espera do portal)",
+    "custo_por_processo": "não medido (sem custo real)"
+  },
+  "tempo_de_ciclo_lote_ms": {
+    "n": 2,
+    "media_ms": 2627.31,
+    "min_ms": 1947.6,
+    "max_ms": 3307.02
+  },
+  "tempo_de_ciclo_por_lote": {
+    "LOTE-2026-0002": 3307.02,
+    "LOTE-2026-0003": 1947.6
+  },
+  "tarefas_bpmn": {
+    "T1": {
+      "nome": "Verificar ambiente",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 1652.13,
+      "min_ms": 1652.13,
+      "max_ms": 1652.13
+    },
+    "T2": {
+      "nome": "Ler entradas",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 1215.26,
+      "min_ms": 1215.26,
+      "max_ms": 1215.26
+    },
+    "T3": {
+      "nome": "Validar dados",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 0.01,
+      "min_ms": 0.01,
+      "max_ms": 0.01
+    },
+    "T4": {
+      "nome": "Checar idempotência",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 0.16,
+      "min_ms": 0.15,
+      "max_ms": 0.18
+    },
+    "T7": {
+      "nome": "Calcular CO₂, pontos e selo",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 0.18,
+      "min_ms": 0.17,
+      "max_ms": 0.2
+    },
+    "T8": {
+      "nome": "Gerar e conferir Termo de Doação",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 21.43,
+      "min_ms": 14.7,
+      "max_ms": 28.16
+    },
+    "T9": {
+      "nome": "Lançar no portal e confirmar via API",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 2599.35,
+      "min_ms": 1925.14,
+      "max_ms": 3273.56
+    },
+    "T10": {
+      "nome": "Gravar estado e CT-04",
+      "execucoes": 2,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 2,
+      "media_ms": 3.24,
+      "min_ms": 2.28,
+      "max_ms": 4.2
+    },
+    "T11": {
+      "nome": "Gravar CT-05",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 360.45,
+      "min_ms": 360.45,
+      "max_ms": 360.45
+    }
+  },
+  "gateways": {
+    "G0": {
+      "sim": 1
+    },
+    "G1": {
+      "sim": 1
+    },
+    "G2": {
+      "sim": 2
+    },
+    "G3": {
+      "sim": 2
+    },
+    "G4": {
+      "retomar": 2
+    },
+    "G6": {
+      "sim": 2
+    },
+    "G7": {
+      "sim": 2
+    }
+  },
+  "falhas_tratadas": [],
+  "resultados": [
+    {
+      "indice": 0,
+      "lote_id": "LOTE-2026-0002",
+      "status": "processado",
+      "motivo": [],
+      "protocolo": "SIM-000001",
+      "co2_evitado_kg_co2eq": 30.48,
+      "pontos": 120,
+      "selo_verde_esg": null,
+      "selo_situacao": "abaixo_do_minimo"
+    },
+    {
+      "indice": 1,
+      "lote_id": "LOTE-2026-0003",
+      "status": "processado",
+      "motivo": [],
+      "protocolo": "SIM-000002",
+      "co2_evitado_kg_co2eq": 50.8,
+      "pontos": 200,
+      "selo_verde_esg": null,
+      "selo_situacao": "abaixo_do_minimo"
+    }
+  ],
+  "trilhas_bpmn": {
+    "-": [
+      "T1",
+      "G0:sim",
+      "T2",
+      "G1:sim",
+      "T11",
+      "T12"
+    ],
+    "LOTE-2026-0002": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:retomar",
+      "T7",
+      "T8",
+      "G6:sim",
+      "T9",
+      "G7:sim",
+      "T10"
+    ],
+    "LOTE-2026-0003": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:retomar",
+      "T7",
+      "T8",
+      "G6:sim",
+      "T9",
+      "G7:sim",
+      "T10"
+    ]
+  },
+  "conferencia_gabarito": null
+}

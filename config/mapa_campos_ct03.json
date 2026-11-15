@@ -1,0 +1,21 @@
+{
+  "_aviso": "Mapa nome_interno -> nome_no_arquivo do lote de doação (CT-03). Hoje é identidade: nomes do 'modelo de aplicação' proposto pelo Erick v1.0 (11/11/2026), NÃO confirmado [PENDENTE: PEN-001]. Se os nomes mudarem, só este mapa muda. confirmacao_entrega_texto, doador_nome_ficticio, beneficiario_tipo e simulado são acréscimos propostos pela AIPA.",
+  "campos": {
+    "lote_id": "lote_id",
+    "doador_id": "doador_id",
+    "beneficiario_id": "beneficiario_id",
+    "alimento_descricao": "alimento_descricao",
+    "quantidade_disponibilizada_kg": "quantidade_disponibilizada_kg",
+    "quantidade_recebida_kg": "quantidade_recebida_kg",
+    "quantidade_aproveitada_kg": "quantidade_aproveitada_kg",
+    "status_logistico": "status_logistico",
+    "estado_termico": "estado_termico",
+    "evento_atual": "evento_atual",
+    "entrega_confirmada_em": "entrega_confirmada_em",
+    "confirmacao_entrega_texto": "confirmacao_entrega_texto",
+    "doador_nome_ficticio": "doador_nome_ficticio",
+    "beneficiario_tipo": "beneficiario_tipo",
+    "simulado": "simulado"
+  },
+  "obrigatorios": ["lote_id", "doador_id", "beneficiario_id", "alimento_descricao", "quantidade_disponibilizada_kg", "status_logistico", "entrega_confirmada_em", "simulado"]
+}

@@ -1,0 +1,23 @@
+# segredos
+.env
+*.env
+!.env.exemplo
+
+# ambiente e caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# saídas e estado da execução (regeráveis com os scripts)
+saida/
+entrada/
+*.db
+*.db-journal
+portal_simulado/*.db
+_tmp*/
+
+# modelo treinado (regerável com treinar_modelo.py)
+modelos/*.joblib

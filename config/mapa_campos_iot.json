@@ -1,0 +1,33 @@
+{
+  "_aviso": "Chaves OBSERVADAS nos logs mosquitto_sub de 10 e 11/11/2026 (repositório da IoT, commit 4b09c42). Confirmação do Erick pendente (PC-012). Comparação de valores sem diferenciar maiúsculas. Valor bruto sempre preservado.",
+  "chaves": {
+    "lote_id": "lote_id",
+    "device_id": "device_id",
+    "seq": "seq",
+    "ts": "ts",
+    "ts_valido": "ts_valido",
+    "temp_c": "temp_c",
+    "limite_c": "limite_c",
+    "duracao_acima_s": "duracao_acima_s",
+    "severidade": "severidade",
+    "evento": "evento",
+    "estado": "estado",
+    "origem": "origem",
+    "schema": "schema"
+  },
+  "sufixos_topico": {
+    "telemetria": "telemetria",
+    "alerta": "alerta",
+    "status": "status",
+    "comando": "ack"
+  },
+  "valores_estado": {
+    "alerta": "ativacao",
+    "frio_ok": "normal",
+    "normalizado": "normalizacao"
+  },
+  "valores_evento": {
+    "quebra_cadeia_frio": "quebra_cadeia_frio",
+    "normal": "normal"
+  }
+}

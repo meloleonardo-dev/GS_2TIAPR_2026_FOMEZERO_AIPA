@@ -1,0 +1,266 @@
+{
+  "_aviso": "Relatório gerado pelo robô (execução real) com dados SIMULADOS; evidência da IoT física e simulada nunca misturadas: veja 'modo_iot'.",
+  "id_execucao": "EXEC-20261113-215248",
+  "inicio": "2026-11-13T21:52:48-03:00",
+  "simulado": true,
+  "arquivo_lotes": "entrada\\lotes_entregues.json",
+  "modo_iot": [
+    "simulador"
+  ],
+  "modo_iot_texto": "IoT SIMULADA (origens ['simulador']); não misturar com a física.",
+  "recursos": {
+    "disco_livre_mb": 57117.7,
+    "disco_uso_pct": 88.3,
+    "memoria_disponivel_mb": 4628.0,
+    "memoria_uso_pct": 71.2,
+    "cpu_pct": 12.7
+  },
+  "portal": "SIMULADO em http://127.0.0.1:5050, no ar (iniciado pelo robô), modo de falha nenhum",
+  "iot_resumo": "1 arquivo(s), 4 mensagens {'telemetria': 3, 'alerta_ativacao': 1}, 1 linha(s) inválida(s)",
+  "modelo": "ocorrencia-v2 carregado (extração do kg v2)",
+  "limiar_confianca": 0.7,
+  "portal_resumo": {
+    "lancamentos": [],
+    "simulado": true,
+    "total_lancamentos": 0
+  },
+  "portal_total_lancamentos": 0,
+  "fim": "2026-11-13T21:52:51-03:00",
+  "duracao_total_s": 3.45,
+  "abortado": false,
+  "arquivo_log": "EXEC-20261113-215248.log",
+  "resumo": {
+    "lotes_no_arquivo": 3,
+    "lotes_tratados": 3,
+    "processado": 0,
+    "revisao_humana": 3,
+    "falha": 0,
+    "ignorado_duplicado": 0,
+    "ignorado_nao_entregue": 0,
+    "ignorados_nao_entregues": 0,
+    "taxa_automacao": 0.0,
+    "taxa_revisao_humana": 1.0,
+    "taxa_erros": 0.0
+  },
+  "definicoes": {
+    "lotes_tratados": "entregues, sem contar duplicados nem não entregues",
+    "taxa_erros": "lotes com status falha / lotes tratados",
+    "tempo_de_ciclo_lote": "T3 a T10 por lote, em ms (inclui espera do portal)",
+    "custo_por_processo": "não medido (sem custo real)"
+  },
+  "tempo_de_ciclo_lote_ms": {
+    "n": 3,
+    "media_ms": 35.31,
+    "min_ms": 5.81,
+    "max_ms": 94.28
+  },
+  "tempo_de_ciclo_por_lote": {
+    "LOTE-2026-0003": 94.28,
+    "LOTE-2026-0005": 5.81,
+    "LOTE-2026-0006": 5.85
+  },
+  "tarefas_bpmn": {
+    "T1": {
+      "nome": "Verificar ambiente",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 1666.79,
+      "min_ms": 1666.79,
+      "max_ms": 1666.79
+    },
+    "T2": {
+      "nome": "Ler entradas",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 1448.13,
+      "min_ms": 1448.13,
+      "max_ms": 1448.13
+    },
+    "T3": {
+      "nome": "Validar dados",
+      "execucoes": 3,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 3,
+      "media_ms": 0.01,
+      "min_ms": 0.01,
+      "max_ms": 0.01
+    },
+    "T4": {
+      "nome": "Checar idempotência",
+      "execucoes": 3,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 3,
+      "media_ms": 0.17,
+      "min_ms": 0.14,
+      "max_ms": 0.21
+    },
+    "T5": {
+      "nome": "IA: extrair kg e classificar",
+      "execucoes": 3,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 3,
+      "media_ms": 31.76,
+      "min_ms": 2.29,
+      "max_ms": 90.64
+    },
+    "T6": {
+      "nome": "Regras inteligentes",
+      "execucoes": 3,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 3,
+      "media_ms": 0.09,
+      "min_ms": 0.04,
+      "max_ms": 0.12
+    },
+    "T10": {
+      "nome": "Gravar estado e CT-04",
+      "execucoes": 3,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 3,
+      "media_ms": 2.83,
+      "min_ms": 2.75,
+      "max_ms": 2.96
+    },
+    "T11": {
+      "nome": "Gravar CT-05",
+      "execucoes": 1,
+      "erros": 0,
+      "taxa_erros": 0.0,
+      "motivos_erro": {},
+      "n": 1,
+      "media_ms": 196.13,
+      "min_ms": 196.13,
+      "max_ms": 196.13
+    }
+  },
+  "gateways": {
+    "G0": {
+      "sim": 1
+    },
+    "G1": {
+      "sim": 1
+    },
+    "G2": {
+      "sim": 3
+    },
+    "G3": {
+      "sim": 3
+    },
+    "G4": {
+      "novo": 3
+    },
+    "G5": {
+      "revisao_humana": 3
+    }
+  },
+  "falhas_tratadas": [
+    {
+      "falha": "F4",
+      "lote_id": null,
+      "motivo": "iot_linha_invalida:iot_simulado_invalido.log:3",
+      "caminho_seguro": "linha ignorada; leitura continua"
+    }
+  ],
+  "resultados": [
+    {
+      "indice": 0,
+      "lote_id": "LOTE-2026-0003",
+      "status": "revisao_humana",
+      "motivo": [
+        "evento_iot_desconhecido"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 1,
+      "lote_id": "LOTE-2026-0005",
+      "status": "revisao_humana",
+      "motivo": [
+        "alerta_iot_quebra_cadeia_frio"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    },
+    {
+      "indice": 2,
+      "lote_id": "LOTE-2026-0006",
+      "status": "revisao_humana",
+      "motivo": [
+        "ocorrencia_avaria",
+        "baixa_confianca"
+      ],
+      "co2_evitado_kg_co2eq": null,
+      "pontos": null,
+      "selo_verde_esg": null,
+      "selo_situacao": "nao_calculado",
+      "protocolo": null
+    }
+  ],
+  "trilhas_bpmn": {
+    "-": [
+      "T1",
+      "G0:sim",
+      "T2",
+      "G1:sim",
+      "T11",
+      "T12"
+    ],
+    "LOTE-2026-0003": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0005": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ],
+    "LOTE-2026-0006": [
+      "G2:sim",
+      "T3",
+      "G3:sim",
+      "T4",
+      "G4:novo",
+      "T5",
+      "T6",
+      "G5:revisao_humana",
+      "T10"
+    ]
+  },
+  "conferencia_gabarito": null
+}

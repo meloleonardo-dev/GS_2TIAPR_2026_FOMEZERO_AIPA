@@ -1,0 +1,61 @@
+id;texto;classe;kg_recebido_gabarito;kg_cadastrado;origem;rotulado_por;revisao_humana
+CV2-01;oi gente aqui é da cozinha da vila, passando só pra dizer q chegou a doação, eram uns dezoito quilos de mandioca e já tá tudo lavado na geladeira, deus abençoe;sem_ocorrencia;18;18;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-02;[áudio transcrito] então é... a gente pegou agora de manhã né os trinta e dois quilos de arroz tá tudo joia tá bom brigada;sem_ocorrencia;32;32;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-03;blz, 22kg de feijao preto na mão. nenhum pacote furado nem nada;sem_ocorrencia;22;22;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-04;Conferimos na balança: 14,5 kg de queijo minas, bem gelado, sem nenhum problema. Obrigada à equipe!;sem_ocorrencia;14.5;14.5;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-05;rcbd 9 kg tomate td ok vlw;sem_ocorrencia;9;9;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-06;nao faltou nada, os quarenta e cinco quilos de batata doce bateram com o que tava no app;sem_ocorrencia;45;45;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-07;Bom dia! Aqui é a Associação de Moradores. A doação do supermercado foi deixada hoje: 27 quilos de legumes variados (abóbora, chuchu e beterraba). Já separamos em sacolas para as famílias cadastradas e a distribuição vai ser amanhã às 8h.;sem_ocorrencia;27;27;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-08;chegô os seis kilo de laranja q vcs mandaram, as criança amaram kkk;sem_ocorrencia;6;6;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-09;pode dar baixa aí, onze quilos e meio de pão doce entregue aqui na creche, nada amassado;sem_ocorrencia;11.5;11.5;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-10;tudo dentro: 50 kgs de farinha de trigo, sacos lacrados, ja guardei no deposito;sem_ocorrencia;50;50;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-11;a van passou aqui umas 10h e deixou 16 kg de frango congelado, durinho ainda, ja foi pro freezer;sem_ocorrencia;16;16;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-12;Obg pela força!! sete kg de uva e 3 kg de morango, tudo bonito;sem_ocorrencia;10;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-13;[áudio transcrito] oi então os ovos chegaram né mas umas três bandejas vieram tudo quebrada escorrendo na caixa, no total era vinte quilos;avaria;20;20;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-14;o pacote de açúcar rasgou na descida da van, perdemos uns 2kg dos 25 que vieram;avaria;25;25;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-15;chegou as melancia mas duas tavam rachada e vazando, 30 kg ao todo;avaria;30;30;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-16;Infelizmente parte das alfaces veio murcha e com folha apodrecida, mais ou menos metade dos 8 kg;avaria;8;8;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-17;lata amassada, umas 4 latas estufadas de milho verde, recebi 12 kg de enlatados;avaria;12;12;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-18;mamao todo mole e com mancha preta, nao da pra aproveitar quase nada, 15 kg;avaria;15;15;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-19;a caixa desmontou no caminho e os pães caíram no chão do caminhão, ficaram sujos, eram 10 quilos;avaria;10;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-20;garrafa de óleo veio trincada e melou tudo, 18 kg de mantimento;avaria;18;18;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-21;boa tarde! recebemos sim a doação de 40 kg de batata, mas uns 5 kg estavam brotados e com bicho, separamos pra descartar. o resto ja foi pras famílias;avaria;40;40;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-22;biscoito todo esfarelado, os pacotes chegaram esmagados embaixo das caixas de leite, nove quilos;avaria;9;9;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-23;tem saco de feijao com caruncho, uns dois de cinco quilos cada, total recebido 20kg;avaria;20;20;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-24;uva toda espremida e azeda dentro da caixa, foram 6 kg;avaria;6;6;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-25;[áudio transcrito] oi, aqui chegou só uma parte né, era pra ser trinta quilo de arroz e veio uns vinte, o rapaz falou que o resto vem semana que vem;divergencia_quantidade;20;30;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-26;contei 3 sacos de 5kg, mas no sistema tá 25 kg;divergencia_quantidade;15;25;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-27;no papel do motorista constava 50 kg de laranja, pesamos aqui e deu quarenta e um;divergencia_quantidade;41;50;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-28;Recebemos 12 kg de carne, mas não os 16 que estavam previstos.;divergencia_quantidade;12;16;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-29;veio faltano umas caixa de leite, deu 18 kilo e era 24;divergencia_quantidade;18;24;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-30;pessoal da logística, só pra registrar: o lote veio menor, 7 kg de cenoura em vez de 10;divergencia_quantidade;7;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-31;Bom dia. A doação chegou, porém incompleta: das quatro caixas de banana anunciadas recebemos três, aproximadamente 21 kg.;divergencia_quantidade;21;28;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-32;tá errado o peso, chegou 5,5 kg de peixe e no app aparece 9;divergencia_quantidade;5.5;9;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-33;mandaram metade só, tipo 15 kg dos 30 kg prometidos;divergencia_quantidade;15;30;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-34;o motorista deixou dois sacos e levou o terceiro pra outra entidade por engano, então ficou 40 kg aqui e não 60;divergencia_quantidade;40;60;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-35;conferi e deu trinta e cinco quilos de macarrão, a doação anunciada era de cinquenta, ninguém avisou da diferença;divergencia_quantidade;35;50;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-36;kd o resto? so chegou 1 caixa de 8kg, eram 3;divergencia_quantidade;8;24;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-37;[áudio transcrito] menina, o frango chegou todo descongelado, a água escorrendo do saco, doze quilos;problema_temperatura;12;12;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-38;o caminhão não tava com a refrigeração ligada, o iogurte chegou a uns 15 graus, 20 kg;problema_temperatura;20;20;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-39;sorvete virou sopa kkk, 6kg;problema_temperatura;6;6;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-40;a manteiga veio derretendo, toda mole na embalagem, 4 kg;problema_temperatura;4;4;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-41;a entrega atrasou e os 9 kg de presunto passaram a tarde no porta-malas, chegou abafado;problema_temperatura;9;9;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-42;o requeijão não veio refrigerado não, tava na temperatura do dia, 5 kg;problema_temperatura;5;5;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-43;a caixa do peixe não era térmica e o peixe chegou amolecido, uns treze quilos;problema_temperatura;13;13;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-44;termômetro da cozinha marcou 12°C na carne quando chegou, 25 kg;problema_temperatura;25;25;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-45;o freezer do carro deu pau no meio do caminho e a polpa de fruta descongelou, 8 kg;problema_temperatura;8;8;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-46;Recebemos as 30 marmitas (uns 15 kg) mas já chegaram frias e sem o aquecimento que foi combinado, ficaram mais de 4 h fora;problema_temperatura;15;15;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-47;a carne moída chegou já sem estar congelada, toda mole, pesou onze quilos e meio;problema_temperatura;11.5;11.5;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-48;leite em caixinha tá ok mas o leite fresco chegou quentinho, 6 kg ao todo;problema_temperatura;6;6;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-49;[áudio inaudível];ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-50;vcs entregam no sabado?;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-51;aaaaaa errei o grupo desculpa;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-52;👍👍;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-53;quem é o responsável pela doação de amanhã? preciso falar com ele;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-54;ainda não chegou nada aqui, vou esperar;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-55;deixa no portão 2, do lado da farmácia;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-56;blz depois falo;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-57;precisa assinar algum papel?;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-58;segue o print da tela;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-59;não consigo abrir o app, dá erro;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao
+CV2-60;?? nao entendi a msg;ilegivel_outro;;10;SINTETICO_cego_v2;agente de IA da AIPA (escrito e rotulado);nao

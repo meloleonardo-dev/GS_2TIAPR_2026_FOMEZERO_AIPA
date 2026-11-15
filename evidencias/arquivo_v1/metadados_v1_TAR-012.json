@@ -1,0 +1,125 @@
+{
+  "modelo": "ocorrencia-v1",
+  "gerado_em": "2026-11-13T17:52:05",
+  "algoritmo": "TF-IDF (1-2 gramas, tokenizador spaCy pt, sem acento, números -> numtok) + LogisticRegression (class_weight=balanced, C=10.0)",
+  "semente": 42,
+  "classes": [
+    "avaria",
+    "divergencia_quantidade",
+    "ilegivel_outro",
+    "problema_temperatura",
+    "sem_ocorrencia"
+  ],
+  "limiar_confianca": 0.7,
+  "limiar_partida": 0.7,
+  "calibracao_limiar": {
+    "metodo": "validação cruzada estratificada de 5 partes só no treino; menor limiar >= 0,70 com zero falso automático fora da dobra",
+    "tabela": [
+      {
+        "limiar": 0.7,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 30,
+        "n": 225
+      },
+      {
+        "limiar": 0.75,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 26,
+        "n": 225
+      },
+      {
+        "limiar": 0.8,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 20,
+        "n": 225
+      },
+      {
+        "limiar": 0.85,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 11,
+        "n": 225
+      },
+      {
+        "limiar": 0.9,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 3,
+        "n": 225
+      },
+      {
+        "limiar": 0.95,
+        "falso_automatico_oof": 0,
+        "seguiriam_automatico_oof": 0,
+        "n": 225
+      }
+    ]
+  },
+  "conjunto_treino": {
+    "arquivo": "dados/sinteticos/ocorrencias_rotuladas.csv",
+    "sha256": "f846a642b89b3c068d584b21eb60ecfa849de52fed1bfdbe70ab144d50471fc1",
+    "n_total": 300,
+    "n_treino": 225,
+    "n_teste": 75
+  },
+  "conjunto_fora_do_molde": {
+    "arquivo": "dados/sinteticos/ocorrencias_fora_do_molde.csv",
+    "sha256": "43661920f5f9dd5bb34c4d4649e927a808d1ae138cc1c2453549c61ee9b8524b",
+    "n": 30
+  },
+  "versoes": {
+    "python": "3.13.5",
+    "scikit-learn": "1.9.1"
+  },
+  "palavras_de_maior_peso_por_classe": {
+    "avaria": [
+      "com",
+      "amassados",
+      "unidades",
+      "estavam",
+      "vieram amassados",
+      "recebi",
+      "recebemos",
+      "podres"
+    ],
+    "divergencia_quantidade": [
+      "faltaram",
+      "faltando",
+      "mas o",
+      "recebidos",
+      "quilos",
+      "uma caixa",
+      "apenas",
+      "uma"
+    ],
+    "ilegivel_outro": [
+      "xpto",
+      "xpto numtok",
+      "entregue",
+      "foi",
+      "confirmo",
+      "boa",
+      "favor",
+      "pode"
+    ],
+    "problema_temperatura": [
+      "quente",
+      "chegou",
+      "temperatura",
+      "morno",
+      "gelo",
+      "estava",
+      "peixe",
+      "da refrigeracao"
+    ],
+    "sem_ocorrencia": [
+      "tudo",
+      "chegou certinho",
+      "certinho",
+      "certo",
+      "tudo certo",
+      "confirmada",
+      "entrega confirmada",
+      "entrega"
+    ]
+  },
+  "limitacao": "Conjuntos SINTÉTICOS: os 300 textos têm rótulo por construção do gerador e os 30 'fora do molde' foram escritos e rotulados pelo agente de IA da AIPA; nenhum texto teve revisão humana (DEC-044). Os moldes são poucos e o vocabulário é pequeno, então as métricas do teste tendem a ser otimistas; o conjunto 'fora do molde' mede um pouco da generalização, com n = 30. Não há texto real de beneficiário."
+}

@@ -1,0 +1,4 @@
+lote_id;doador_id;beneficiario_id;beneficiario_tipo;entrega_confirmada_em;quantidade_disponibilizada_kg;quantidade_recebida_kg;status;motivo
+LOTE-2026-0003;DOADOR-001;BENEF-002;ONG;2026-11-16T09:40:00-03:00;20.0;;revisao_humana;evento_iot_desconhecido
+LOTE-2026-0005;DOADOR-001;BENEF-004;ONG;2026-11-16T10:05:00-03:00;25.0;;revisao_humana;alerta_iot_quebra_cadeia_frio
+LOTE-2026-0006;DOADOR-003;BENEF-005;cozinha_comunitaria;2026-11-16T10:20:00-03:00;6.0;;revisao_humana;ocorrencia_avaria,baixa_confianca

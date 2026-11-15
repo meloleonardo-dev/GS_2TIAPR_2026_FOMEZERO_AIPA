@@ -1,0 +1,13 @@
+$ python executar_robo.py --cenario disco_cheio
+(código de saída 3)
+
+[cenário disco_cheio | F11] disco abaixo do mínimo -> pasta saida\cenarios\disco_cheio
+2026-11-13 21:55:15,510 | INFO | EXEC-20261113-215515 | E0 | - | início da execução (trabalho=disco_cheio, origens IoT aceitas=['fisico'], portal_modo=nenhum, sem_portal=False)
+2026-11-13 21:55:15,615 | INFO | EXEC-20261113-215515 | T1 | - | recursos: disco livre 57115.5 MB, memória disponível 4619.9 MB, CPU 13.9%
+2026-11-13 21:55:15,615 | CRITICAL | EXEC-20261113-215515 | T1 | - | disco livre 57115.5 MB < mínimo 999999999 MB
+2026-11-13 21:55:15,615 | INFO | EXEC-20261113-215515 | G0 | - | gateway -> nao_ambiente
+2026-11-13 21:55:15,615 | CRITICAL | EXEC-20261113-215515 | E-fim | - | execução abortada com segurança antes de gravar qualquer saída de lote
+2026-11-13 21:55:15,630 | INFO | EXEC-20261113-215515 | E1 | - | fim da execução: relatório relatorio_EXEC-20261113-215515.md
+
+== EXEC-20261113-215515 | tratados 0 | processado 0 | revisão humana 0 | falha 0 | duplicados 0 | não entregues 0 | taxa de erros None | 0.11 s
+   relatório: saida\cenarios\disco_cheio\saida\relatorios\relatorio_EXEC-20261113-215515.md | log: saida\cenarios\disco_cheio\saida\logs\EXEC-20261113-215515.log
