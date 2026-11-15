@@ -121,3 +121,7 @@ testes/                    pytest
 evidencias/                evidências de validação
 contrato/                  proposta dos contratos CT-03, CT-04, CT-05 e IoT
 ```
+
+## Outros módulos do FOMEZERO (mesmo grupo)
+- PLN: Fábrica de Corpus (corpus de documentos oficiais sobre doação segura de alimentos): https://github.com/meloleonardo-dev/GS_2TIAPR_2026_FOMEZERO_PLN
+- GENAI: assistente de consulta para doadores (RAG sobre o corpus da PLN): https://github.com/meloleonardo-dev/GS_2TIAPR_2026_FOMEZERO_GENAI
