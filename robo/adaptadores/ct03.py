@@ -70,6 +70,19 @@ def adaptar(registro: dict, mapa: dict) -> tuple[dict, list[str]]:
     for c in ("lote_id", "doador_id", "beneficiario_id", "status_logistico"):
         if isinstance(lote.get(c), str):
             lote[c] = lote[c].strip()
+    # acréscimos da integração com o FEMD (opcionais): divergências marcadas e resumo da triagem visual
+    div = lote.get("divergencias_informadas")
+    if div is None:
+        lote["divergencias_informadas"] = []
+    elif isinstance(div, list) and all(isinstance(d, str) for d in div):
+        lote["divergencias_informadas"] = [d.strip() for d in div if d.strip()]
+    else:
+        lote["divergencias_informadas"] = []
+        erros.append("divergencias_informadas")
+    tri = lote.get("triagem_visual")
+    if tri is not None and not isinstance(tri, dict):
+        lote["triagem_visual"] = None
+        erros.append("triagem_visual")
     lote["_bruto"] = registro
     lote["_hash"] = hash_registro(registro) if isinstance(registro, dict) else None
     return lote, erros

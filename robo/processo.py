@@ -258,7 +258,10 @@ class Robo:
                     obs.info("G5", chave, f"revisão humana: {motivos}")
                     return self._t10(res, ct04, lote, indice, "T6")
                 obs.gateway("G5", chave, "automatico")
-                kg_validado, origem_qtd = ia["kg_extraido"], "confirmacao_beneficiario"
+                if ia["kg_extraido"] is not None:
+                    kg_validado, origem_qtd = ia["kg_extraido"], "confirmacao_beneficiario"
+                else:  # R7 aceitou o campo numérico: texto sem kg, mas kg recebido informado e sem divergência
+                    kg_validado, origem_qtd = lote["quantidade_recebida_kg"], "informado_beneficiario"
 
             return self._t7_a_t10(res, ct04, lote, indice, chave, kg_validado, origem_qtd)
         except Exception as e:  # noqa: BLE001 - caminho seguro para erro não previsto
@@ -308,7 +311,9 @@ class Robo:
                 kg_cadastrado=lote["quantidade_disponibilizada_kg"], kg_recebido_informado=lote.get("quantidade_recebida_kg"),
                 iot_fonte_disponivel=self.iot["disponivel"], iot_ativacao_aceita=iot["ativacao_aceita"] or alerta_ct03,
                 iot_desconhecido=iot["desconhecido"], lote_alterado=alterado,
-                ocorrencias_automaticas=tuple(p["OCORRENCIAS_AUTOMATICAS"]))
+                ocorrencias_automaticas=tuple(p["OCORRENCIAS_AUTOMATICAS"]),
+                divergencias_informadas=tuple(lote.get("divergencias_informadas") or ()),
+                triagem_visual=lote.get("triagem_visual"))
             motivos = regras.avaliar(entrada, p)
             if not self.clf.disponivel:
                 self.obs.falha("F3", chave, "modelo_indisponivel", "revisão humana")
@@ -323,6 +328,9 @@ class Robo:
               "iot_ativacao_referencia": next(iter(sorted(iot["ativacoes"], key=lambda a: a["tipo_mensagem"] !=
                                                          "alerta_ativacao")), None),
               "alerta_ct03": alerta_ct03,
+              "kg_informado": lote.get("quantidade_recebida_kg"),
+              "divergencias_informadas": list(lote.get("divergencias_informadas") or []),
+              "triagem_visual": lote.get("triagem_visual"),
               "modelo": getattr(self, "nome_modelo", None) if self.clf.disponivel else None,
               "limiar_confianca": self.limiar}
         self._ultimo_texto = mascarar(texto)

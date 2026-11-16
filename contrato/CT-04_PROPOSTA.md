@@ -43,7 +43,7 @@ A FEMD guarda dados no navegador (IDEIA_VIGENTE). Proposta mais simples: a FEMD 
 | `beneficiario_id` | texto (código, ex.: `BENEF-003`) | sim | Termo e histórico; **nunca nome de pessoa** |
 | `alimento_descricao` | texto | sim | Termo; contexto da IA |
 | `quantidade_disponibilizada_kg` | número > 0 | sim | quantidade cadastrada pelo doador; **não** é base do CO₂ |
-| `quantidade_recebida_kg` | número ≥ 0 ou `null` | não | se vier preenchida, é comparada com o kg extraído do texto do beneficiário (divergência → revisão humana) |
+| `quantidade_recebida_kg` | número ≥ 0 ou `null` | não | kg pesado e informado pelo beneficiário. Comparado com o cadastrado e com o kg extraído do texto (divergência → revisão humana); se o texto não tiver kg, vale o informado (DEC-054) |
 | `quantidade_aproveitada_kg` | número ou `null` | não | o robô **não** preenche nem infere (precisa de registro posterior, §11 do Erick) |
 | `status_logistico` | `cadastrado` \| `em_transporte` \| `entregue` \| `cancelado` | sim | só `entregue` entra |
 | `estado_termico` | texto bruto ou `null` | não | preservado como veio; mapeado no adaptador (ex.: `ALERTA`); **não** é decisão sanitária |
@@ -53,6 +53,8 @@ A FEMD guarda dados no navegador (IDEIA_VIGENTE). Proposta mais simples: a FEMD 
 | `doador_nome_ficticio` | texto | não | só no Termo, marcado SIMULADO. **Acréscimo proposto pela AIPA** (opcional) |
 | `beneficiario_tipo` | `ONG` \| `cozinha_comunitaria` \| `cidadao` | não | Termo e indicadores. **Acréscimo proposto pela AIPA** (opcional) |
 | `simulado` | booleano | sim | `true` em toda a GS. **Acréscimo proposto pela AIPA** |
+| `divergencias_informadas` | lista de códigos (`quantidade_menor`, `embalagem_danificada`, `temperatura_inadequada`, `produto_diferente`, `outro`) | não | qualquer código → revisão humana, motivo `divergencia_informada_beneficiario` (R11). **Acréscimo da integração com o FEMD** (DEC-054) |
+| `triagem_visual` | objeto ou `null` (`classe`, `confianca`, `produto`, `inconclusivo`, `pede_confirmacao_humana`, `modelo`, `destino`) | não | resumo da triagem por foto do cadastro (VCIA, CT-08). Deterioração/compostagem → `triagem_visual_deterioracao`; inconclusiva ou pede confirmação → `triagem_visual_pede_avaliacao` (R10). **Acréscimo da integração com o FEMD** (DEC-054) |
 
 Campos do modelo do Erick que o robô **não usa**: `dispositivo_id`, `temperatura_c`, `umidade_pct`, `distancia_cm`, `caixa_presente`, `ultima_leitura_em`, `recebido_em` (são leituras da IoT; o robô não julga temperatura nem presença).
 

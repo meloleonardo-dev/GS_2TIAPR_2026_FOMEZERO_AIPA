@@ -66,3 +66,18 @@ def test_ct03_ausente_e_ilegivel(tmp_path):
     (tmp_path / "q.json").write_text("{quebrado", encoding="utf-8")
     with pytest.raises(ct03.EntradaIlegivel):
         ct03.ler_arquivo(tmp_path / "q.json")
+
+
+def test_ct03_acrescimos_femd():
+    import json
+    from robo.adaptadores.ct03 import adaptar
+    from robo.config import BASE
+    mapa = json.loads((BASE / "config" / "mapa_campos_ct03.json").read_text(encoding="utf-8"))
+    reg = {"lote_id": "L1", "divergencias_informadas": [" falta_quantidade ", ""], "triagem_visual": {"inconclusivo": True}}
+    lote, erros = adaptar(reg, mapa)
+    assert lote["divergencias_informadas"] == ["falta_quantidade"] and lote["triagem_visual"] == {"inconclusivo": True}
+    assert "divergencias_informadas" not in erros and "triagem_visual" not in erros
+    lote, erros = adaptar({"lote_id": "L2", "divergencias_informadas": "texto", "triagem_visual": 3}, mapa)
+    assert "divergencias_informadas" in erros and "triagem_visual" in erros
+    lote, erros = adaptar({"lote_id": "L3"}, mapa)
+    assert lote["divergencias_informadas"] == [] and lote["triagem_visual"] is None

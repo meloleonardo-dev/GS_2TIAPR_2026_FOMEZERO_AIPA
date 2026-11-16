@@ -1,4 +1,4 @@
-"""Regras inteligentes do gateway G5 (R1 a R9, DESENVOLVIMENTO.md §4.3).
+"""Regras inteligentes do gateway G5 (R1 a R11, DESENVOLVIMENTO.md §4.3; R10 e R11 da integração com o FEMD).
 
 Cada regra que dispara acrescenta um motivo. Só segue automático o lote SEM nenhum motivo.
 Nenhuma regra declara que o alimento é seguro: o resultado é "automático" ou "revisão humana".
@@ -25,6 +25,8 @@ class EntradaRegras:
     iot_desconhecido: bool = False
     lote_alterado: bool = False
     ocorrencias_automaticas: tuple = ("sem_ocorrencia",)
+    divergencias_informadas: tuple = ()
+    triagem_visual: dict | None = None
     detalhes: dict = field(default_factory=dict)
 
 
@@ -49,20 +51,32 @@ def avaliar(e: EntradaRegras, params: dict) -> list[str]:
         # R5: baixa confiança
         if e.confianca is not None and e.confianca < e.limiar:
             motivos.append("baixa_confianca")
-    # R7: sem texto ou sem kg no texto
-    if not e.texto_presente or e.kg_extraido is None:
+    # R7: sem texto, ou sem kg no texto e sem kg recebido informado no campo numérico
+    kg_confirmado = e.kg_extraido if e.kg_extraido is not None else e.kg_recebido_informado
+    if not e.texto_presente or kg_confirmado is None:
         motivos.append("sem_confirmacao")
     else:
-        # R6: divergência entre o kg extraído e o cadastrado (ou o informado no lote)
+        # R6: divergência entre cadastrado, informado (campo numérico) e extraído do texto
         tol = calculos.tolerancia_kg(e.kg_cadastrado, params)
-        diverge = abs(e.kg_extraido - e.kg_cadastrado) > tol
-        if e.kg_recebido_informado is not None and abs(e.kg_recebido_informado - e.kg_extraido) > tol:
+        diverge = abs(kg_confirmado - e.kg_cadastrado) > tol
+        if (e.kg_recebido_informado is not None and e.kg_extraido is not None
+                and abs(e.kg_recebido_informado - e.kg_extraido) > tol):
             diverge = True
         if diverge:
             motivos.append("divergencia_kg")
     # R9: lote concluído chegou de novo com conteúdo diferente
     if e.lote_alterado:
         motivos.append("lote_alterado_apos_processamento")
+    # R10: a triagem visual do cadastro (VCIA) pediu avaliação pessoal ou viu sinais de deterioração
+    t = e.triagem_visual
+    if t:
+        if t.get("destino") == "compostagem" or str(t.get("classe") or "").startswith("sinais visuais de deterioração"):
+            motivos.append("triagem_visual_deterioracao")
+        elif t.get("inconclusivo") or t.get("pede_confirmacao_humana"):
+            motivos.append("triagem_visual_pede_avaliacao")
+    # R11: o beneficiário marcou alguma divergência na entrega
+    if e.divergencias_informadas:
+        motivos.append("divergencia_informada_beneficiario")
     return motivos
 
 

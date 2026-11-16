@@ -59,3 +59,28 @@ def test_nenhuma_regra_declara_seguro(params):
     # a saída é só uma lista de motivos de revisão; não existe motivo/valor "seguro"
     for m in avaliar(base(iot_ativacao_aceita=True, classe="problema_temperatura"), params):
         assert "segur" not in m and "apto" not in m
+
+
+def test_r7_aceita_kg_informado_no_campo_numerico(params):
+    # texto sem kg, mas o beneficiário informou o kg recebido no campo numérico
+    assert avaliar(base(kg_extraido=None, kg_recebido_informado=12.0), params) == []
+    # informado divergente do cadastrado vai para revisão
+    assert avaliar(base(kg_extraido=None, kg_recebido_informado=9.0), params) == ["divergencia_kg"]
+
+
+def test_r6_informado_contra_texto(params):
+    assert avaliar(base(kg_extraido=12.0, kg_recebido_informado=12.3), params) == []
+    assert avaliar(base(kg_extraido=12.0, kg_recebido_informado=10.0), params) == ["divergencia_kg"]
+
+
+def test_r10_triagem_visual(params):
+    assert avaliar(base(triagem_visual={"inconclusivo": True}), params) == ["triagem_visual_pede_avaliacao"]
+    assert avaliar(base(triagem_visual={"pede_confirmacao_humana": True}), params) == ["triagem_visual_pede_avaliacao"]
+    assert avaliar(base(triagem_visual={"destino": "compostagem"}), params) == ["triagem_visual_deterioracao"]
+    assert avaliar(base(triagem_visual={"classe": "sem sinais visuais de deterioração",
+                                        "inconclusivo": False, "pede_confirmacao_humana": False}), params) == []
+
+
+def test_r11_divergencia_marcada(params):
+    assert avaliar(base(divergencias_informadas=("embalagem_danificada",)), params) == [
+        "divergencia_informada_beneficiario"]

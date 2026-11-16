@@ -22,7 +22,7 @@ O FOMEZERO liga quem tem excedente de alimento (o **doador**: mercado, padaria, 
 2. lê os lotes de doação entregues (`entrada/lotes_entregues.json`, formato proposto do módulo FEMD) e as mensagens da IoT (`entrada/iot/*.log`, capturas `mosquitto_sub`; os dois logs de 10 e 11/11/2026 são **dado físico real** do ESP32 do grupo);
 3. valida e manda o inválido para a quarentena; descarta duplicados (SQLite);
 4. **IA:** spaCy extrai o kg recebido do texto do beneficiário e um classificador (TF-IDF de palavras e de pedaços de palavra + regressão logística, scikit-learn) diz se houve ocorrência (avaria, divergência, temperatura, texto ilegível), com uma confiança;
-5. **regras inteligentes:** ocorrência, baixa confiança, kg que não bate com o cadastrado ou alerta `quebra_cadeia_frio` da IoT → **revisão humana**, sem pontos;
+5. **regras inteligentes (R1 a R11):** ocorrência, baixa confiança, kg que não bate (cadastrado × informado × escrito no texto), alerta `quebra_cadeia_frio` da IoT, triagem por foto que pediu avaliação ou viu deterioração, ou problema marcado pelo beneficiário → **revisão humana**, sem pontos;
 6. lote validado: calcula o **CO₂ evitado (kg CO₂eq)** = kg recebido validado × 2,54 (estimativa; FAO 2013), os **pontos** (10 por kg) e o **Selo Verde ESG** do doador pelo acumulado (Bronze 50 kg, Prata 200 kg, Ouro 500 kg);
 7. gera o **Termo de Doação** em PDF e confere o PDF;
 8. lança no portal SIMULADO com **Selenium** e confirma pela **API REST**;
@@ -65,6 +65,14 @@ Outras opções:
 
 **Revisão humana.** Lotes retidos vão para `saida/revisao/fila_revisao.csv` (abre no Excel; há uma cópia de leitura em `fila_revisao.xlsx`). O operador preenche `decisao` (`aprovado` ou `reprovado`), `kg_aprovado` e `revisor` (código, não nome) e salva como `entrada/decisoes_revisao.csv`; a próxima execução lê o arquivo: aprovado segue para cálculo, Termo e lançamento; reprovado fica sem pontos. O robô nunca diz se o alimento é "seguro" ou "impróprio": quem decide é a pessoa.
 
+## Serviço local para o portal FOMEZERO (confirmação automática)
+O portal do FOMEZERO (módulo FEMD) pode chamar o robô na hora em que o beneficiário confirma a entrega, sem exportar e importar arquivos:
+```
+python servico_aipa.py            # http://127.0.0.1:5070, só neste computador (Ctrl+C para parar)
+python servico_aipa.py --limpar   # começa do zero (apaga servico_dados/)
+```
+O frontend envia o lote entregue (CT-03, com `quantidade_recebida_kg`, `divergencias_informadas` e o resumo `triagem_visual` da VCIA) para `POST /api/lotes`; o serviço guarda o lote em `servico_dados/entrada/` e executa **o mesmo robô** (validação, idempotência, IA, regras, CO₂, pontos, selo, Termo em PDF, Selenium + API no portal SIMULADO) e devolve o CT-04 em cerca de 8 s. `GET /api/resultados` devolve todos os CT-04 e `GET /api/termos/<lote_id>` o Termo de Doação em PDF. A revisão humana também passa pelo serviço: `GET /api/revisao` lista a fila (texto já mascarado) e `POST /api/revisao/<lote_id>` com `decisao` (`aprovado` ou `reprovado`), `kg_aprovado` e `revisor` (código, nunca nome) grava a decisão no mesmo `entrada/decisoes_revisao.csv` e roda o robô: aprovado segue para cálculo, Termo e lançamento; reprovado fica sem pontos. Opções: `--porta`, `--trabalho` (outra pasta de estado) e `--portal-porta`. Aceita chamadas só de `localhost`/`127.0.0.1`; a IoT lida é a física versionada (`dados/iot_fisico/`). O estado fica em `servico_dados/` (fora do repositório). Porta 5060 não serve: o Chrome a bloqueia.
+
 ## Agendamento (execução automática, sem intervenção)
 - Pelo próprio robô (biblioteca `schedule`): `python executar_robo.py --agendar 10` roda agora e a cada 10 minutos (Ctrl+C para parar).
 - Windows (Agendador de Tarefas): `schtasks /Create /SC MINUTE /MO 10 /TN FOMEZERO_AIPA /TR "C:\caminho\AIPA\.venv\Scripts\python.exe C:\caminho\AIPA\executar_robo.py"`.
@@ -106,6 +114,7 @@ Python 3.14 (testado também com 3.13) e bibliotecas de código aberto, com a li
 ## Estrutura
 ```
 executar_robo.py           PONTO DE ENTRADA
+servico_aipa.py            serviço local (Flask) para o portal FOMEZERO chamar o robô na confirmação da entrega
 gerar_dados_sinteticos.py  dados sintéticos e entrada/
 treinar_modelo.py          treino e métricas da IA (v1 e v2)
 medir_cego_v2.py           medição do conjunto cego v2 (confere o hash; opcional)

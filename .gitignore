@@ -21,3 +21,6 @@ _tmp*/
 
 # modelo treinado (regerável com treinar_modelo.py)
 modelos/*.joblib
+
+# estado do serviço local (servico_aipa.py)
+servico_dados/
