@@ -19,4 +19,4 @@ Tudo foi produzido por execução real do robô nesta máquina. Dados de lote SI
 | F10 navegador/WebDriver não inicia -> contingência API | `falhas/F10_navegador_indisponivel/LEIA-ME.md` | processado=2, revisao_humana=0, falha=0, ignorado_duplicado=0, taxa_erros=0.0 |
 | F11 disco abaixo do mínimo | `falhas/F11_disco_cheio/LEIA-ME.md` | processado=0, revisao_humana=0, falha=0, ignorado_duplicado=0, taxa_erros=None |
 | Agendamento (schedule, 2 ciclos de 15 s) | `agendamento/console.txt` |  |
-| pytest | `pytest/saida_pytest.txt` | resultado============================== 58 passed in 13.25s ============================= |
+| pytest | `pytest/saida_pytest.txt` | ============================= 68 passed in 12.75s ============================= (atualizado em 2026-11-17) |
