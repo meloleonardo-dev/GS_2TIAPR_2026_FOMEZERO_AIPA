@@ -18,6 +18,7 @@ Rotas:
   GET  /api/termos/<lote_id>      Termo de Doação em PDF do lote processado
   GET  /api/revisao               fila de revisão humana (lotes pendentes, texto já mascarado)
   POST /api/revisao/<lote_id>     decisão do operador ({"decisao", "kg_aprovado", "revisor"}); roda o robô
+  GET  /api/certificados/<doador_id>?nome=...  certificado do Selo Verde ESG em PDF (só com selo atribuído)
 Dados e portal SIMULADOS.
 """
 from __future__ import annotations
@@ -34,8 +35,9 @@ from pathlib import Path
 
 from flask import Flask, abort, jsonify, request, send_file
 
-from robo import portal_servidor
-from robo.config import BASE, Caminhos, carregar_parametros, carregar_segredos
+from robo import certificado_pdf, portal_servidor
+from robo.banco import Banco
+from robo.config import BASE, Caminhos, agora, carregar_parametros, carregar_segredos
 from robo.processo import Robo
 
 TRABALHO = BASE / "servico_dados"
@@ -234,6 +236,32 @@ def decidir(lote_id: str):
         relatorio = Robo(estado["trabalho"], dict(estado["params"]), estado["segredos"]).executar()
         lote = next((c for c in ler_ct04()["lotes"] if c.get("lote_id") == lote_id), None)
     return jsonify({"status": "ok", "id_execucao": relatorio["id_execucao"], "lote": lote})
+
+
+@app.get("/api/certificados/<doador_id>")
+def certificado(doador_id: str):
+    """Certificado do Selo Verde ESG do doador, calculado pelo robô a partir dos lotes processados."""
+    if not LOTE_ID.match(doador_id):
+        abort(404)
+    nome = re.sub(r"[\x00-\x1f]", "", request.args.get("nome", ""))[:60]
+    with trava:
+        cam = Caminhos(estado["trabalho"], estado["params"])
+        if not cam.estado_db.exists():
+            return jsonify({"status": "erro", "mensagem": "Nenhum lote processado ainda."}), 404
+        banco = Banco(cam.estado_db)
+        try:
+            emitido = agora(estado["params"]["FUSO"]).isoformat()
+            dados = certificado_pdf.dados_do_doador(banco, doador_id, estado["params"], nome, emitido)
+        except certificado_pdf.SemSelo as e:
+            return jsonify({"status": "erro", "mensagem": f"Ainda sem Selo Verde ESG: {e}."}), 404
+        finally:
+            banco.fechar()
+        arquivo = cam.sub("certificados") / f"CERTIFICADO_{doador_id}_{dados['selo']}.pdf"
+        certificado_pdf.gerar(dados, arquivo)
+        ok, detalhe = certificado_pdf.conferir(arquivo, dados["selo"], dados["codigo"])
+        if not ok:
+            return jsonify({"status": "erro", "mensagem": f"Certificado não passou na conferência ({detalhe})."}), 500
+    return send_file(arquivo, mimetype="application/pdf", download_name=f"certificado_selo_{dados['selo'].lower()}.pdf")
 
 
 def main() -> int:

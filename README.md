@@ -60,7 +60,7 @@ Outras opções:
 | `python executar_robo.py --limpar` | apaga as saídas e o banco do portal antes (execução limpa) |
 | `python executar_robo.py --headful` | mostra o navegador (para gravar a demonstração) |
 | `python executar_robo.py --cenario portal_fora` | demonstra uma falha (cenários: `arquivo_ausente`, `iot_ausente`, `modelo_ausente`, `iot_invalido`, `portal_fora`, `portal_lento`, `erro_api`, `json_invalido`, `credencial_invalida`, `navegador_indisponivel`, `disco_cheio`), numa pasta separada `saida/cenarios/<nome>/` |
-| `python -m pytest testes -v` | testes automáticos (extração, regras, cálculos, adaptadores, idempotência, contrato JSON, Selenium) |
+| `python -m pytest testes -v` | testes automáticos (extração, regras, cálculos, adaptadores, idempotência, contrato JSON, Selenium, certificado do selo) |
 | `python gerar_evidencias.py` | regenera todas as evidências em `evidencias/` executando o robô de verdade (cerca de 4 min) |
 
 **Revisão humana.** Lotes retidos vão para `saida/revisao/fila_revisao.csv` (abre no Excel; há uma cópia de leitura em `fila_revisao.xlsx`). O operador preenche `decisao` (`aprovado` ou `reprovado`), `kg_aprovado` e `revisor` (código, não nome) e salva como `entrada/decisoes_revisao.csv`; a próxima execução lê o arquivo: aprovado segue para cálculo, Termo e lançamento; reprovado fica sem pontos. O robô nunca diz se o alimento é "seguro" ou "impróprio": quem decide é a pessoa.
@@ -71,7 +71,7 @@ O portal do FOMEZERO (módulo FEMD) pode chamar o robô na hora em que o benefic
 python servico_aipa.py            # http://127.0.0.1:5070, só neste computador (Ctrl+C para parar)
 python servico_aipa.py --limpar   # começa do zero (apaga servico_dados/)
 ```
-O frontend envia o lote entregue (CT-03, com `quantidade_recebida_kg`, `divergencias_informadas` e o resumo `triagem_visual` da VCIA) para `POST /api/lotes`; o serviço guarda o lote em `servico_dados/entrada/` e executa **o mesmo robô** (validação, idempotência, IA, regras, CO₂, pontos, selo, Termo em PDF, Selenium + API no portal SIMULADO) e devolve o CT-04 em cerca de 8 s. `GET /api/resultados` devolve todos os CT-04 e `GET /api/termos/<lote_id>` o Termo de Doação em PDF. A revisão humana também passa pelo serviço: `GET /api/revisao` lista a fila (texto já mascarado) e `POST /api/revisao/<lote_id>` com `decisao` (`aprovado` ou `reprovado`), `kg_aprovado` e `revisor` (código, nunca nome) grava a decisão no mesmo `entrada/decisoes_revisao.csv` e roda o robô: aprovado segue para cálculo, Termo e lançamento; reprovado fica sem pontos. Opções: `--porta`, `--trabalho` (outra pasta de estado) e `--portal-porta`. Aceita chamadas só de `localhost`/`127.0.0.1`; a IoT lida é a física versionada (`dados/iot_fisico/`). O estado fica em `servico_dados/` (fora do repositório). Porta 5060 não serve: o Chrome a bloqueia.
+O frontend envia o lote entregue (CT-03, com `quantidade_recebida_kg`, `divergencias_informadas` e o resumo `triagem_visual` da VCIA) para `POST /api/lotes`; o serviço guarda o lote em `servico_dados/entrada/` e executa **o mesmo robô** (validação, idempotência, IA, regras, CO₂, pontos, selo, Termo em PDF, Selenium + API no portal SIMULADO) e devolve o CT-04 em cerca de 8 s. `GET /api/resultados` devolve todos os CT-04 e `GET /api/termos/<lote_id>` o Termo de Doação em PDF. A revisão humana também passa pelo serviço: `GET /api/revisao` lista a fila (texto já mascarado) e `POST /api/revisao/<lote_id>` com `decisao` (`aprovado` ou `reprovado`), `kg_aprovado` e `revisor` (código, nunca nome) grava a decisão no mesmo `entrada/decisoes_revisao.csv` e roda o robô: aprovado segue para cálculo, Termo e lançamento; reprovado fica sem pontos. `GET /api/certificados/<doador_id>?nome=...` gera o **certificado do Selo Verde ESG** em PDF (`robo/certificado_pdf.py`, imagens em `assets/selos/`): o selo vem do mesmo cálculo do robô sobre os lotes processados; sem selo, responde 404; o PDF é relido e conferido (nível, código de conferência, "SIMULADO" e o aviso de que não é certificação). Opções: `--porta`, `--trabalho` (outra pasta de estado) e `--portal-porta`. Aceita chamadas só de `localhost`/`127.0.0.1`; a IoT lida é a física versionada (`dados/iot_fisico/`). O estado fica em `servico_dados/` (fora do repositório). Porta 5060 não serve: o Chrome a bloqueia.
 
 ## Agendamento (execução automática, sem intervenção)
 - Pelo próprio robô (biblioteca `schedule`): `python executar_robo.py --agendar 10` roda agora e a cada 10 minutos (Ctrl+C para parar).
@@ -120,7 +120,8 @@ treinar_modelo.py          treino e métricas da IA (v1 e v2)
 medir_cego_v2.py           medição do conjunto cego v2 (confere o hash; opcional)
 gerar_evidencias.py        regenera evidencias/ (opcional)
 config/                    parametros.json, mapas de campos (CT-03 e IoT)
-robo/                      processo.py (BPMN), nlp_ocorrencia.py, regras.py, calculos.py, termo_pdf.py,
+assets/selos/              imagens dos selos Bronze, Prata e Ouro (certificado)
+robo/                      processo.py (BPMN), certificado_pdf.py, nlp_ocorrencia.py, regras.py, calculos.py, termo_pdf.py,
                            portal_selenium.py, portal_api.py, banco.py, saidas.py, relatorio.py,
                            observabilidade.py, adaptadores/, cenarios.py
 portal_simulado/           portal SIMULADO (Flask) com banco próprio e modos de falha
