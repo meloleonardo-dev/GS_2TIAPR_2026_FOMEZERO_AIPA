@@ -273,6 +273,12 @@ def main() -> int:
     ap.add_argument("--limpar", action="store_true", help="apaga a pasta de trabalho antes de subir")
     ap.add_argument("--trabalho", type=Path, default=TRABALHO, help="pasta de trabalho (padrão servico_dados/)")
     ap.add_argument("--portal-porta", type=int, default=5050, help="porta do portal SIMULADO")
+    ap.add_argument(
+        "--navegador",
+        choices=["chrome", "edge"],
+        default=None,
+        help="navegador do robô; se omitido, mantém config/parametros.json",
+    )
     args = ap.parse_args()
     trabalho = args.trabalho.resolve()
     if args.limpar and trabalho.exists():
@@ -280,6 +286,9 @@ def main() -> int:
     trabalho.mkdir(parents=True, exist_ok=True)
     estado["trabalho"] = trabalho
     estado["params"], estado["segredos"] = parametros(trabalho, args.portal_porta), carregar_segredos()
+    if args.navegador:
+        estado["params"]["NAVEGADOR"] = args.navegador
+    print(f"Navegador do robô: {estado['params']['NAVEGADOR']}")
     if not estado["segredos"]:
         print("Aviso: .env não encontrado. Copie .env.exemplo para .env (lançamento no portal vai falhar).")
     p, cam = estado["params"], Caminhos(estado["trabalho"], estado["params"])

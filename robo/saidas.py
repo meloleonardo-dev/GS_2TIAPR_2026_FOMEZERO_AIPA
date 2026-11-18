@@ -67,10 +67,25 @@ def gravar_ct05(pasta: Path, lotes_estado: list[dict], resumo_execucao: dict, pa
         "lotes": {"processado": len(proc), "revisao_humana": sum(c["status"] == "revisao_humana" for c in cts),
                   "falha": sum(c["status"] == "falha" for c in cts),
                   "ignorados_nao_entregues": resumo_execucao.get("ignorados_nao_entregues", 0)},
+        "execucao": {
+            "id_execucao": id_execucao,
+            "contagens": resumo_execucao.get("contagens_execucao"),
+            "_nota": (
+                "Contagens desta execução, incluindo registros inválidos sem lote_id. "
+                "total_tratados soma processado, revisao_humana e falha; "
+                "registros_sem_id é um subconjunto, não deve ser somado novamente."
+            ),
+        },
         "taxa_automacao": resumo_execucao.get("taxa_automacao"),
         "taxa_revisao_humana": resumo_execucao.get("taxa_revisao_humana"),
         "taxa_erros": resumo_execucao.get("taxa_erros"),
-        "_nota_taxas": "contagens e massa = estado acumulado do robô; taxas = desta execução (relatório BPMN)",
+        "_nota_taxas": (
+            "lotes = estado acumulado dos registros identificados no banco; "
+            "massa e ranking = lotes processados desse estado; "
+            "execucao.contagens e taxas = registros tratados nesta execução, "
+            "incluindo inválidos sem lote_id; duplicados e não entregues "
+            "não entram no denominador das taxas."
+        ),
         "ranking_esg": ranking,
         "nao_calculados": {"massa_aproveitada_kg": None, "beneficiarios_atendidos": None, "refeicoes": None,
                            "desperdicio_evitado_kg": None,

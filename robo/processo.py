@@ -472,7 +472,13 @@ class Robo:
             obs.info("T11", None, f"fila de revisão humana: {len(fila)} lote(s) pendente(s)")
             cont = {s: sum(r["status"] == s for r in resultados) for s in ("processado", "revisao_humana", "falha")}
             trat = sum(cont.values())
-            resumo = {"ignorados_nao_entregues": sum(r["status"] == "ignorado_nao_entregue" for r in resultados),
+            resumo = {
+                      "contagens_execucao": {
+                          **cont,
+                          "total_tratados": trat,
+                          "registros_sem_id": len(getattr(self, "_sem_id", [])),
+                      },
+                      "ignorados_nao_entregues": sum(r["status"] == "ignorado_nao_entregue" for r in resultados),
                       "taxa_automacao": round(cont["processado"] / trat, 4) if trat else None,
                       "taxa_revisao_humana": round(cont["revisao_humana"] / trat, 4) if trat else None,
                       "taxa_erros": round(cont["falha"] / trat, 4) if trat else None}

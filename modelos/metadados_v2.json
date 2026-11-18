@@ -1,6 +1,6 @@
 {
   "modelo": "ocorrencia-v2",
-  "gerado_em": "2026-11-13T21:47:05",
+  "gerado_em": "2026-11-17T19:50:50",
   "algoritmo": "TF-IDF de palavras (1-2 gramas, tokenizador spaCy pt, sem acento, números -> numtok, letra repetida -> 1) + TF-IDF de caracteres char_wb (3-5, min_df=2) + LogisticRegression (class_weight=balanced, C=10.0)",
   "treino": "225 da v1 + 500 de ocorrencias_rotuladas_v2_extra.csv",
   "extracao_kg_versao": 2,
@@ -59,14 +59,14 @@
   "conjuntos": {
     "rotulados_v1": {
       "arquivo": "dados/sinteticos/ocorrencias_rotuladas.csv",
-      "sha256": "f846a642b89b3c068d584b21eb60ecfa849de52fed1bfdbe70ab144d50471fc1",
+      "sha256": "d32b02a3085760cd7eb8580cf54a8c08645fc9f273f349e5052e238d51e10209",
       "n_total": 300,
       "n_treino": 225,
       "n_teste": 75
     },
     "extra_v2": {
       "arquivo": "dados/sinteticos/ocorrencias_rotuladas_v2_extra.csv",
-      "sha256": "f4aece0e75fdc9ab9d304224de73124d055978c8e3151f9520d11111d6bbac11",
+      "sha256": "965d72c8c51e5d156871d3bd387ca4cb40ea3687d456d76d86aefc5b15cd0b2c",
       "n": 500,
       "usado_no_treino": true
     },
@@ -78,7 +78,7 @@
   },
   "n_treino": 725,
   "versoes": {
-    "python": "3.13.5",
+    "python": "3.12.3",
     "scikit-learn": "1.9.1"
   },
   "palavras_de_maior_peso_por_classe": {
